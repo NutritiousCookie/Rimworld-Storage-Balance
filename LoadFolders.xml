@@ -1,0 +1,13 @@
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="vanillaexpanded.vfecore">1.6/VE Furniture</li>
+    <li IfModActive="vanillaexpanded.vfespacer">1.6/VFE Spacer</li>
+    <li IfModActive="vanillaexpanded.vfeproduction">1.6/VFE Production</li>
+    <li IfModActive="adaptive.primitivestorage">1.6/Adaptive Primitive</li>
+    <li IfModActive="adaptive.storage.neolithic">1.6/Adaptive Neolithic</li>
+    <li IfModActive="ghost.rootsofrimworld">1.6/Roots of Rimworld</li>
+    <li IfModActive="ferny.progressionstorage">1.6/Progression Storage</li>
+  </v1.6>
+</loadFolders>
