@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- REBALANCE -->
+    <!-- Baskets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>1</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/costList/Hay</xpath>
+        <value>
+            <Hay>10</Hay>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>2</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/costList/Hay</xpath>
+        <value>
+            <Hay>20</Hay>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/costList/Hay</xpath>
+        <value>
+            <Hay>30</Hay>
+        </value>
+    </Operation>
+    <!-- Wood Pile -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    <!-- Cellars -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/description</xpath>
+        <value>
+        <description>A dirt dugout that can store a range of items. Keeps perishable items slightly cooler underground, effective at around 65F/18C. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \nOccupies a 1x1 area underground.\n\nTotal Capacity: 6 Stacks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>9</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>100</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/description</xpath>
+        <value>
+            <description>A wooden cellar that can store a range of items. Keeps perishable items slightly cooler underground, effective at around 65F/18C. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \nOccupies a 3x3 area underground. \n\nTotal Capacity: 9 Stacks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>12</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>75</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/description</xpath>
+        <value>
+            <description>A stone cellar stone that can store a range of items. Keeps perishable items slightly cooler underground, effective at around 74F/23C. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \nOccupies a 3x3 area underground. \n\nTotal Capacity: 175 Stacks</description>
+        </value>
+    </Operation>
+    <!-- Tent -->
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>2</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>50</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/description</xpath>
+        <value>
+        <description>A tent that can store a variety of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 18 Stacks</description>
+        </value>
+    </Operation>
+
+<!-- REMOVE DUPLICATE CONTENT -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Storage Neolithic Module</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+<!-- RESTORE CUT CONTENT -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Better Architect Menu</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationFindMod">
+            <mods>
+              <li>Progression: Storage</li>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
+                    </li>
+                </operations>
+            </match>
+        </nomatch>
+    </Operation>
+</Patch>
