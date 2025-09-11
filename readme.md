@@ -1,5 +1,5 @@
-#Rimworld Storage Balance Patches
-###by NutritiousCookie
+# Rimworld Storage Balance Patches
+### by NutritiousCookie
 
 This mod contains patches for other storage mods to rebalance their various storage buildings. It is intended to be used with Progression: Storage, although that mod is not required.
 
