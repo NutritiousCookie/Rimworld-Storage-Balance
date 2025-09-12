@@ -141,14 +141,12 @@
             </mods>
             <match Class="PatchOperationSequence">
                 <operations>
-                    <li Class="PatchOperationAttributeSet">
-                        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
-                        <attribute>designationCategory</attribute>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/designationCategory</xpath>
                         <value></value>
                     </li>
-                    <li Class="PatchOperationAttributeSet">
-                        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
-                        <attribute>designationCategory</attribute>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
                         <value></value>
                     </li>
                 </operations>
