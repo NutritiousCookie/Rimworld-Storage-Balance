@@ -240,6 +240,33 @@ Allowed items: Wood.</description>
         </value>
     </Operation>
 
+    <!-- VFE Art -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Art</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFE_Pottery"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>2</maxItemsInCell>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFE_Pottery"]/description</xpath>
+                    <value>
+                        <description>A small-size piece of pottery with artistic engravings. Can be crafted on a crafting spot. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 2 
+Stack per tile: 2 
+
+Allowed items: Food, Plant matter.</description>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 <!-- REMOVE DUPLICATES -->
     <!-- Adaptive Primitive Storage -->
     <Operation Class="PatchOperationFindMod">
