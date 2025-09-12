@@ -2,6 +2,21 @@
 <Patch>        
 <!-- REBALANCE -->
     <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/building/maxItemsInCell</xpath>
+            <value>
+            <maxItemsInCell>6</maxItemsInCell>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/description</xpath>
+        <value>
+            <description>A scompact barrel designed for storage of common goods, including raw food, plant materials, medicines, textiles, and crafted resources. Prevents deterioration, but perishable items may still need freezing. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 6 
+Stack per tile: 6 
+
+Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant matter, Raw fish, Wort, Hemogen, Condiments</description>
+        </value>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
