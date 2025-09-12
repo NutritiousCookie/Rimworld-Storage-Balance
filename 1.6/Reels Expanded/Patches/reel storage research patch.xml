@@ -273,7 +273,7 @@
     <!-- Spacer -->
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Vanilla Furniture Expanded - Spacer</li>
+            <li>Vanilla Furniture Expanded - Spacer Module</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
