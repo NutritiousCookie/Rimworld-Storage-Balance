@@ -134,25 +134,6 @@
         </value>
     </Operation>
 
-<!-- REMOVE DUPLICATE CONTENT -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Adaptive Storage Neolithic Module</li>
-        </mods>
-            <match Class="PatchOperationSequence">
-                <operations>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/designationCategory</xpath>
-                        <value></value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
-                        <value></value>
-                    </li>
-                </operations>
-            </match>
-    </Operation>
-
 <!-- RESTORE CUT CONTENT -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
