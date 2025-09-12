@@ -119,21 +119,21 @@
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adaptive Storage Neolithic Module</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAttributeSet">
-                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
-                    <attribute>designationCategory</attribute>
-                    <value></value>
-                </li>
-                <li Class="PatchOperationAttributeSet">
-                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
-                    <attribute>designationCategory</attribute>
-                    <value></value>
-                </li>
-            </operations>
-        </match>
+            </mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value></value>
+                    </li>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value></value>
+                    </li>
+                </operations>
+            </match>
     </Operation>
 
 <!-- RESTORE CUT CONTENT -->
@@ -141,54 +141,50 @@
         <mods>
             <li>Better Architect Menu</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </li>
-            </operations>
-        </match>
-        <nomatch Class="PatchOperationFindMod">
-            <mods>
-              <li>Progression: Storage</li>
-            </mods>
             <match Class="PatchOperationSequence">
                 <operations>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value>Ferny_GeneralStorage</value>
                     </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value>Ferny_GeneralStorage</value>
                     </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value>Ferny_GeneralStorage</value>
                     </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
+                    <li Class="PatchOperationAttributeSet">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                        <attribute>designationCategory</attribute>
+                        <value>Ferny_FoodStorage</value>
                     </li>
                 </operations>
             </match>
-        </nomatch>
+            <nomatch Class="PatchOperationFindMod">
+                <mods>
+                  <li>Progression: Storage</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
+                        </li>
+                    </operations>
+                </match>
+            </nomatch>
     </Operation>
 </Patch>
