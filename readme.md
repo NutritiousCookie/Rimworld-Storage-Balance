@@ -5,7 +5,7 @@ This mod contains patches for other storage mods to rebalance their various stor
 
 Design philosophy:
 - Declutter menus by removing duplicate items across mods
-- Balance around vanilla shelves
+- Balance around vanilla shelves (which are changed to neolithic tech)
 - Balance stack sizes by tech level and specialization of the building, rather than resource cost to build it.
 
 General guidelines are:
