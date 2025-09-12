@@ -5,6 +5,7 @@
     <li IfModActive="vanillaexpanded.vfecore">1.6/VE Furniture</li>
     <li IfModActive="vanillaexpanded.vfespacer">1.6/VFE Spacer</li>
     <li IfModActive="vanillaexpanded.vfeproduction">1.6/VFE Production</li>
+    <li IfModActive="reel.expanded.storage">1.6/Reels Expanded</li>
     <li IfModActive="adaptive.primitivestorage">1.6/Adaptive Primitive</li>
     <li IfModActive="adaptive.storage.neolithic">1.6/Adaptive Neolithic</li>
     <li IfModActive="ghost.rootsofrimworld">1.6/Roots of Rimworld</li>
