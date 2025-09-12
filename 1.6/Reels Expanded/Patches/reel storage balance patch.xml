@@ -121,6 +121,14 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/costList</xpath>
+        <value>
+            <costList>
+                <Hay>20</Hay>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>5</maxItemsInCell>
