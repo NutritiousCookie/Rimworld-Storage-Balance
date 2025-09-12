@@ -25,5 +25,6 @@
 		<li>reel.expanded.storage</li>
 		<li>ferny.progressionstorage</li>
 		<li>ferny.betterarchitect</li>
+		<li>potato.progressionstorageundo</li>
 	</loadAfter>
 </ModMetaData>
