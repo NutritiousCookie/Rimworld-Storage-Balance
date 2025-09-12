@@ -54,6 +54,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/description</xpath>
         <value>
@@ -61,7 +62,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
 Stack size total: 5 
 Stack per tile: 5 
 
-Allowed items: Everything except Foods, Corpses and Chunks</</description>
+Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
