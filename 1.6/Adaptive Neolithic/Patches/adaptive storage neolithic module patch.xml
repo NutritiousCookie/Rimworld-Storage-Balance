@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- REBALANCE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[Name="ASNeolithicLargePotThingBase"]/label</xpath>
+        <value>
+            <label>carved pot</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[Name="ASNeolithicTextileBundleBase"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>1</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>1</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>1</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]/costList</xpath>
+        <value>
+            <costlist>
+                <WoodLog>1</WoodLog>
+            </costlist>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[Name="ASNeolithicChunkStorageBase"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+
+<!-- ORGANIZE -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[Name="ASNeolithicBasketThingBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[Name="ASNeolithicChunkStorageBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[Name="ASNeolithicLargePotThingBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[Name="ASNeolithicTextileBundleBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Primitive Storage</li>
+            <li>Reel's Expanded Storage</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+            <value>
+                <designationCategory></designationCategory>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+            <value>
+                <designationCategory>Ferny_ResourcesStorage</designationCategory>
+            </value>
+        </nomatch>
+    </Operation>
+
+<!-- REMOVE RESEARCH -->
+    <!-- Items -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>MF_BasicFurniture</li>
+                    </researchPrerequisites>
+                </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Art</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>VFE_Res_ArtfulDisplay</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+        </nomatch>
+    </Operation>
+
+    <!-- Projects -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+    </Operation>
+
+</Patch>
