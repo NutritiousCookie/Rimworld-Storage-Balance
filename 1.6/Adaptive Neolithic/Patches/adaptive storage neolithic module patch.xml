@@ -3,13 +3,13 @@
 
 <!-- REBALANCE -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[Name="ASNeolithicLargePotThingBase"]/label</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/label</xpath>
         <value>
             <label>carved pot</label>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[Name="ASNeolithicTextileBundleBase"]/costStuffCount</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicTextileBundleBase"]/costStuffCount</xpath>
         <value>
             <costStuffCount>1</costStuffCount>
         </value>
@@ -41,7 +41,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[Name="ASNeolithicChunkStorageBase"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
@@ -49,13 +49,13 @@
 
 <!-- ORGANIZE -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[Name="ASNeolithicBasketThingBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
         <value>
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[Name="ASNeolithicChunkStorageBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]</xpath>
         <value>
             <designationCategory>Ferny_ResourcesStorage</designationCategory>
         </value>
@@ -67,7 +67,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[Name="ASNeolithicLargePotThingBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]</xpath>
         <value>
             <designationCategory>Ferny_FoodStorage</designationCategory>
         </value>
@@ -79,13 +79,13 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[Name="ASNeolithicTextileBundleBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicTextileBundleBase"]</xpath>
         <value>
             <designationCategory>Ferny_ResourcesStorage</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]</xpath>
         <value>
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
@@ -112,7 +112,7 @@
 <!-- REMOVE RESEARCH -->
     <!-- Items -->
     <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
     </Operation>
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -132,7 +132,7 @@
             <li>Vanilla Furniture Expanded - Art</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>VFE_Res_ArtfulDisplay</li>
@@ -140,7 +140,7 @@
             </value>
         </match>
         <nomatch Class="PatchOperationRemove">
-            <xpath>Defs/ThingDef[Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
         </nomatch>
     </Operation>
 
