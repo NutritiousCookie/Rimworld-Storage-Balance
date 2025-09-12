@@ -2,3 +2,4 @@
 
 1.0 Publish to Steam Workshop
 1.1 Fix typo that deleted Adaptive Primitive Storage's Weapon Rack
+1.2 Fix typo that made Reel's Storage stone piles accept any item
