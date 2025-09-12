@@ -8,7 +8,7 @@ Design philosophy:
 - Balance around vanilla shelves (which are changed to neolithic tech)
 - Balance stack sizes by tech level and specialization of the building, rather than resource cost to build it.
 
-General guidelines are:
+General guidelines for stacks per cell are:
 
 | Tech Level | General Use | Specific Use           |
 |:----------:|:-----------:|------------------------|
