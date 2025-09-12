@@ -19,6 +19,7 @@ General guidelines for stacks per cell are:
 | Spacer     | 15-20       | extra features         |
 
 Buildings that are larger or have more restrictive allowed items will tend towards the higher end of the range, and buildings that are smaller, allow more items, or have extra uses will tend towards the lower end.
+
 "Extra features" includes refrigeration, production bonuses, etc.
 
 Currently covering:
