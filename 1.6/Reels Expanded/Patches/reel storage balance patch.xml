@@ -162,7 +162,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
                         <li>StoneBlocks</li>
                     </categories>
                 </filter>
-            </defaultStorageSettings>>
+            </defaultStorageSettings>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -203,7 +203,7 @@ Allowed items: Stone blocks</description>
                         <li>StoneBlocks</li>
                     </categories>
                 </filter>
-            </defaultStorageSettings>>
+            </defaultStorageSettings>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
