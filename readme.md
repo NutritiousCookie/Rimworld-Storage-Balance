@@ -22,7 +22,9 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 
 "Extra features" includes refrigeration, production bonuses, etc.
 
-Currently covering:
+## Compatability
+
+Currently covering these storage mods:
 - Adaptive Primitive Storage
 - Adaptive Storage Neolithic Module
 - Vanilla Furniture Expanded - Core
@@ -31,7 +33,7 @@ Currently covering:
 - Vanilla Furniture Expanded - Spacer
 - Reel's Expanded Storage
 
-Compatible with:
+Made with compatibility in mind for these other patches:
 - Progression: Storage
 - Restore Content - Progression: Storage (unnecessary with this mod)
 
