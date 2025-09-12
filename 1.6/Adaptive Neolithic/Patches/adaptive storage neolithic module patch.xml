@@ -35,6 +35,7 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    <!-- Can't touch this through normal means because it is generated at runtime with a custom constructor. Why??? 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]/costStuffCount</xpath>
         <value>
@@ -47,6 +48,7 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    -->
 
 <!-- ORGANIZE -->
     <Operation Class="PatchOperationAdd">
