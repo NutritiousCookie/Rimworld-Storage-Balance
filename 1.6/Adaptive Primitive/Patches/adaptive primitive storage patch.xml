@@ -96,7 +96,6 @@
         </value>
     </Operation>
     <!-- Tent -->
-    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/building/maxItemsInCell</xpath>
         <value>
