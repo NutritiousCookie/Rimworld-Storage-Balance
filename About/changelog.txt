@@ -1,3 +1,4 @@
 # Changelog for Storage Balance Patches
 
 1.0 Publish to Steam Workshop
+1.1 Fix typo that deleted Adaptive Primitive Storage's Weapon Rack

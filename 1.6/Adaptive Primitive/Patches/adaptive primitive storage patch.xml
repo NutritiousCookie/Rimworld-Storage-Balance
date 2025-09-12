@@ -134,7 +134,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_GearStorage</designationCategory>
         </value>
