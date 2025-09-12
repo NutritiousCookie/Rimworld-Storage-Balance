@@ -170,21 +170,11 @@
                 </researchPrerequisites>
             </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationRemove">
             <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationRemove">
             <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
     </Operation>
 
     <!-- Vanilla Furniture Expanded Patches -->
