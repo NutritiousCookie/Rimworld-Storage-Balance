@@ -26,18 +26,19 @@
             <costStuffCount>1</costStuffCount>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationRemove">
         <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]/costList</xpath>
-        <value>
-            <costlist>
-                <WoodLog>1</WoodLog>
-            </costlist>
-        </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>1</costStuffCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
