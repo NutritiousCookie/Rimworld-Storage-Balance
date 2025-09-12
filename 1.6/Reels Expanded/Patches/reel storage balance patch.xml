@@ -16,6 +16,7 @@ Stack per tile: 6
 
 Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant matter, Raw fish, Wort, Hemogen, Condiments</description>
         </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/building/maxItemsInCell</xpath>
         <value>
@@ -346,5 +347,4 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
-
 </Patch>
