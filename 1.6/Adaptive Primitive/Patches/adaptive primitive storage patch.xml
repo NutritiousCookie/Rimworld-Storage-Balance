@@ -138,7 +138,7 @@
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adaptive Storage Neolithic Module</li>
-            </mods>
+        </mods>
             <match Class="PatchOperationSequence">
                 <operations>
                     <li Class="PatchOperationReplace">
