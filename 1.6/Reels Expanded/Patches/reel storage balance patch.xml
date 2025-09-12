@@ -290,6 +290,12 @@ Stack per tile: 8
 Allowed items: Wood.</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
 
     <!-- VFE Art -->
     <Operation Class="PatchOperationFindMod">

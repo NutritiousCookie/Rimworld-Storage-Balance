@@ -133,6 +133,12 @@
         <description>A tent that can store a variety of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 18 Stacks</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
 
 <!-- RESTORE CUT CONTENT -->
     <Operation Class="PatchOperationConditional">
