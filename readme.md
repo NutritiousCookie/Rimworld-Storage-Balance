@@ -26,17 +26,17 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 ## Compatability
 
 Currently covering these storage mods:
-- Adaptive Primitive Storage
-- Adaptive Storage Neolithic Module
-- Reel's Expanded Storage
-- Vanilla Furniture Expanded - Core
-- Vanilla Furniture Expanded - Art
-- Vanilla Furniture Expanded - Production
-- Vanilla Furniture Expanded - Spacer
+- [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215)
+- [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895)
+- [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097)
+  - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
+  - [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
+  - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632)
+  - [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
 
 Made with compatibility in mind for these other patches:
-- Progression: Storage
-- Restore Content - Progression: Storage (unnecessary with this mod)
+- [Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186)
+- [Restore Content - Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3417113151) (unnecessary with this mod)
 
 ## Installation
 
