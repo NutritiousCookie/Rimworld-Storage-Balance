@@ -40,11 +40,13 @@ Made with compatibility in mind for these other patches:
 
 ## Installation
 
+### [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3566687115)
+
+### Manual
+
 Download and unzip into your `RimWorld/Mods/` folder. Sort it after all of the above mods.
 
 Alternatively, use **[RimSort](https://github.com/RimSort/RimSort)**, the modern, actively developed, open-source modloader for RimWorld, and add this repository in `Download` > `Add Git Mod`. RimSort will sort this mod correctly.
-
-Once the mod is completed, it will be uploaded to Steam Workshop.
 
 ### Usage, permissions, etc
 
