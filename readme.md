@@ -27,8 +27,11 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 
 Currently covering these storage mods:
 - [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215)
+  - Restores content cut by Progression: Storage. Reduces some material costs. Decreases stack sizes significantly.
 - [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895)
+  - Reduces some material costs. Removes wood pile if Adaptive Primitive is installed.
 - [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097)
+  - Removes some items if Adaptive Primitive is installed. Removes research projects. Moves buildings to vanilla projects, or Vanilla Furniture Expanded projects if VFE is installed. Covers the following:
   - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
   - [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
   - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632)
