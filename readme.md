@@ -48,6 +48,6 @@ Download and unzip into your `RimWorld/Mods/` folder. Sort it after all of the a
 
 Alternatively, use **[RimSort](https://github.com/RimSort/RimSort)**, the modern, actively developed, open-source modloader for RimWorld, and add this repository in `Download` > `Add Git Mod`. RimSort will sort this mod correctly.
 
-### Usage, permissions, etc
+## Usage, permissions, etc
 
 Modding is a community effort that should never be constrained by money or author egos. Use, change, and distribute this mod as you wish. If something feels wrong or bothers you, contribute to the community by making a patch and uploading it for everyone.
