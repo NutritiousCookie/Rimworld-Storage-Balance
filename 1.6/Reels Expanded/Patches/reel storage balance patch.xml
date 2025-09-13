@@ -239,22 +239,6 @@ Allowed items: Beer, Wine, Simple Spirits, Luxury Spirits</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/building/maxItemsInCell</xpath>
-        <value>
-            <maxItemsInCell>4</maxItemsInCell>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/description</xpath>
-        <value>
-            <description>A small, single-tile wooden chest designed for storing a limited amount of items. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 4 
-Stack per tile: 8 
-
-Allowed items: Everything except Foods, Corpses and Chunks</description>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>5</maxItemsInCell>
