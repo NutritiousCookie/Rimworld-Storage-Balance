@@ -63,6 +63,17 @@
         <value>
             <maxItemsInCell>3</maxItemsInCell>
         </value>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/description</xpath>
+        <value>
+        <description>A designated spot to pile wood. Free to build. Deconstructing returns 100% of wood logs stored. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \n\nTotal Capacity: 3 Stacks\n\nDynamic Textures</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="SmallLogPileGraphics"]/graphics/li[graphicData/texPath="SmallLogPile/SmallLogPile_F"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
     </Operation>
     <!-- Cellars -->
     <Operation Class="PatchOperationReplace">
