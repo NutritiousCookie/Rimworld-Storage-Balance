@@ -70,15 +70,15 @@ Allowed items: Medicine, Plant Matter, Drugs, Neutroamine, Body parts, Medical e
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/description</xpath>
         <value>
             <description>A sturdy metal crate designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 8 
-Stack per tile: 8 
+Stack size total: 6 
+Stack per tile: 6 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
@@ -86,15 +86,15 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>9</maxItemsInCell>
+            <maxItemsInCell>7</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/description</xpath>
         <value>
             <description>A stack of five sturdy metal crates designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 36 
-Stack per tile: 9 
+Stack size total: 28 
+Stack per tile: 7 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
