@@ -63,6 +63,7 @@
         <value>
             <maxItemsInCell>3</maxItemsInCell>
         </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/description</xpath>
         <value>
