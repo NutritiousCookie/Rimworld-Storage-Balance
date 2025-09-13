@@ -3,6 +3,8 @@
 
 This mod contains patches for other storage mods to rebalance their various storage buildings. It is intended to be used with Progression: Storage, although that mod is not required.
 
+![Storage Balance Patches](About/preview.png)
+
 ## Design philosophy
 
 - Declutter menus by removing duplicate items across mods
