@@ -340,16 +340,28 @@
     </Operation>
     
 <!-- PROJECTS -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelNeolithicStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+        </nomatch>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelMedievalStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+        </nomatch>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]</xpath>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelIndustrialStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]</xpath>
+        </nomatch>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ReelSpacerStorage"]</xpath>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelSpacerStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelSpacerStorage"]</xpath>
+        </nomatch>
     </Operation>
 </Patch>
