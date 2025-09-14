@@ -205,7 +205,7 @@
             <nomatch Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
                 <value>
-                    <researchPrerequisites></researchPrerequisites>
+                    <researchPrerequisites>Stonecutting</researchPrerequisites>
                 </value>
             </nomatch>
         </nomatch>
