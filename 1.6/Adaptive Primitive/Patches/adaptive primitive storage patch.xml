@@ -157,13 +157,21 @@
         <mods>
             <li>Vanilla Furniture Expanded</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>MF_BasicFurniture</li>
-                </researchPrerequisites>
-            </value>
+        <match Class="PatchOperationSequence">
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                    <researchPrerequisites>
+                        <li>MF_BasicFurniture</li>
+                    </researchPrerequisites>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>MF_BasicFurniture</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
         </match>
     </Operation>
     <!-- Art -->
@@ -189,6 +197,30 @@
                         </researchPrerequisites>
                     </value>
                 </li>
+            </operations>
+        </match>
+    </Operation>
+
+<!-- Phanerons Duplicate Patch -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
 
