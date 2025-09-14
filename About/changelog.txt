@@ -6,3 +6,4 @@
 1.0.3 - Change versioning schema, make research project removal more intelligent
 1.0.4 - Late game general storage buildings nerf
 1.1.0 - Major update. Added 'Phaneron's Basic Storage' support. No longer restores 'Adaptive Primitive Storage' buildings, instead added support for 'Restore Content - Progression: Storage'. Many small balance changes.
+1.1.1 - Fixed major bugs related to Better Architect Menu dependency.
