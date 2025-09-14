@@ -209,6 +209,7 @@
                 </value>
             </nomatch>
         </nomatch>
+    </Operation>
 
     <!-- PROJECTS -->
     <Operation Class="PatchOperationConditional">
