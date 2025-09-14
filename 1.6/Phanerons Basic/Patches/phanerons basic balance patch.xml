@@ -225,13 +225,13 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]</xpath>
         <value>
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
-    -->
 
     <!-- Stone Pot -->
     <!--
