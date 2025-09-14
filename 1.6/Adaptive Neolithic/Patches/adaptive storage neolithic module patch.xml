@@ -140,11 +140,8 @@
         </nomatch>
     </Operation>
 
-<!-- REMOVE RESEARCH -->
-    <!-- Items -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
-    </Operation>
+<!-- Vanilla Furniture Expanded Patches -->
+    <!-- Core -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Furniture Expanded</li>
@@ -158,6 +155,7 @@
                 </value>
         </match>
     </Operation>
+    <!-- Art -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Furniture Expanded - Art</li>
@@ -178,7 +176,12 @@
         </nomatch>
     </Operation>
 
-    <!-- PROJECTS -->
+<!-- REMOVE RESEARCH -->
+    <!-- Items -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+    </Operation>
+    <!-- Projects -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicStorage"]</xpath>
         <nomatch Class="PatchOperationRemove">
