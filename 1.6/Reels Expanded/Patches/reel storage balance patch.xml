@@ -34,7 +34,7 @@ Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant ma
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageFridge"]/designationCategory</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
         <value>
             <designationCategory>Ferny_FoodStorage</designationCategory>
         </value>
