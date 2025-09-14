@@ -151,6 +151,12 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
