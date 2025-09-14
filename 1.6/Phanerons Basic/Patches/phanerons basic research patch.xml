@@ -1,6 +1,200 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REMOVE RESEARCH -->
-<!-- ITEMS -->
-<!-- PROJECTS -->
+    <!-- ITEMS -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageSack"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites></researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Machining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCask"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFoodCupboard"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>BiofuelRefining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Machining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMealStorage"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Smithing</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Machining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+    </Operation>
+    
+    <!-- Vanilla Furniture Expanded Patches -->
+    <!-- Core -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li></researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>ComplexFurniture</li>
+                            </researchPrerequisites>
+                        </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites></researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Machining</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+    
+    <!-- PROJECTS -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="BasicStorageNeolithicStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="BasicStorageNeolithicStorage"]</xpath>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="BasicStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="BasicStorage"]</xpath>
+        </nomatch>
+    </Operation>
 </Patch>
