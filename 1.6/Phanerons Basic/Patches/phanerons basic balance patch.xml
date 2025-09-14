@@ -103,6 +103,12 @@
             <maxItemsInCell>10</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>250</costStuffCount>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]</xpath>
         <value>

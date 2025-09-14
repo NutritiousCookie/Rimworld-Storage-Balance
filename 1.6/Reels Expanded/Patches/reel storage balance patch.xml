@@ -185,6 +185,12 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
 
     <!-- VFE Props -->
     <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
+            <value>
+            <maxItemsInCell>10</maxItemsInCell>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
         <value>
             <designationCategory></designationCategory>
