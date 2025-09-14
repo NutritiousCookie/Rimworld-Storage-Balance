@@ -30,18 +30,19 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 ## Compatability
 
 Currently covering these storage mods:
-- [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215) - Restores content cut by Progression: Storage. Reduces some material costs. Decreases stack sizes significantly.
+- [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215) - Decreases stack sizes significantly. Reduces some material costs.
 - [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895) - Reduces some material costs. Removes wood pile if Adaptive Primitive is installed.
-- [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097) - Removes some items if Adaptive Primitive is installed. Removes research projects. Moves buildings to vanilla projects, or Vanilla Furniture Expanded projects if VFE is installed. Covers the following:
-  - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
-  - [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
-  - [Vanilla Furniture Expanded - Production](https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632)
-  - [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
-  - [Vanilla Furniture Expanded - Props and Decor](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149)
+- [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097) - Decreases stack sizes. Removes some items if Adaptive Primitive is installed. Removes research projects. Moves buildings to vanilla projects, or Vanilla Furniture Expanded projects if VFE is installed. Also covers the buildings from [VFE - Props](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) and [VFE - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023) if they are installed.
+- [Phaneron's Basic Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3201536200) - Rebalances stack sizes, mostly small increases. Removes crates, meat hook, and weapon rack if Reel's is installed. Removes research projects. Moves buildings to vanilla projects, or VFE projects if VFE is installed.
 
-Made with compatibility in mind for these other patches:
+Research projects are removed, and items are instead assigned to projects from:
+- Vanilla (no required DLCs)
+- [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
+- [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
+
+Made with compatibility in mind for these other mods:
 - [Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186)
-- [Restore Content - Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3417113151) (unnecessary with this mod)
+- [Restore Content - Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3417113151)
 
 ## Installation
 
