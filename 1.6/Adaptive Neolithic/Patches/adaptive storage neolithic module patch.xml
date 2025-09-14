@@ -21,9 +21,9 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]/costStuffCount</xpath>
+        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]/building/maxItemsInCell</xpath>
         <value>
-            <costStuffCount>1</costStuffCount>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationRemove">
@@ -73,6 +73,12 @@
         <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]</xpath>
         <value>
             <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
@@ -142,17 +148,25 @@
                 </researchPrerequisites>
             </value>
         </match>
-        <nomatch Class="PatchOperationRemove">
+        <nomatch Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites></researchPrerequisites>
+            </value>
         </nomatch>
     </Operation>
 
-    <!-- Projects -->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+    <!-- PROJECTS -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+        </nomatch>
     </Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicItemDisplay"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+        </nomatch>
     </Operation>
-
 </Patch>
