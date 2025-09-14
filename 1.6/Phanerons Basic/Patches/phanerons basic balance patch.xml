@@ -1,7 +1,209 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageSack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCask"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>5</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFoodCupboard"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMealStorage"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>7</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    
 <!-- REMOVE DUPLICATES -->
-    <!-- Adaptive Neolithic -->
-    <!-- Reels -->
+<!-- Reels -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Barrel -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/label</xpath>
+                    <value>
+                        <label>barrel</label>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/building/fixedStorageSettings/filter</xpath>
+                    <value>
+                    <filter>
+                        <disallowNotEverStorable>true</disallowNotEverStorable>
+                        <categories>
+                            <li>ResourcesRaw</li>
+                            <li>Textiles</li>
+                            <li>Leathers</li>
+                            <li>Foods</li>        
+                            <li>PlantMatter</li>				
+                            <li MayRequire="vanillaexpanded.vcooke">VCEF_RawFishCategory</li> 
+                            <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>   			
+                            <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>							
+                        </categories>
+                        <thingDefs>  
+                            <li MayRequire="vanillaexpanded.vpsycastse">VPE_Eltex</li>
+                            <li>ComponentSpacer</li>
+                            <li>ComponentIndustrial</li>
+                            <li>Wort</li>
+                            <li>MedicineHerbal</li>
+                        </thingDefs>
+                        <disallowedCategories>
+                            <li>FoodMeals</li>
+                            <li>StoneBlocks</li>
+                        </disallowedCategories>
+                    </filter>
+                    </value>
+                </li>
+                <!-- Crates -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
