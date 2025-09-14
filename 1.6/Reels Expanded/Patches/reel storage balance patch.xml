@@ -437,6 +437,18 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+        <value>
+            <designationCategory></designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory></designationCategory>
+        </value>
+    </Operation>
 
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
@@ -453,12 +465,6 @@ Allowed items: Food, Plant matter.</description>
                     <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
