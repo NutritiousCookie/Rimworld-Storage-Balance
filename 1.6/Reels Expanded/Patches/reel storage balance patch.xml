@@ -485,14 +485,32 @@ Allowed items: Food, Plant matter.</description>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
@@ -513,6 +531,12 @@ Allowed items: Food, Plant matter.</description>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/designationCategory</xpath>
                     <value>

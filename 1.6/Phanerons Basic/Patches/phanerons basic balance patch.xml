@@ -194,7 +194,7 @@
             <operations>
                 <!-- Crates -->
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/</xpath>
+                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
