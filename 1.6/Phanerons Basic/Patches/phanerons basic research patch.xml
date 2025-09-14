@@ -104,24 +104,6 @@
             </researchPrerequisites>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
-        <value>
-            <researchPrerequisites>
-                <li>ComplexFurniture</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
-        <value>
-            <researchPrerequisites>
-                <li>ComplexFurniture</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-    </Operation>
     
     <!-- Vanilla Furniture Expanded Patches -->
     <!-- Core -->
@@ -136,6 +118,22 @@
                     <value>
                         <researchPrerequisites>
                             <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_ModernFurniture</li>
                         </researchPrerequisites>
                     </value>
                 </li>
@@ -165,6 +163,22 @@
                                 <li>ComplexFurniture</li>
                             </researchPrerequisites>
                         </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>ComplexFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>ComplexFurniture</li>
+                        </researchPrerequisites>
+                    </value>
                 </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
