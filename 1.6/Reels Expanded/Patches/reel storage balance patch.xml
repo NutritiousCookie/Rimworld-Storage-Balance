@@ -49,6 +49,51 @@ Stack per tile: 6
 Allowed items: Meals, Raw Food, Everything except Corpses and Chunks</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@Name="ReelNewIndustrialShelfBase"]/itemGraphics</xpath>
+        <value>
+            <itemGraphics>
+                <columns>
+                    <c0>
+                        <rows>
+                            <r0>
+                                <stackBehaviour>Stack</stackBehaviour>
+                                <stackOffset>(0.2,0,0)</stackOffset>
+                                <drawOffset>(-0.03,0,-0.2)</drawOffset>
+                                <drawScale>0.8</drawScale>
+                                <stackOffsetNorth>(0.25,0,0)</stackOffsetNorth>
+                                <stackOffsetSouth>(0.25,0,0)</stackOffsetSouth>
+                                <stackOffsetEast>(0.0,-1,0.2)</stackOffsetEast>
+                                <stackOffsetWest>(0.0,-1,0.2)</stackOffsetWest>
+                                <drawOffsetNorth>(0.05,0,-0.2)</drawOffsetNorth>
+                                <drawOffsetSouth>(0.05,0,-0.2)</drawOffsetSouth>
+                                <drawOffsetEast>(0.0,0.0,0)</drawOffsetEast>
+                                <drawOffsetWest>(0.0,0.0,0)</drawOffsetWest>
+                            </r0>
+                        </rows>
+                    </c0>
+                    <c1>
+                        <rows>
+                            <r0>
+                                <stackBehaviour>Stack</stackBehaviour>
+                                <stackOffset>(0.2,0,0)</stackOffset>
+                                <drawOffset>(-1.03,0,0.55)</drawOffset>
+                                <drawScale>0.8</drawScale>
+                                <stackOffsetNorth>(0.25,0,0)</stackOffsetNorth>
+                                <stackOffsetSouth>(0.25,0,0)</stackOffsetSouth>
+                                <stackOffsetEast>(0.0,0,-0.2)</stackOffsetEast>
+                                <stackOffsetWest>(0.0,0,-0.2)</stackOffsetWest>
+                                <drawOffsetNorth>(-0.95,1,0.5)</drawOffsetNorth>
+                                <drawOffsetSouth>(-0.95,1,0.5)</drawOffsetSouth>
+                                <drawOffsetEast>(0.0,1,0.5)</drawOffsetEast>
+                                <drawOffsetWest>(0.0,1,0.5)</drawOffsetWest>
+                            </r0>
+                        </rows>
+                    </c1>
+                </columns>
+            </itemGraphics>
+        </value>
+    </Operation>
     <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]/building/maxItemsInCell</xpath>
