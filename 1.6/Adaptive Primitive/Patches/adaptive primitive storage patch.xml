@@ -144,11 +144,14 @@
         <description>A tent that can store a variety of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 18 Stacks</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_GearStorage</designationCategory>
-        </value>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_GearStorage</designationCategory>
+            </value>
+        </match>
     </Operation>
 
 <!-- Vanilla Furniture Expanded Patches -->
@@ -229,57 +232,62 @@
     </Operation>
 
 <!-- RESTORE CUT CONTENT -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
-    <!-- Use the "Restore Content" mod to determine if these are brought back
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
-                    <value>Ferny_GeneralStorage</value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
-                    <value>Ferny_GeneralStorage</value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
-                    <value>Ferny_GeneralStorage</value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
-                    <value>Ferny_FoodStorage</value>
-                </li>
-            </operations>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Progression: Storage</li>
+        </mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+            <!-- Use the "Restore Content" mod to determine if these are brought back
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+                        <value>Ferny_GeneralStorage</value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]/designationCategory</xpath>
+                        <value>Ferny_GeneralStorage</value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]/designationCategory</xpath>
+                        <value>Ferny_GeneralStorage</value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]/designationCategory</xpath>
+                        <value>Ferny_FoodStorage</value>
+                    </li>
+                </operations>
+            </match>
+            -->
+            <nomatch Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </nomatch>
         </match>
-        -->
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </li>
-            </operations>
-        </nomatch>
     </Operation>
 </Patch>
