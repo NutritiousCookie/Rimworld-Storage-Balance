@@ -12,7 +12,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="BasicStorageSack"]</xpath>
         <value>
-            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
