@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
+
+    <!-- Sack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageSack"]/building/maxItemsInCell</xpath>
         <value>
@@ -13,6 +15,13 @@
             <designationCategory>Ferny_ResourcesStorage</designationCategory>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStorageSackBase"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
+    
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/maxItemsInCell</xpath>
         <value>
@@ -37,6 +46,8 @@
             <designationCategory>Ferny_FoodStorage</designationCategory>
         </value>
     </Operation>
+    
+    <!-- Small Crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/building/maxItemsInCell</xpath>
         <value>
@@ -44,23 +55,34 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStorageWoodenCrateBase"]/graphics/li[minimumStackCount="4"]/minimumStackCount</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <minimumStackCount>3</minimumStackCount>
         </value>
     </Operation>
-    <!--
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>5</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
-    -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -119,12 +141,23 @@
             <maxItemsInCell>8</maxItemsInCell>
         </value>
     </Operation>
+    
+    <!-- Metal Crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>8</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStorageMetalCrateBase"]/graphics/li[minimumStackCount="5"]/minimumStackCount
+</xpath>
+        <value>
+            <minimumStackCount>6</minimumStackCount>
+        </value>
+    </Operation>
+    
+    <!-- Small Pallet -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/building/maxItemsInCell</xpath>
         <value>
@@ -137,6 +170,22 @@
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="3"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>6</minimumStackCount>
+        </value>
+    </Operation>
+
+    <!-- Large Pallet -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/building/maxItemsInCell</xpath>
         <value>
@@ -149,6 +198,20 @@
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet2x2_Base"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>10</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet2x2_Base"]/graphics/li[minimumStackCount="10"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>20</minimumStackCount>
+        </value>
+    </Operation>
+
+    <!-- Large Bundle -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/building/maxItemsInCell</xpath>
         <value>
@@ -190,48 +253,6 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-                <!-- Barrel -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/label</xpath>
-                    <value>
-                        <label>barrel</label>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/building/fixedStorageSettings/filter</xpath>
-                    <value>
-                    <filter>
-                        <disallowNotEverStorable>true</disallowNotEverStorable>
-                        <categories>
-                            <li>ResourcesRaw</li>
-                            <li>Textiles</li>
-                            <li>Leathers</li>
-                            <li>Foods</li>        
-                            <li>PlantMatter</li>				
-                            <li MayRequire="vanillaexpanded.vcooke">VCEF_RawFishCategory</li> 
-                            <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>   			
-                            <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>							
-                        </categories>
-                        <thingDefs>  
-                            <li MayRequire="vanillaexpanded.vpsycastse">VPE_Eltex</li>
-                            <li>ComponentSpacer</li>
-                            <li>ComponentIndustrial</li>
-                            <li>Wort</li>
-                            <li>MedicineHerbal</li>
-                        </thingDefs>
-                        <disallowedCategories>
-                            <li>FoodMeals</li>
-                            <li>StoneBlocks</li>
-                        </disallowedCategories>
-                    </filter>
-                    </value>
-                </li>
                 <!-- Crates -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
@@ -275,13 +296,6 @@
         </match>
         <nomatch Class="PatchOperationSequence">
             <operations>
-                <!-- Barrel -->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </li>
                 <!-- Crates -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
