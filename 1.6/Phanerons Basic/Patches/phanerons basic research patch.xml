@@ -3,6 +3,14 @@
 <!-- REMOVE RESEARCH -->
     <!-- ITEMS -->
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>ComplexClothing</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageSack"]/researchPrerequisites</xpath>
         <value>
             <researchPrerequisites></researchPrerequisites>
@@ -114,14 +122,6 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>MF_BasicFurniture</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
@@ -156,14 +156,6 @@
         </match>
         <nomatch Class="PatchOperationSequence">
             <operations>
-                <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>ComplexFurniture</li>
-                            </researchPrerequisites>
-                        </value>
-                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
                     <value>
