@@ -241,7 +241,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]</xpath>
         <value>
-            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

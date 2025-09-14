@@ -138,13 +138,6 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>MF_BasicFurniture</li></researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
@@ -173,12 +166,6 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites></researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
@@ -189,7 +176,40 @@
             </operations>
         </nomatch>
     </Operation>
-    
+
+    <!-- Art -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Art</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>VFE_Res_Pottery</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationFindMod">
+            <mods>
+                <li>Vanilla Furniture Expanded</li>
+            </mods>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>MF_BasicFurniture</li>
+                    </researchPrerequisites>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites></researchPrerequisites>
+                </value>
+            </nomatch>
+        </nomatch>
+
     <!-- PROJECTS -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef/researchPrerequisites[li="BasicStorageNeolithicStorage"]</xpath>
