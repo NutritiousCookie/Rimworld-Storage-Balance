@@ -428,4 +428,20 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
+    <!-- Phaneron's Basic Storage -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
