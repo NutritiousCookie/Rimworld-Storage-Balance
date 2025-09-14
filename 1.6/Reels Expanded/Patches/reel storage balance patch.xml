@@ -131,7 +131,8 @@ Stack per tile: 5
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
-    <!-- Props -->
+
+    <!-- VFE Props -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
         <value>
@@ -141,15 +142,15 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>10</maxItemsInCell>
+            <maxItemsInCell>8</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/description</xpath>
         <value>
             <description>A large storage container designed to hold a variety of items for long-term storage. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 80 
-Stack per tile: 10 
+Stack size total: 64 
+Stack per tile: 8 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
@@ -254,6 +255,54 @@ Stack size total: 24
 Stack per tile: 6 
 
 Allowed items: Stone blocks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer"]/description</xpath>
+        <value>
+            <description>An advanced container designed for storing large quantities of goods and valuables in vessels and colonies. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 10 
+Stack per tile: 10 
+
+Allowed items: Everything except Foods, Corpses and Chunks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>10</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer"]/description</xpath>
+        <value>
+            <description>A larger advanced container designed for storing large quantities of goods and valuables in vessels and colonies. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 20 
+Stack per tile: 10 
+
+Allowed items: Everything except Foods, Corpses and Chunks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainerStack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>15</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainerStack"]/description</xpath>
+        <value>
+            <description>A stack of three advanced containers designed for storing large quantities of goods and valuables in vessels and colonies. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 60 
+Stack per tile: 15 
+
+Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
