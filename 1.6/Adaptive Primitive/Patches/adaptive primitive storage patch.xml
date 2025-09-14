@@ -274,7 +274,7 @@
             -->
             <nomatch Class="PatchOperationConditional">
                 <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
-                <match Class="PatchOperationReplace">Class="PatchOperationSequence">
+                <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationAdd">
                             <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
