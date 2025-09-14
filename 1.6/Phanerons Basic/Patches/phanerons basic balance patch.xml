@@ -193,7 +193,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <!-- Crates -->
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/</xpath>
                     <value>
                         <designationCategory></designationCategory>

@@ -34,12 +34,6 @@ Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant ma
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_FoodStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
@@ -151,12 +145,6 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_ResourcesStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
@@ -195,12 +183,6 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
             <value>
             <maxItemsInCell>10</maxItemsInCell>
             </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
-        <value>
-            <designationCategory></designationCategory>
-        </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/building/maxItemsInCell</xpath>
@@ -428,18 +410,6 @@ Stack per tile: 8
 Allowed items: Wood.</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_ResourcesStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
-        <value>
-            <designationCategory>Ferny_GearStorage</designationCategory>
-        </value>
-    </Operation>
 
     <!-- VFE Art -->
     <Operation Class="PatchOperationFindMod">
@@ -462,6 +432,45 @@ Stack size total: 2
 Stack per tile: 2 
 
 Allowed items: Food, Plant matter.</description>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+<!-- FERNY ORGANIZE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </li>
             </operations>
