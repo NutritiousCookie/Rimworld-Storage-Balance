@@ -158,20 +158,24 @@
             <li>Vanilla Furniture Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
-                    <researchPrerequisites>
-                        <li>MF_BasicFurniture</li>
-                    </researchPrerequisites>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>MF_BasicFurniture</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
     <!-- Art -->
