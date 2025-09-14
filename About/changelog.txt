@@ -1,6 +1,7 @@
 # Changelog for Storage Balance Patches
 
-1.0.0 Publish to Steam Workshop
-1.0.1 Fix typo that deleted Adaptive Primitive Storage's Weapon Rack
-1.0.2 Fix typo that made Reel's Storage stone piles accept any item
-1.0.3 Change versioning schema, make research project removal more intelligent
+1.0.0 - Publish to Steam Workshop
+1.0.1 - Fix typo that deleted Adaptive Primitive Storage's Weapon Rack
+1.0.2 - Fix typo that made Reel's Storage stone piles accept any item
+1.0.3 - Change versioning schema, make research project removal more intelligent
+1.0.4 - Late game general storage buildings nerf
