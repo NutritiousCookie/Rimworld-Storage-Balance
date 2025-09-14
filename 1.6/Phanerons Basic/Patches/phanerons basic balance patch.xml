@@ -218,6 +218,7 @@
     </Operation>
 
     <!-- Large Bundle -->
+    <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/building/maxItemsInCell</xpath>
         <value>
@@ -230,6 +231,9 @@
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
+    -->
+
+    <!-- Stone Pot -->
     <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/building/maxItemsInCell</xpath>
@@ -244,6 +248,8 @@
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>
     </Operation>
+
+    <!-- Weapon Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/building/maxItemsInCell</xpath>
         <value>
