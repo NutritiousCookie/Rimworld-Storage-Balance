@@ -1,9 +1,11 @@
 # Rimworld Storage Balance Patches
 ### by NutritiousCookie
 
+![Storage Balance Patches](About/preview.png)
+
 This mod contains patches for other storage mods to rebalance their various storage buildings. It is intended to be used with Progression: Storage, although that mod is not required.
 
-![Storage Balance Patches](About/preview.png)
+The changes made by this mod are listed [here](https://docs.google.com/spreadsheets/d/1aPsodNrzzR2pbRKwGoJjD76U-y6hecBySeb66Cm9250).
 
 ## Design philosophy
 
@@ -19,7 +21,7 @@ General guidelines for stacks per cell are:
 | Neolithic  | 2-3         | 4-8                    |
 | Medieval   | 4-5         | 6-10                   |
 | Industrial | 6-8         | 8-16 or extra features |
-| Spacer     | 15-20       | extra features         |
+| Spacer     | 10+         | 20+ or extra features  |
 
 Buildings that are larger or have more restrictive allowed items will tend towards the higher end of the range, and buildings that are smaller, allow more items, or have extra uses will tend towards the lower end.
 
