@@ -52,12 +52,6 @@
 
 <!-- ORGANIZE -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
-        <value>
-            <designationCategory>Ferny_GeneralStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]</xpath>
         <value>
             <designationCategory>Ferny_ResourcesStorage</designationCategory>
@@ -115,6 +109,34 @@
             <value>
                 <designationCategory>Ferny_ResourcesStorage</designationCategory>
             </value>
+        </nomatch>
+    </Operation>
+
+<!-- REMOVE DUPLICATES -->
+<!-- Phanerons -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
         </nomatch>
     </Operation>
 
