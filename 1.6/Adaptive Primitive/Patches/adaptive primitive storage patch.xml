@@ -154,6 +154,7 @@
 <!-- RESTORE CUT CONTENT -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/designationCategory</xpath>
+    <!-- Use the "Restore Cut Content" mod to determine if these are brought back
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
@@ -174,6 +175,7 @@
                 </li>
             </operations>
         </match>
+        -->
         <nomatch Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
