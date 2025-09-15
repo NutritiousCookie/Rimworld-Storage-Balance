@@ -236,56 +236,36 @@
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
             <match Class="PatchOperationSequence">
                 <operations>
-                    <!-- testing
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
-                        <value>
-                            <designationCategory>Ferny_GearStorage</designationCategory>
-                        </value>
-                    </li>
-                    -->
                     <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
                         <value>
                             <designationCategory>Ferny_GearStorage</designationCategory>
                         </value>
                     </li>
-                    <!-- testing
-                    <li Class="PatchOperationFindMod">
-                        <mods>
-                            <li>Progression: Storage</li>
-                        </mods>
-                        <match Class="PatchOperationSequence">
-                            <operations> -->
-                                <li Class="PatchOperationAdd">
-                                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
-                                    <value>
-                                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                                    </value>
-                                </li>
-                                <li Class="PatchOperationAdd">
-                                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
-                                    <value>
-                                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                                    </value>
-                                </li>
-                                <li Class="PatchOperationAdd">
-                                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
-                                    <value>
-                                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                                    </value>
-                                </li>
-                                <li Class="PatchOperationAdd">
-                                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
-                                    <value>
-                                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                                    </value>
-                                </li>
-                                <!-- testing
-                            </operations>
-                        </match>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
                     </li>
-                    -->
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
                 </operations>
             </match>
         <nomatch>
