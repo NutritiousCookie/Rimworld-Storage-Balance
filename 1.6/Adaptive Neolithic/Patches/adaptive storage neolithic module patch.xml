@@ -44,6 +44,21 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Foods</li>
+                    <li>PlantMatter</li>
+                </categories>
+                <disallowedCategories>
+                    <li>FoodMeals</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
