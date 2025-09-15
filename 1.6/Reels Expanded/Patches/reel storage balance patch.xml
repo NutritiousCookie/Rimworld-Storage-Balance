@@ -484,7 +484,7 @@ Allowed items: Food, Plant matter.</description>
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
-    <!-- Adaptive Primitive Storage -->
+    <!-- Primitive -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Adaptive Primitive Storage</li>
@@ -530,7 +530,7 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
-    <!-- Phaneron's Basic Storage -->
+    <!-- Phaneron's -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Phaneron's Basic Storage</li>

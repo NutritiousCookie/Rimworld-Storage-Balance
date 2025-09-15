@@ -160,65 +160,65 @@
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
-<!-- Phanerons -->
-<Operation Class="PatchOperationFindMod">
-    <mods>
-        <li>Phaneron's Basic Storage</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationAdd">
+    <!-- Phanerons -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+            <match Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
                 <value>
-                    <designationCategory></designationCategory>
+                    <designationCategory>Ferny_GeneralStorage</designationCategory>
                 </value>
-            </li>
-        </operations>
-    </match>
-    <nomatch Class="PatchOperationConditional">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
-            <value>
-                <designationCategory>Ferny_GeneralStorage</designationCategory>
-            </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ASNeolithicBasketThingBase"]</xpath>
-            <value>
-                <designationCategory>Furniture</designationCategory>
-            </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]</xpath>
+                <value>
+                    <designationCategory>Furniture</designationCategory>
+                </value>
+            </nomatch>
         </nomatch>
-    </nomatch>
-</Operation>
-<!-- Primitive/Reel's -->
-<Operation Class="PatchOperationFindMod">
-    <mods>
-        <li>Adaptive Primitive Storage</li>
-        <li>Reel's Expanded Storage</li>
-    </mods>
-    <match Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
-        <value>
-            <designationCategory></designationCategory>
-        </value>
-    </match>
-    <nomatch Class="PatchOperationConditional">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+    </Operation>
+    <!-- Primitive/Reel's -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Primitive Storage</li>
+            <li>Reel's Expanded Storage</li>
+        </mods>
         <match Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
             <value>
-                <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                <designationCategory></designationCategory>
             </value>
         </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
-            <value>
-                <designationCategory>Furniture</designationCategory>
-            </value>
+        <nomatch Class="PatchOperationConditional">
+            <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+                <value>
+                    <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+                <value>
+                    <designationCategory>Furniture</designationCategory>
+                </value>
+            </nomatch>
         </nomatch>
-    </nomatch>
-</Operation>
+    </Operation>
 
 <!-- RESEARCH -->
 <!-- Vanilla Furniture Expanded Patches -->

@@ -184,93 +184,6 @@
         </value>
     </Operation>
 
-<!-- REMOVE DUPLICATES -->
-<!-- Reels -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Reel's Expanded Storage</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <!-- Crates -->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <!-- Meat Hook -->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <!-- Weapon Rack -->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
-    
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
@@ -385,6 +298,93 @@
                     <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
                     <value>
                         <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+<!-- REMOVE DUPLICATES -->
+<!-- Reels -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Crates -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <!-- Meat Hook -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <!-- Weapon Rack -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
                     </value>
                 </li>
             </operations>

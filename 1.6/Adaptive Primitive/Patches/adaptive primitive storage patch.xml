@@ -208,7 +208,41 @@
         </match>
     </Operation>
 
-<!-- Phanerons Duplicate Patch -->
+<!-- FERNY ORGANIZE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+    </Operation>
+
+<!-- REMOVE DUPLICATES -->
+<!-- Phanerons -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Phaneron's Basic Storage</li>
@@ -241,38 +275,5 @@
                 </li>
             </operations>
         </match>
-    </Operation>
-
-<!-- FERNY ORGANIZE -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
-            <match Class="PatchOperationSequence">
-                <operations>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_FoodStorage</designationCategory>
-                        </value>
-                    </li>
-                </operations>
-            </match>
     </Operation>
 </Patch>
