@@ -8,7 +8,7 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/description</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/description</xpath>
         <value>
             <description>A specialized storage container designed to hold food for feeding your colony animals. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
 Stack size total: 12 
@@ -20,15 +20,15 @@ Allowed items: Hay, Kibble</description>
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/building/maxItemsInCell</xpath>
             <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>5</maxItemsInCell>
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/description</xpath>
         <value>
             <description>A scompact barrel designed for storage of common goods, including raw food, plant materials, medicines, textiles, and crafted resources. Prevents deterioration, but perishable items may still need freezing. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 6 
-Stack per tile: 6 
+Stack size total: 5 
+Stack per tile: 5 
 
 Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant matter, Raw fish, Wort, Hemogen, Condiments</description>
         </value>
@@ -94,7 +94,7 @@ Allowed items: Meals, Raw Food, Everything except Corpses and Chunks</descriptio
             </itemGraphics>
         </value>
     </Operation>
-    <!--
+    <!-- medicine cabinet -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]/building/maxItemsInCell</xpath>
         <value>
@@ -111,7 +111,7 @@ Stack per tile: 10
 Allowed items: Medicine, Plant Matter, Drugs, Neutroamine, Body parts, Medical equipment \n\n&lt;color=#0094FF&gt;Items stored can be frozen when powered.&lt;/color&gt;</description>
         </value>
     </Operation>
-    -->
+    <!-- metal crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
@@ -122,8 +122,8 @@ Allowed items: Medicine, Plant Matter, Drugs, Neutroamine, Body parts, Medical e
         <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/description</xpath>
         <value>
             <description>A sturdy metal crate designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 6 
-Stack per tile: 6 
+Stack size total: 5 
+Stack per tile: 5 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
@@ -131,19 +131,20 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>7</maxItemsInCell>
+            <maxItemsInCell>5</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/description</xpath>
         <value>
             <description>A stack of five sturdy metal crates designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 28 
-Stack per tile: 7 
+Stack size total: 20 
+Stack per tile: 5 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
+    <!-- wood crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/building/maxItemsInCell</xpath>
         <value>
@@ -178,12 +179,14 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     </Operation>
 
     <!-- VFE Props -->
+    <!-- barrel pallet -->
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
             <value>
             <maxItemsInCell>10</maxItemsInCell>
             </value>
     </Operation>
+    <!-- cargo container -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/building/maxItemsInCell</xpath>
         <value>
@@ -200,6 +203,7 @@ Stack per tile: 8
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
+    <!-- hay bale -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/costList</xpath>
         <value>
@@ -208,10 +212,11 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
             </costList>
         </value>
     </Operation>
+    <!-- stone pile -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>5</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -302,6 +307,7 @@ Stack per tile: 6
 Allowed items: Stone blocks</description>
         </value>
     </Operation>
+    <!-- spacer containers -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer"]/building/maxItemsInCell</xpath>
         <value>
@@ -350,26 +356,28 @@ Stack per tile: 15
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
+    <!-- wine rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/description</xpath>
         <value>
             <description>A civilized storage rack designed to hold wine and other alcoholic beverages for enjoyment or trade. Items stored inside will not deteriorate over time. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 8 
-Stack per tile: 8 
+Stack size total: 6 
+Stack per tile: 6 
 
 Allowed items: Beer, Wine, Simple Spirits, Luxury Spirits</description>
         </value>
     </Operation>
+    <!-- chests -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>5</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -382,6 +390,7 @@ Stack per tile: 10
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
+    <!-- wood pile -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/costStuffCount</xpath>
         <value>
@@ -389,9 +398,27 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>3</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/description</xpath>
+        <value>
+            
+		<description>A small pile specifically designed to hold wood logs for use in construction, crafting, and fueling fires. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 6 
+Stack per tile: 6 
+
+Allowed items: Wood.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -404,8 +431,8 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/description</xpath>
         <value>
             <description>A larger bundle specifically designed to hold wood logs for use in construction, crafting, and fueling fires. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 24 
-Stack per tile: 8 
+Stack size total: 12 
+Stack per tile: 4 
 
 Allowed items: Wood.</description>
         </value>
@@ -437,18 +464,6 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
-        <value>
-            <designationCategory></designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
-        <value>
-            <designationCategory></designationCategory>
-        </value>
-    </Operation>
 
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
@@ -462,13 +477,7 @@ Allowed items: Food, Plant matter.</description>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
@@ -484,6 +493,19 @@ Allowed items: Food, Plant matter.</description>
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
+    <!-- Vanilla -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+        <value>
+            <designationCategory></designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory></designationCategory>
+        </value>
+    </Operation>
     <!-- Primitive -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -492,37 +514,13 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
