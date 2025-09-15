@@ -63,7 +63,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker or defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>MF_ModernFurniture</li>
