@@ -250,8 +250,6 @@
                     </li>
                 </operations>
             </match>
-        <nomatch>
-        </nomatch>
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
