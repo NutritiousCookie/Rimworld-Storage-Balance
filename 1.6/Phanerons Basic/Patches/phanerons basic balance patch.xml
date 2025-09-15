@@ -199,8 +199,20 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
@@ -211,8 +223,20 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
@@ -224,9 +248,21 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
                 <!-- Weapon Rack -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
