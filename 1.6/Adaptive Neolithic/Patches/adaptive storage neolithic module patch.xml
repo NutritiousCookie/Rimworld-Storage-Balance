@@ -5,7 +5,7 @@
     <!-- baskets -->
     <!--
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="Name="ASNeolithicBasketThingBase"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>3</maxItemsInCell>
         </value>
@@ -105,7 +105,7 @@
             </operations>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase" or @Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf" or @Name="ASNeolithicPlinthBase" or @Name="ASNeolithicTextileBundleBase" or @Name="ASNeolithicWoodPile"]</xpath>
+            <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase" or @Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf" or @Name="ASNeolithicPlinthBase" or @Name="ASNeolithicTextileBundleBase" or defName="ASNeolithicWoodPile"]</xpath>
             <value>
                 <designationCategory>Furniture</designationCategory>
             </value>
