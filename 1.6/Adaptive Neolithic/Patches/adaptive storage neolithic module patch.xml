@@ -135,8 +135,8 @@
             <li>Adaptive Primitive Storage</li>
             <li>Reel's Expanded Storage</li>
         </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]/designationCategory</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
             <value>
                 <designationCategory></designationCategory>
             </value>
