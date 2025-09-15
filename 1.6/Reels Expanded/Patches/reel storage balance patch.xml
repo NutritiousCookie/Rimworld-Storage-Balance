@@ -550,4 +550,26 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
+    <!-- Neolithic -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Storage Neolithic Module</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
