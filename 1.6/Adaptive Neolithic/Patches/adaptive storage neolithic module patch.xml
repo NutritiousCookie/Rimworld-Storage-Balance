@@ -85,106 +85,30 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="Name="ASNeolithicBasketThingBase"]</xpath>
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase" or @Name="ASNeolithicPlinthBase"]</xpath>
                     <value>
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]</xpath>
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicTextileBundleBase" or @Name="ASNeolithicWoodPile"]</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]</xpath>
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf"]</xpath>
                     <value>
                         <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_FoodStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicPlinthBase"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicTextileBundleBase"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicWoodPile"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </li>
             </operations>
         </match>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="Name="ASNeolithicBasketThingBase"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicPlinthBase"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicTextileBundleBase"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicWoodPile"]</xpath>
-                    <value>
-                        <designationCategory>Furniture</designationCategory>
-                    </value>
-                </li>
-            </operations>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase" or @Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf" or @Name="ASNeolithicPlinthBase" or @Name="ASNeolithicTextileBundleBase" or @Name="ASNeolithicWoodPile"]</xpath>
+            <value>
+                <designationCategory>Furniture</designationCategory>
+            </value>
         </nomatch>
     </Operation>
 
