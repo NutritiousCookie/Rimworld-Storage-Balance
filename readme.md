@@ -11,16 +11,16 @@ The changes made by this mod are listed [here](https://docs.google.com/spreadshe
 
 - Declutter menus by removing duplicate items across mods
 - Declutter research by removing storage-specific projects, moving buildings to vanilla or vanilla expanded projects.
-- Balance around vanilla shelves (which are changed to neolithic tech)
+- Balance around vanilla shelves
 - Balance stack sizes by tech level and specialization of the building, rather than resource cost to build it.
 
 General guidelines for stacks per cell are:
 
 | Tech Level | General Use | Specific Use           |
 |:----------:|:-----------:|------------------------|
-| Neolithic  | 2-3         | 4-8                    |
-| Medieval   | 4-5         | 6-10                   |
-| Industrial | 6-8         | 8-16 or extra features |
+| Neolithic  | 2-3         | 4-6                    |
+| Medieval   | 3-4         | 6-8                    |
+| Industrial | 4-6         | 8-10 or extra features |
 | Spacer     | 10+         | 20+ or extra features  |
 
 Buildings that are larger or have more restrictive allowed items will tend towards the higher end of the range, and buildings that are smaller, allow more items, or have extra uses will tend towards the lower end.
