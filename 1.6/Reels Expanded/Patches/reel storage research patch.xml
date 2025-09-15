@@ -3,7 +3,7 @@
 <!-- REMOVE RESEARCH -->
 <!-- ITEMS -->
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder" or defName="ReelStorageNewBarrel" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate" or defName="ReelStorageBookshelf" or defName="ReelStorageWineRack" or defName="ReelStorageWoodChest" or defName="ReelStorageLargeWoodChest"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>ComplexFurniture</li>
@@ -11,15 +11,7 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageNewMedicineCabinet"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>AirConditioning</li>
@@ -27,23 +19,7 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageSkip"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Machining</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Machining</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageCargoContainer"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>Machining</li>
@@ -59,46 +35,6 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewMedicineCabinet"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>AirConditioning</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageVerticalWeaponRack"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Machining</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageHorizontalWeaponRack"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Machining</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
@@ -107,63 +43,12 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Machining</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="ReelStorageStonePile" or defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>Stonecutting</li>
                 </researchPrerequisites>
             </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>Stonecutting</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>ComplexFurniture</li>
-                </researchPrerequisites>
-            </value>
-    </Operation>
-    <Operation Class="PatchOperationRemove">
-            <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
     </Operation>
     <Operation Class="PatchOperationRemove">
             <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
@@ -178,7 +63,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker or defName="ReelNewIndustrialShelf""]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>MF_ModernFurniture</li>
@@ -186,23 +71,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>MF_ModernFurniture</li>
-                            </researchPrerequisites>
-                        </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>MF_BasicFurniture</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>MF_BasicFurniture</li>
@@ -214,26 +83,15 @@
         <nomatch Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Machining</li>
                         </researchPrerequisites>
                     </value>
                 </li>
-                <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>ComplexFurniture</li>
-                            </researchPrerequisites>
-                        </value>
-                </li>
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
                 </li>
             </operations>
         </nomatch>
@@ -273,80 +131,24 @@
         <mods>
             <li>Vanilla Furniture Expanded - Spacer Module</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>SpacerElectronics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>SpacerElectronics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainerStack"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>SpacerElectronics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>SpacerElectronics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-            </operations>
+        <match  Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageSpacerLocker"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>SpacerElectronics</li>
+                </researchPrerequisites>
+            </value>
         </match>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>ShipBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>ShipBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainerStack"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>ShipBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>ShipBasics</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-            </operations>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageSpacerLocker"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>ShipBasics</li>
+                </researchPrerequisites>
+            </value>
         </nomatch>
     </Operation>
-    
+
 <!-- PROJECTS -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/ThingDef/researchPrerequisites[li="ReelNeolithicStorage"]</xpath>
