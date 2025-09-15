@@ -243,27 +243,9 @@
                         </value>
                     </li>
                     <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or defName="ASF_MeatRack"]</xpath>
                         <value>
                             <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_GeneralStorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
-                        <value>
-                            <designationCategory>Ferny_FoodStorage</designationCategory>
                         </value>
                     </li>
                 </operations>
@@ -281,25 +263,13 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot" or defName="ASF_UncoveredClayPot"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot" or defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
