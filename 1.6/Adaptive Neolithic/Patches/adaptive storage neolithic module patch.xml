@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- ADD TO MENU 
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@ParentName="ASNeolithicItemDisplayBase"]</xpath>
-        <value>
-            <thingCategories>
-                <li>BuildingsFurniture</li>
-            </thingCategories>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@ParentName="ASNeolithicStorageBase"]</xpath>
-        <value>
-            <thingCategories>
-                <li>BuildingsFurniture</li>
-            </thingCategories>
-        </value>
-    </Operation>
--->
 
 <!-- REBALANCE -->
     <!-- baskets -->
@@ -25,7 +7,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="Name="ASNeolithicBasketThingBase"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
     -->
@@ -72,7 +54,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="ASNeolithicPlinthBase"]/building/maxItemsInCell</xpath>
         <value>
-            <designationCategory>Ferny_GeneralStorage</designationCategory>
+            <maxItemsInCell>1</maxItemsInCell>
         </value>
     </Operation>
     -->
