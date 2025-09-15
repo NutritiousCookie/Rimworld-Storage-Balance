@@ -6,5 +6,6 @@
     <li IfModActive="adaptive.primitivestorage">1.6/Adaptive Primitive</li>
     <li IfModActive="adaptive.storage.neolithic">1.6/Adaptive Neolithic</li>
     <li IfModActive="phaneron.basic.storage">1.6/Phanerons Basic</li>
+    <li IfModActive="vanillaexpanded.vfecore">1.6/Vanilla Furniture Expanded</li>
   </v1.6>
 </loadFolders>
