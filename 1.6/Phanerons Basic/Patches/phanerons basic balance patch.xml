@@ -304,112 +304,112 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageSack"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageCask"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageFoodCupboard"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMealStorage"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <!-- Crates -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <!-- Meat Hook -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
                 <!-- Weapon Rack -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]</xpath>
                     <value>
-                        <designationCategory>Furniture</designationCategory>
+                        <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </li>
             </operations>

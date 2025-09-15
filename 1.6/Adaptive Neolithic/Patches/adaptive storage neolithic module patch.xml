@@ -122,7 +122,7 @@
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase" or @Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf" or @Name="ASNeolithicPlinthBase" or @Name="ASNeolithicTextileBundleBase" or defName="ASNeolithicWoodPile"]</xpath>
             <value>
-                <designationCategory>Furniture</designationCategory>
+                <designationCategory>ASFstorage</designationCategory>
             </value>
         </nomatch>
     </Operation>
