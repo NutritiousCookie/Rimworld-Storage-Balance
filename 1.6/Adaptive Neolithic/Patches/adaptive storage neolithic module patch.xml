@@ -91,7 +91,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicTextileBundleBase" or @Name="ASNeolithicWoodPile"]</xpath>
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicChunkStorageBase" or defName="ASNeolithicHayPile" or @Name="ASNeolithicTextileBundleBase" or defName="ASNeolithicWoodPile"]</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
