@@ -29,6 +29,7 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 
 ## Compatability
 
+![Storage Balance Patches](About/support.png)
 Currently covering these storage mods:
 - [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215) - Decreases stack sizes significantly. Reduces some material costs.
 - [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895) - Reduces some material costs. Removes wood pile if Adaptive Primitive is installed.
