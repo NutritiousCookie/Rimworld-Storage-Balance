@@ -148,6 +148,7 @@
     </Operation>
     -->
     <!-- tall weapon rack -->
+    <!-- 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/maxItemsInCell</xpath>
         <value>
@@ -166,19 +167,63 @@
             <description>A horizontal weapon rack that can display up to 16 weapons.</description>
         </value>
     </Operation>
+    -->
+    <!-- weapon rack -->
+    <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <maxItemsInCell>5</maxItemsInCell>
         </value>
     </Operation>
-    <!-- weapon rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/description</xpath>
         <value>
-            <description>A weapon rack that can display up to 8 weapons.</description>
+            <description>A weapon rack that can display up to 10 weapons.</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_WeaponRackASF"]/itemGraphics/columns</xpath>
+        <value>
+            <columns>
+                <c0>
+                    <rows>
+                        <r0>
+                            <stackBehaviour>Stack</stackBehaviour>
+                            <stackOffset>(0.165,0,0)</stackOffset>
+                            <stackOffsetEast>(0,-0.01,0.15)</stackOffsetEast>
+                            <stackOffsetWest>(0,-0.01,0.15)</stackOffsetWest>
+                            <stackOffsetNorth>(0.165,0,0)</stackOffsetNorth>
+                            <drawOffset>(-0.1,0.05,0.15)</drawOffset>
+                            <drawOffsetEast>(-0.1,0.05,0)</drawOffsetEast>
+                            <drawOffsetWest>(0.1,0.05,0)</drawOffsetWest>
+                            <drawOffsetNorth>(0.04,0.05,0.15)</drawOffsetNorth>
+                            <drawScale>1</drawScale>
+                            <rotation>270</rotation>
+                        </r0>
+                    </rows>
+                </c0>
+                <c1>
+                    <rows>
+                        <r0>
+                            <stackBehaviour>Stack</stackBehaviour>
+                            <stackOffset>(0.165,0,0)</stackOffset>
+                            <stackOffsetEast>(0,-0.01,0.15)</stackOffsetEast>
+                            <stackOffsetWest>(0,-0.01,0.15)</stackOffsetWest>
+                            <stackOffsetNorth>(0.165,0,0)</stackOffsetNorth>
+                            <drawOffset>(-0.25,0.1,0.15)</drawOffset>
+                            <drawOffsetEast>(-0.1,0.02,-0.25)</drawOffsetEast>
+                            <drawOffsetWest>(0.1,0.02,-0.25)</drawOffsetWest>
+                            <drawOffsetNorth>(-0.183,0.1,0.15)</drawOffsetNorth>
+                            <drawScale>1</drawScale>
+                            <rotation>270</rotation>
+                        </r0>
+                    </rows>
+                </c1>
+            </columns>
+        </value>
+    </Operation>
+    -->
 
 <!-- LINKABLES -->
     <!-- Vanilla Furniture Expanded -->
@@ -293,7 +338,14 @@
 
 <!-- REMOVE DUPLICATES -->
     <!-- Vanilla -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]</xpath>
+        <value>
+            <designationCategory Inherit= "False"></designationCategory>
+        </value>
+    </Operation>
     <!-- Remove display shelves -->
+    <!-- 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
         <value>
@@ -306,6 +358,7 @@
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
+    -->
     <!-- Reels -->
     <Operation Class="PatchOperationFindMod">
         <mods>
