@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
         <value>
             <researchPrerequisites>
@@ -8,7 +8,7 @@
             </researchPrerequisites>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd">
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_VerticalWeaponRack" or defName="sbz_HorizontalWeaponRack"]</xpath>
         <value>
             <researchPrerequisites>
