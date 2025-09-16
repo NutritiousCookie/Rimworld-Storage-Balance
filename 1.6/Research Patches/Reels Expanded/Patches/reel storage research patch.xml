@@ -20,7 +20,7 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageCargoContainer"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelStorageSkip" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageCargoContainer"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>Machining</li>
@@ -67,7 +67,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>MF_ModernFurniture</li>
@@ -95,7 +95,7 @@
         <nomatch Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Machining</li>
