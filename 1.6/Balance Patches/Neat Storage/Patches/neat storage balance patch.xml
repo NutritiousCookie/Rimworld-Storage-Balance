@@ -180,6 +180,114 @@
         </value>
     </Operation>
 
+<!-- LINKABLES -->
+    <!-- Vanilla Furniture Expanded -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- cause hanger shelves to inherit VFE wardrobe -->
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]</xpath>
+                    <attribute>ParentName</attribute>
+                    <value>VFE_WardrobeBase</value>
+                </li>
+                <!-- make beds recognize hanger shelves -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name = "BasicBedBase" or defName = "HospitalBed" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>sbz_HangerShelf</li>
+                        <li>sbz_WideHangerShelf</li>
+                    </value>
+                </li>
+                <!-- add comfort to hanger shelves -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Facility">
+                                <statOffsets>
+                                    <Comfort>0.05</Comfort>
+                                </statOffsets>
+                                <maxSimultaneous>1</maxSimultaneous>
+                                <maxDistance>6</maxDistance>
+                            </li>
+                            <li Class="CompProperties_Styleable"/>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Facility">
+                                <statOffsets>
+                                    <Comfort>0.1</Comfort>
+                                </statOffsets>
+                                <maxSimultaneous>1</maxSimultaneous>
+                                <maxDistance>6</maxDistance>
+                            </li>
+                            <li Class="CompProperties_Styleable"/>
+                        </comps>
+                    </value>
+                </li>
+                <!-- add beauty to hanger shelves -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]</xpath>
+                    <value>
+                        <statBases Inherit ="False">
+                            <MaxHitPoints>200</MaxHitPoints>
+                            <Mass>20</Mass>
+                            <WorkToBuild>2500</WorkToBuild>
+                            <Flammability>1.0</Flammability>
+                            <Beauty>8</Beauty>
+                        </statBases>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]</xpath>
+                    <value>
+                        <statBases Inherit ="False">
+                            <MaxHitPoints>100</MaxHitPoints>
+                            <Mass>10</Mass>
+                            <WorkToBuild>1250</WorkToBuild>
+                            <Flammability>1.0</Flammability>
+                            <Beauty>8</Beauty>
+                        </statBases>
+                    </value>
+                </li>
+                <!-- rename hanger shelves -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/label</xpath>
+                    <value>
+                        <label>small modern wardrobe</label>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/label</xpath>
+                    <value>
+                        <label>modern wardrobe</label>
+                    </value>
+                </li>
+                <!-- change description for hanger shelves -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/description</xpath>
+                    <value>
+                        <description>A clothes hanger rack that can hold up to 4 pieces of clothing. Gives a small comfort bonus to all nearby beds. Placing more than one wardrobe near the same bed has no effect.</description>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/description</xpath>
+                    <value>
+                        <description>A clothes hanger rack that can hold up to 8 pieces of clothing. Gives a small comfort bonus to all nearby beds. Placing more than one wardrobe near the same bed has no effect.</description>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 <!-- FERNY ORGANIZE -->
     <!-- not needed -->
 
