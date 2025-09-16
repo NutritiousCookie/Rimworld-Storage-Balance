@@ -53,23 +53,23 @@
         </value>
     </Operation>
     <!-- display shelf -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/label</xpath>
         <value>
             <label>display shelf</label>
         </value>
     </Operation>
-    -->
+-->
     <!-- small display shelf -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/label</xpath>
         <value>
             <label>small display shelf</label>
         </value>
     </Operation>
-    -->
+-->
     <!-- tall display shelf -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/label</xpath>
@@ -85,70 +85,70 @@
         </value>
     </Operation>
     <!-- hanger shelf -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- narrow hanger shelf -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- display cabinet -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- narrow display cabinet -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_NarrowDisplayCabinet"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- display case -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DisplayTable"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>1</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- meat hook -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- textile rack -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
-    -->
+-->
     <!-- tall weapon rack -->
-    <!-- 
+<!-- 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/maxItemsInCell</xpath>
         <value>
@@ -167,9 +167,9 @@
             <description>A horizontal weapon rack that can display up to 16 weapons.</description>
         </value>
     </Operation>
-    -->
+-->
     <!-- weapon rack -->
-    <!--
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/building/maxItemsInCell</xpath>
         <value>
@@ -223,17 +223,17 @@
             </columns>
         </value>
     </Operation>
-    -->
+-->
 
 <!-- LINKABLES -->
     <!-- Vanilla Furniture Expanded -->
+<!--
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Furniture Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
-                <!-- make beds recognize hanger shelves -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[@Name = "BasicBedBase" or defName = "HospitalBed" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
@@ -241,7 +241,6 @@
                         <li>sbz_WideHangerShelf</li>
                     </value>
                 </li>
-                <!-- make shelves recognize beds -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]</xpath>
                     <value>
@@ -250,7 +249,6 @@
                         </placeWorkers>
                     </value>
                 </li>
-                <!-- add comfort to hanger shelves -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]</xpath>
                     <value>
@@ -281,7 +279,6 @@
                         </comps>
                     </value>
                 </li>
-                <!-- add beauty to hanger shelves -->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]</xpath>
                     <value>
@@ -306,7 +303,6 @@
                         </statBases>
                     </value>
                 </li>
-                <!-- rename hanger shelves -->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/label</xpath>
                     <value>
@@ -319,7 +315,6 @@
                         <label>modern wardrobe</label>
                     </value>
                 </li>
-                <!-- change description for hanger shelves -->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/description</xpath>
                     <value>
@@ -335,12 +330,14 @@
             </operations>
         </match>
     </Operation>
+-->
 
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
+<!--
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Vanilla Furniture Expanded</li>
@@ -358,8 +355,9 @@
                         </value>
                     </nomatch>
                 </li>
+-->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
@@ -368,6 +366,7 @@
         </match>
         <nomatch Class="PatchOperationSequence">
             <operations>
+<!--
                 <li Class="PatchOperationFindMod">
                     <mods>
                         <li>Vanilla Furniture Expanded</li>
@@ -385,8 +384,9 @@
                         </value>
                     </nomatch>
                 </li>
+-->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
                     <value>
                         <designationCategory>ASFstorage</designationCategory>
                     </value>
@@ -397,16 +397,14 @@
 
 <!-- REMOVE DUPLICATES -->
     <!-- remove corpse spot -->
-    <!--
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]</xpath>
         <value>
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
-    -->
     <!-- remove display shelves -->
-    <!-- 
+<!-- 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
         <value>
@@ -419,7 +417,7 @@
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
-    -->
+-->
     <!-- Reels -->
     <Operation Class="PatchOperationFindMod">
         <mods>
