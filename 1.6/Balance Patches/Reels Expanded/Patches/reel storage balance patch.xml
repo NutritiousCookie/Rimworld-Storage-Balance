@@ -572,4 +572,26 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
+    <!-- Neat -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[sbz] Neat Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>

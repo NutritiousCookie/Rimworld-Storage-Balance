@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- RESEARCH -->
+<!-- Vanilla Furniture Expanded Patches -->
+    <!-- Core -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <!-- Art -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Art</li>
+                    </mods>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>VFE_Res_ArtfulDisplay</li>
+                            </researchPrerequisites>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>MF_BasicFurniture</li>
+                            </researchPrerequisites>
+                        </value>
+                    </nomatch>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]</xpath>
+        </nomatch>
+    </Operation>
+
+<!-- REMOVE RESEARCH -->
+    <!-- Items -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+    </Operation>
+    <!-- Projects -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicItemDisplay"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+        </nomatch>
+    </Operation>
+</Patch>
