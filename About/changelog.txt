@@ -10,3 +10,4 @@
 1.1.2 - Many small balance changes and bugfixes. Shelves have been moved back to their vanilla medieval technology, and stack sizes everywhere else has been tweaked down to match. Description/readme has the new guidelines used for these balance changes.
 1.1.3 - Folder structure rework, separating research from other changes.
 1.1.4 - Add compatibility for Medieval Overhaul and some more Progression: Storage combinations. Begin support for Neat Storage.
+1.2.0 - Compatibility for [sbz] Neat Storage. Other small tweaks. Neat Storage meat hook takes priority over Reel's, and Reel's+VFE:Props weapon rack takes priority over Neat's, which takes priority over Primitive. This change overwrites Progression: Storage behavior.
