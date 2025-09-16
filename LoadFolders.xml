@@ -12,7 +12,6 @@
     <li IfModActive="phaneron.basic.storage">1.6/Research Patches/Phanerons Basic</li>
     <li IfModActive="reel.expanded.storage">1.6/Balance Patches/Reels Expanded</li>
     <li IfModActive="reel.expanded.storage">1.6/Research Patches/Reels Expanded</li>
-    <li IfModActive="vanillaexpanded.vfecore">1.6/Balance Patches/Vanilla Furniture Expanded</li>
     <li IfModActive="sbz.neatstorage">1.6/Balance Patches/Neat Storage</li>
     <li IfModActive="sbz.neatstorage">1.6/Research Patches/Neat Storage</li>
   </v1.6>
