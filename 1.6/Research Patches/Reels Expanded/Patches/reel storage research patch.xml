@@ -103,7 +103,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
                 </li>
             </operations>
         </nomatch>

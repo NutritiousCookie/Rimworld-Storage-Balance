@@ -490,8 +490,8 @@ Allowed items: Food, Plant matter.</description>
                 </li>
             </operations>
         </match>
-        <nomatch Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageSkip" or defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack" or defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageSkip" or defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack" or defName="ReelStorageSpacerLocker"]</xpath>
             <value>
                 <designationCategory>ASFstorage</designationCategory>
             </value>
