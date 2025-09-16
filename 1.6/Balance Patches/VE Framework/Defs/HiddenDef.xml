@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VEF.Buildings.HiddenDesignatorsDef>
+        <defName>StorageBalancePatches_HiddenDesignators</defName>
+        <hiddenDesignators>
+        </hiddenDesignators>
+    </VEF.Buildings.HiddenDesignatorsDef>
+</Defs>
