@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationAttributeSet">
-        <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or @Name="sbzWeaponRackBase"]/researchPrerequisites</xpath>
-        <attribute>Inherit</attribute>
-        <value>False</value>
-    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/researchPrerequisites</xpath>
         <value>
-            <researchPrerequisites>
+            <researchPrerequisites Inherit="False">
                 <li>Smithing</li>
             </researchPrerequisites>
         </value>
@@ -16,7 +11,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/researchPrerequisites</xpath>
         <value>
-            <researchPrerequisites>
+            <researchPrerequisites Inherit="False">
                 <li>Machining</li>
             </researchPrerequisites>
         </value>
