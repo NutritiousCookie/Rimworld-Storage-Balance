@@ -42,7 +42,7 @@
             </operations>
         </match>
         <nomatch Class="PatchOperationRemove">
-            <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]</xpath>
+            <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
         </nomatch>
     </Operation>
 
