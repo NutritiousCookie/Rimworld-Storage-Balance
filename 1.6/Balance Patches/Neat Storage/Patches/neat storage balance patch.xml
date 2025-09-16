@@ -502,7 +502,7 @@
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationRemove">
-                            <xpath>VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook"]</xpath>
+                            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook"]</xpath>
                         </li>
                         <li Class="PatchOperationAdd">
                             <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
