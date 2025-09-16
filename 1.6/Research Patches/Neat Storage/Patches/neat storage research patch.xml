@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/researchPrerequisites</xpath>
         <value>
             <researchPrerequisites>
                 <li>Smithing</li>
@@ -9,7 +9,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_VerticalWeaponRack" or defName="sbz_HorizontalWeaponRack"]</xpath>
+        <xpath>Defs/ThingDef[defName="sbz_VerticalWeaponRack" or defName="sbz_HorizontalWeaponRack"]/researchPrerequisites</xpath>
         <value>
             <researchPrerequisites>
                 <li>Machining</li>
