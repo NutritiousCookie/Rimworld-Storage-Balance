@@ -292,6 +292,20 @@
     <!-- not needed -->
 
 <!-- REMOVE DUPLICATES -->
+    <!-- Vanilla -->
+    <!-- Remove display shelves -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
+        <value>
+            <designationCategory Inherit= "False"></designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory Inherit= "False"></designationCategory>
+        </value>
+    </Operation>
     <!-- Reels -->
     <Operation Class="PatchOperationFindMod">
         <mods>
