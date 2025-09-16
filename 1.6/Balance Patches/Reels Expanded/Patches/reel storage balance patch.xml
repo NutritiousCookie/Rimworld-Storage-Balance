@@ -483,13 +483,19 @@ Allowed items: Food, Plant matter.</description>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </li>
             </operations>
         </match>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageSkip" or defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack" or defName="ReelStorageSpacerLocker"]/designationCategory</xpath>
+            <value>
+                <designationCategory>ASFstorage</designationCategory>
+            </value>
+        </nomatch>
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
@@ -514,13 +520,13 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>

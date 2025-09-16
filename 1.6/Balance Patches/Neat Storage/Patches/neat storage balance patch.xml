@@ -334,17 +334,33 @@
     </Operation>
 
 <!-- FERNY ORGANIZE -->
-    <!-- not needed -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_GearStorage</designationCategory>
+                </value>
+            </match>
+            <nomatch Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>ASFstorage</designationCategory>
+                </value>
+            </nomatch>
+    </Operation>
 
 <!-- REMOVE DUPLICATES -->
-    <!-- Vanilla -->
+    <!-- remove corpse spot -->
+    <!--
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]</xpath>
         <value>
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
-    <!-- Remove display shelves -->
+    -->
+    <!-- remove display shelves -->
     <!-- 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
@@ -369,13 +385,32 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]</xpath>
                     <value>
-                        <designationCategory Inherit= "False"></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory Inherit= "False"></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
             </operations>
@@ -389,15 +424,15 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or @Name="sbzWeaponRackBase"]</xpath>
                     <value>
-                        <designationCategory Inherit= "False"></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or @Name="sbzWeaponRackBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory Inherit= "False"></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
             </operations>

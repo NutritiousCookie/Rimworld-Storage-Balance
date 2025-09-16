@@ -164,13 +164,13 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/description</xpath>
         <value>
-        <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings. \n\nTotal Capacity: 8 Stacks</description>
+        <description>Sturdy pieces of wood lashed together with leather or fabric for storing large quantities of weaponry. Does not prevent deterioration. Prevents weaponry from affecting the beauty of its surroundings. \n\nTotal Capacity: 6 Stacks</description>
         </value>
     </Operation>
     -->
@@ -250,6 +250,22 @@
                     </li>
                 </operations>
             </match>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>ASFstorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or defName="ASF_MeatRack"]</xpath>
+                        <value>
+                            <designationCategory>ASFstorage</designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </nomatch>
     </Operation>
 
 <!-- REMOVE DUPLICATES -->
@@ -268,6 +284,47 @@
                 </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot" or defName="ASF_UncoveredClayPot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+<!-- Reels/Neat -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[sbz] Neat Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
