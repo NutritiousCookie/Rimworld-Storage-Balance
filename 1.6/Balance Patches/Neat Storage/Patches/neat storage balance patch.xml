@@ -336,4 +336,46 @@
             </operations>
         </match>
     </Operation>
+    <!-- Progression -->
+    <!-- restore meat hook -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Progression: Storage</li>
+        </mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+            <nomatch Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
+                        <value>
+                            <designationCategory>ASFstorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>ASFstorage</designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </nomatch>
+        </match>
+    </Operation>
 </Patch>
