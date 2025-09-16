@@ -19,7 +19,9 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/researchPrerequisites</xpath>
         <value>
-            <researchPrerequisites Inherit="False"></researchPrerequisites>
+            <researchPrerequisites Inherit="False">
+                <li>ComplexFurniture</li>
+            </researchPrerequisites>
         </value>
     </Operation>
 

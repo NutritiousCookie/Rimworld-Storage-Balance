@@ -75,14 +75,6 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Table_Wardrobe"]/researchPrerequisites</xpath>
-                    <value>
-                        <researchPrerequisites>
-                            <li>ComplexFurniture</li>
-                        </researchPrerequisites>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
@@ -102,8 +94,13 @@
                         </researchPrerequisites>
                     </value>
                 </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>ComplexFurniture</li>
+                        </researchPrerequisites>
+                    </value>
                 </li>
             </operations>
         </nomatch>
@@ -130,9 +127,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
                     <value>
-                        <researchPrerequisites>
-                            <li>ComplexFurniture</li>
-                        </researchPrerequisites>
+                        <researchPrerequisites></researchPrerequisites>
                     </value>
                 </li>
             </operations>
