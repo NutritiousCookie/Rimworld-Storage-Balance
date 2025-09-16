@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_TextileRack"]/researchPrerequisites</xpath>
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/researchPrerequisites</xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>Smithing</li>
@@ -14,6 +14,12 @@
             <researchPrerequisites Inherit="False">
                 <li>Machining</li>
             </researchPrerequisites>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites Inherit="False"></researchPrerequisites>
         </value>
     </Operation>
 
@@ -45,13 +51,27 @@
         <mods>
             <li>Vanilla Furniture Expanded</li>
         </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>MF_ModernFurniture</li>
-                </researchPrerequisites>
-            </value>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Crates -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <!-- Weapon Rack -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="False">
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
 </Patch>
