@@ -409,6 +409,12 @@
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+        <value>
+            <li>sbz_CorpseSpot</li>
+        </value>
+    </Operation>
     <!-- remove display shelves -->
 <!-- 
     <Operation Class="PatchOperationAdd">
@@ -423,6 +429,16 @@
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+        <value>
+            <li>sbz_DisplayShelf</li>
+            <li>sbz_TwoTierDisplayShelf</li>
+            <li>sbz_SmallDisplayShelf</li>
+            <li>sbz_TallDisplayShelf</li>
+            <li>sbz_NarrowTallDisplayShelf</li>
+        </value>
+    </Operation>
 -->
     <!-- Reels -->
     <Operation Class="PatchOperationFindMod">
@@ -432,15 +448,23 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate"]</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>sbz_Crate</li>
+                        <li>sbz_MidCrate</li>
+                        <li>sbz_SmallCrate</li>
                     </value>
                 </li>
             </operations>
@@ -462,6 +486,12 @@
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>sbz_WeaponRack</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
@@ -473,15 +503,24 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or @Name="sbzWeaponRackBase"]</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or @Name="sbzWeaponRackBase"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>sbz_Crate</li>
+                        <li>sbz_MidCrate</li>
+                        <li>sbz_SmallCrate</li>
+                        <li>sbz_Pallet</li>
                     </value>
                 </li>
             </operations>
@@ -502,39 +541,42 @@
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationRemove">
-                            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook"]</xpath>
+                            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook" or .="sbz_WeaponRack"]</xpath>
                         </li>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack"]</xpath>
                             <value>
                                 <designationCategory>Ferny_FoodStorage</designationCategory>
                             </value>
                         </li>
                         <li Class="PatchOperationReplace">
-                            <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/designationCategory</xpath>
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack"]/designationCategory</xpath>
                             <value>
                                 <designationCategory>Ferny_FoodStorage</designationCategory>
                             </value>
                         </li>
                     </operations>
                 </match>
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook" or .="sbz_WeaponRack"]</xpath>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack"]</xpath>
+                            <value>
+                                <designationCategory>ASFstorage</designationCategory>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack"]/designationCategory</xpath>
+                            <value>
+                                <designationCategory>ASFstorage</designationCategory>
+                            </value>
+                        </li>
+                    </operations>
+                </nomatch>
             </match>
         </match>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </li>
-            </operations>
-        </nomatch>
     </Operation>
 </Patch>

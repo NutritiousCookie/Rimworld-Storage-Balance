@@ -349,13 +349,6 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
-                <!-- Weapon Rack -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </li>
             </operations>
         </match>
     </Operation>
@@ -369,6 +362,13 @@
                 <!-- Meat Hook -->
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <!-- Weapon Rack -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>

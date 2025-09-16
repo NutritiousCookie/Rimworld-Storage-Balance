@@ -522,13 +522,13 @@ Allowed items: Food, Plant matter.</description>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
             </operations>
@@ -542,15 +542,15 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]/designationCategory</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
             </operations>
@@ -586,15 +586,15 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]/designationCategory</xpath>
                     <value>
-                        <designationCategory></designationCategory>
+                        <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
             </operations>
