@@ -16,29 +16,6 @@
             </researchPrerequisites>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="sbzCrateBase" or @Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
-        <value>
-            <researchPrerequisites>
-                <li>ComplexFurniture</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
-    
-<!-- MEDIEVAL OVERHAUL -->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Medieval Overhaul</li>
-        </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[@Name="sbzCrateBase" or @Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>DankPyon_RusticStorage</li>
-                </researchPrerequisites>
-            </value>
-        </match>
-    </Operation>
 
 <!-- VFE -->
     <Operation Class="PatchOperationFindMod">
@@ -47,12 +24,56 @@
         </mods>
         <match Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>MF_ModernFurniture</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+<!-- MEDIEVAL OVERHAUL -->
+        <nomatch Class="PatchOperationFindMod">
+            <mods>
+                <li>Medieval Overhaul</li>
+            </mods>
+            <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
                 <value>
                     <researchPrerequisites>
-                        <li>MF_ModernFurniture</li>
+                        <li>DankPyon_RusticStorage</li>
                     </researchPrerequisites>
                 </value>
             </match>
+            <nomatch Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>ComplexFurniture</li>
+                    </researchPrerequisites>
+                </value>
+            </nomatch>
+        </nomatch>
+    </Operation>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>DankPyon_RusticStorage</li>
+                </researchPrerequisites>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>ComplexFurniture</li>
+                </researchPrerequisites>
+            </value>
+        </nomatch>
     </Operation>
 
 </Patch>
