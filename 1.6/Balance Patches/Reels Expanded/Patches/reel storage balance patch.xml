@@ -580,13 +580,13 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="ReelStorageMeatHook"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
