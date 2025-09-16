@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- REBALANCE -->
+    <!-- crates and pallets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Crate"]/description</xpath>
+        <value>
+            <description>A large crate that can hold up to 16 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/description</xpath>
+        <value>
+            <description>A crate that can hold up to 8 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/description</xpath>
+        <value>
+            <description>A small crate that can hold up to 4 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet"]/description</xpath>
+        <value>
+            <description>A pallet that can stack up to 16 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/description</xpath>
+        <value>
+            <description>A pallet that can stack up to 4 different items.</description>
+        </value>
+    </Operation>
+    <!-- open shelf -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_OpenShelf"]/label</xpath>
+        <value>
+            <label>double shelf</label>
+        </value>
+    </Operation>
+    <!-- 2-tier display shelf -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/label</xpath>
+        <value>
+            <label>double display shelf</label>
+        </value>
+    </Operation>
+    <!-- display shelf -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/label</xpath>
+        <value>
+            <label>display shelf</label>
+        </value>
+    </Operation>
+    -->
+    <!-- small display shelf -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/label</xpath>
+        <value>
+            <label>small display shelf</label>
+        </value>
+    </Operation>
+    -->
+    <!-- tall display shelf -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/label</xpath>
+        <value>
+            <label>double vertical display shelf</label>
+        </value>
+    </Operation>
+    <!-- narrow tall display shelf -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/label</xpath>
+        <value>
+            <label>vertical display shelf</label>
+        </value>
+    </Operation>
+    <!-- hanger shelf -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- narrow hanger shelf -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- display cabinet -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- narrow display cabinet -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_NarrowDisplayCabinet"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- display case -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayTable"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>1</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- meat hook -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- textile rack -->
+    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    -->
+    <!-- tall weapon rack -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_VerticalWeaponRack"]/description</xpath>
+        <value>
+            <description>A vertical weapon rack that can display up to 16 weapons.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HorizontalWeaponRack"]/description</xpath>
+        <value>
+            <description>A horizontal weapon rack that can display up to 16 weapons.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <!-- weapon rack -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/description</xpath>
+        <value>
+            <description>A weapon rack that can display up to 8 weapons.</description>
+        </value>
+    </Operation>
+
+<!-- FERNY ORGANIZE -->
+    <!-- not needed -->
+
+<!-- REMOVE DUPLICATES -->
+    <!-- Reels -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or @Name="sbzWeaponRackBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <!-- Phaneron's -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
