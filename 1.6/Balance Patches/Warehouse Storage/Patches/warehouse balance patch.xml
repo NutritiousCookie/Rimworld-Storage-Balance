@@ -8,6 +8,12 @@
             <maxItemsInCell>5</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_CB"]/description</xpath>
+        <value>
+            <description>A pile of densely packed cardboard boxes that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 40\n\nRandom graphic upon placement.</description>
+        </value>
+    </Operation>
     <!-- Cardboard box stack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_CBS"]/building/maxItemsInCell</xpath>
@@ -15,11 +21,113 @@
             <maxItemsInCell>5</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_CBS"]/description</xpath>
+        <value>
+            <description>A stack of cardboard boxes that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 5\n\nRandom graphic upon placement.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_CBS_Graphics"]/graphics/li[graphicData/texPath="CBS/CBS_2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
     <!-- Double Layer Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_DLR"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_DLR"]/description</xpath>
+        <value>
+            <description>A fairly large warehouse storage rack designed to store a variety of items in bulk.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 48</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>4</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_3"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>7</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_4"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>10</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>14</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_6"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>17</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_7"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>20</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_8"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>24</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_9"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>27</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_10"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>30</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_11"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>34</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_12"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>37</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_13"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>41</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_14"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>44</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_DLR_Graphics"]/graphics/li[graphicData/texPath="DLR/DLR_15"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>47</minimumStackCount>
         </value>
     </Operation>
     <!-- Roller Fridge -->
@@ -30,12 +138,24 @@
             <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]/description</xpath>
+        <value>
+            <description>A food roller suitable for outdoor use, designed to refrigerate held food items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6</description>
+        </value>
+    </Operation>
 -->
     <!-- General Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_GR"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_GR"]/description</xpath>
+        <value>
+            <description>A general storage rack that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 8</description>
         </value>
     </Operation>
     <!-- General Rack Small -->
@@ -45,11 +165,47 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_GRS"]/description</xpath>
+        <value>
+            <description>A small general storage rack.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 4</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="Vin_GRS_Graphics"]/graphics/li[graphicData/texPath="GRS/GRS_2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
     <!-- Medicine Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_MR"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_MR"]/description</xpath>
+        <value>
+            <description>A medicine storage rack.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 12</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_MR"]/graphics/li[minimumStackCount="2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_MR"]/graphics/li[minimumStackCount="3"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>5</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_MR"]/graphics/li[minimumStackCount="4"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>7</minimumStackCount>
         </value>
     </Operation>
     <!-- Medicine Rack Small -->
@@ -59,11 +215,29 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_MRS"]/description</xpath>
+        <value>
+            <description>A small medicine storage rack.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 4</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_MRS"]/graphics/li[minimumStackCount="2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
     <!-- Pack Crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_PC"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>5</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_PC"]/description</xpath>
+        <value>
+            <description>A large wrapped crate that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 20\n\nPaintable, random graphic upon placement.</description>
         </value>
     </Operation>
     <!-- Triple Layer Rack -->
@@ -73,7 +247,151 @@
             <maxItemsInCell>8</maxItemsInCell>
         </value>
     </Operation>
-    <!-- Weapon Storage Spot -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_TLR"]/description</xpath>
+        <value>
+            <description>A large warehouse storage rack designed to store a variety of bulk items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 64</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="3"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>4</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>7</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="7"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>10</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="9"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>13</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="11"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>15</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="13"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>18</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="15"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>21</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="19"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>23</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="21"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>26</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="23"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>29</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="25"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>31</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="27"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>34</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="29"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>37</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="31"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>39</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="33"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>42</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="35"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>44</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="37"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>47</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="39"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>50</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="41"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>52</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="43"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>55</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="45"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>58</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="47"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>60</minimumStackCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef="Vin_TLR"]/graphics/li[minimumStackCount="49"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>63</minimumStackCount>
+        </value>
+    </Operation>
+    <!-- Weapon Storage Spots -->
 <!-- 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_WP"]/building/maxItemsInCell</xpath>
@@ -81,14 +399,76 @@
             <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
--->
-    <!-- Weapon Storage Spot -->
-<!-- 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_WP"]/description</xpath>
+        <value>
+            <description>A designated spot to store a large amount of weapons.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 12</description>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_WPS"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_WPS"]/description</xpath>
+        <value>
+            <description>A designated spot to store a fair amount of weapons.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6</description>
+        </value>
+    </Operation>
 -->
+
+<!-- CONFIGURE STORAGE -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_TLR" or defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_PC"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedCategories>
+                    <li>Chunks</li>
+                    <li>Corpses</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+
+<!-- REMOVE ITEMS -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+            <li>Phaneron's Basic Storage</li>
+            <li>[sbz] Neat Storage</li>
+            <li>LWM's Adaptive Deep Storage</li>
+            <li>Adaptive Simple Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>Vin_CB</li>
+                        <li>Vin_CBS</li>
+                        <li>Vin_MR</li>
+                        <li>Vin_MRS</li>
+                        <li>Vin_PC</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
