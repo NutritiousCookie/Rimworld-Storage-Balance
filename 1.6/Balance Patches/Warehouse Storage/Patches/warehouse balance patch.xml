@@ -449,7 +449,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]</xpath>
                     <value>
                         <designationCategory>Ferny_FoodStorage</designationCategory>
                     </value>
@@ -477,12 +477,6 @@
             <operations>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]</xpath>
-                    <value>
-                        <designationCategory Inherit="False"></designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
