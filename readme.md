@@ -27,6 +27,8 @@ Buildings that are larger or have more restrictive allowed items will tend towar
 
 "Extra features" includes refrigeration, production bonuses, etc.
 
+**Due to compatibility concerns, all changes to research projects are contained in "1.6/Research Patches/", which can be deleted to revert them.**
+
 ## Compatability
 
 ![Storage Balance Patches](About/support.png)
@@ -35,16 +37,22 @@ Currently covering these storage mods:
 - [Adaptive Primitive Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3400037215) - Decreases stack sizes significantly. Reduces some material costs.
 - [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895) - Reduces some material costs. Removes wood pile if Adaptive Primitive is installed.
 - [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097) - Decreases stack sizes. Removes some items if Adaptive Primitive is installed. Removes research projects. Moves buildings to vanilla projects, or Vanilla Furniture Expanded projects if VFE is installed. Also covers the buildings from [VFE - Props](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) and [VFE - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023) if they are installed.
-- [Phaneron's Basic Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3201536200) - Rebalances stack sizes, mostly small tweaks. Removes crates, barrel, meat hook, and weapon rack if Reel's is installed. Removes research projects. Moves buildings to vanilla projects, or VFE projects if VFE is installed.
+- [Phaneron's Basic Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3201536200) - Rebalances stack sizes, mostly small tweaks. Removes crates, barrel, meat hook, and weapon rack if Reel's is installed. Removes research projects. Moves buildings to vanilla projects, or VFE projects if VFE is installed.[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474][sbz] Neat Storage[/url] - Small rebalance tweaks to crates. Disables crates/weapon racks if Reel's is installed, crates/pallets/weapon racks if Phaneron's is installed.
+- [[sbz] Neat Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474) - Small rebalance tweaks to crates. Disables crates/weapon racks if Reel's is installed, crates/pallets/weapon racks if Phaneron's is installed.
+- [Warehouse Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3519963835) - If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
 
 Research projects are removed, and items are instead assigned to projects from:
 - Vanilla (no required DLCs)
 - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
+- [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
 - [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
+- [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
+- [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926)
 
 Made with compatibility in mind for these other mods:
 - [Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186)
 - [Restore Content - Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3417113151)
+- [Better Architect Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422)
 
 ## Installation
 
