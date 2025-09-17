@@ -585,13 +585,13 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale" or defName="ReelStorageTanningRack"]</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageHayBale" or defName="ReelStorageTanningRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
                     </value>
@@ -600,6 +600,7 @@ Allowed items: Food, Plant matter.</description>
                     <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
                     <value>
                         <li>ReelStorageHayBale</li>
+                        <li>ReelStorageTanningRack</li>
                     </value>
                 </li>
             </operations>
