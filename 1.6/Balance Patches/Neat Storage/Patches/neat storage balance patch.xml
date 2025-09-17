@@ -542,15 +542,27 @@
                             <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators/li[.="sbz_MeatHook" or .="sbz_WeaponRack" or .="sbz_HorizontalWeaponRack" or .="sbz_VerticalWeaponRack"]</xpath>
                         </li>
                         <li Class="PatchOperationAdd">
-                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack"]</xpath>
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
                             <value>
                                 <designationCategory>Ferny_FoodStorage</designationCategory>
                             </value>
                         </li>
                         <li Class="PatchOperationReplace">
-                            <xpath>Defs/ThingDef[defName="sbz_MeatHook" or defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack"]/designationCategory</xpath>
+                            <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/designationCategory</xpath>
                             <value>
                                 <designationCategory>Ferny_FoodStorage</designationCategory>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack"]</xpath>
+                            <value>
+                                <designationCategory>Ferny_GearStorage</designationCategory>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack"]/designationCategory</xpath>
+                            <value>
+                                <designationCategory>Ferny_GearStorage</designationCategory>
                             </value>
                         </li>
                     </operations>
