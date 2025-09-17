@@ -512,6 +512,12 @@ Allowed items: Food, Plant matter.</description>
             <designationCategory></designationCategory>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+        <value>
+            <li>ReelStorageBookshelf</li>
+        </value>
+    </Operation>
     <!-- Primitive -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -529,6 +535,13 @@ Allowed items: Food, Plant matter.</description>
                     <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ReelStorageWoodPile</li>
+                        <li>ReelStorageLargeWoodPile</li>
                     </value>
                 </li>
             </operations>
@@ -553,6 +566,14 @@ Allowed items: Food, Plant matter.</description>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ReelStorageNewBarrel</li>
+                        <li>ReelStorageVerticalWeaponRack</li>
+                        <li>ReelStorageHorizontalWeaponRack</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
@@ -573,6 +594,12 @@ Allowed items: Food, Plant matter.</description>
                     <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ReelStorageHayBale</li>
                     </value>
                 </li>
             </operations>
@@ -597,7 +624,33 @@ Allowed items: Food, Plant matter.</description>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ReelNewIndustrialShelf</li>
+                        <li>ReelStorageMeatHook</li>
+                        <li>ReelStorageVerticalWeaponRack</li>
+                        <li>ReelStorageHorizontalWeaponRack</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
 </Patch>
+
+<!-- Note - Progression: Storage MO patch removes: 
+<VEF.Buildings.HiddenDesignatorsDef>
+    <defName>FernyMedievalOverhaulReelStorageProgStorage_HiddenDesignators</defName>
+    <hiddenDesignators>
+        <li>ReelStorageHayBale</li>
+        <li>ReelStorageLargeWoodPile</li>
+        <li>ReelStorageWoodPile</li>
+        <li>ReelStorageStonePile</li>
+        <li>ReelStorageLargeStonePile</li>
+        <li>ReelStorageWoodChest</li>
+        <li>ReelStorageTanningRack</li>
+        <li>ReelStorageBookshelf</li>
+        <li>ReelStorageLargeWoodChest</li>
+    </hiddenDesignators>
+</VEF.Buildings.HiddenDesignatorsDef>
+-->

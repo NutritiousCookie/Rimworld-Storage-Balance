@@ -141,6 +141,12 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ASNeolithicBasketThingBase</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
@@ -150,11 +156,21 @@
             <li>Adaptive Primitive Storage</li>
             <li>Reel's Expanded Storage</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
-            <value>
-                <designationCategory></designationCategory>
-            </value>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ASNeolithicBasketThingBase</li>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
 </Patch>

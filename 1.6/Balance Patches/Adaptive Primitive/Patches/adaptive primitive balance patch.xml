@@ -253,13 +253,7 @@
             <nomatch Class="PatchOperationSequence">
                 <operations>
                     <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or defName="ASF_MeatRack"]</xpath>
-                        <value>
-                            <designationCategory>ASFstorage</designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or defName="ASF_MeatRack" or defName="ASF_WeaponRack"]</xpath>
                         <value>
                             <designationCategory>ASFstorage</designationCategory>
                         </value>
@@ -294,6 +288,13 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ASF_CoveredClayPot</li>
+                        <li>ASF_UncoveredClayPot</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
@@ -316,6 +317,12 @@
                         <designationCategory></designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ASF_WeaponRack</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
@@ -333,6 +340,12 @@
                     <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ASF_WeaponRack</li>
                     </value>
                 </li>
             </operations>
