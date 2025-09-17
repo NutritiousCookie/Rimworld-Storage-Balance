@@ -3,15 +3,12 @@
     <name>Storage Balance Patches</name>
     <author>NutritiousCookie</author>
     <packageId>ncook.storagepatches</packageId>
-    <modVersion>1.2.1</modVersion>
+    <modVersion>1.2.2</modVersion>
     <url>https://github.com/NutritiousCookie/Rimworld-Storage-Balance</url>
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
     <description>Rebalances storage buildings from various mods.</description>
-    <loadBefore>
-        <li>ferny.betterarchitect</li>
-    </loadBefore>
     <loadAfter>
         <li>Ludeon.Rimworld</li>
         <li>Ludeon.Rimworld.Royalty</li>
@@ -32,5 +29,6 @@
         <li>potato.progressionstorageundo</li>
         <li>vin.warehouse.storage</li>
         <li>sbz.neatstorage</li>
+        <li>ferny.betterarchitect</li>
     </loadAfter>
 </ModMetaData>
