@@ -11,3 +11,4 @@
 1.1.3 - Folder structure rework, separating research from other changes.
 1.1.4 - Add compatibility for Medieval Overhaul and some more Progression: Storage combinations. Begin support for Neat Storage.
 1.2.0 - Compatibility for [sbz] Neat Storage. Other small tweaks. Neat Storage meat hook takes priority over Reel's, and Reel's+VFE:Props weapon rack takes priority over Neat's, which takes priority over Primitive. This change overwrites Progression: Storage behavior.
+1.2.1 - Add VE Framework compatibility, using HiddenDesignators to hide items from areas outside the architect menu. Other small tweaks. Fix small bugs with weapon racks.
