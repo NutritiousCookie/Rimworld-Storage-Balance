@@ -420,19 +420,48 @@
 -->
 
 <!-- CONFIGURE STORAGE -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_TLR" or defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_PC"]/building/fixedStorageSettings/filter</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_TLR" or defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_PC"]/building</xpath>
         <value>
-            <filter>
-                <categories>
-                    <li>Root</li>
-                </categories>
-                <disallowedCategories>
-                    <li>Chunks</li>
-                    <li>Corpses</li>
-                </disallowedCategories>
-            </filter>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
         </value>
+    </Operation>
+
+<!-- FERNY ORGANIZE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_TLR"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Vin_FR"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
     </Operation>
 
 <!-- REMOVE ITEMS -->
@@ -453,7 +482,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
