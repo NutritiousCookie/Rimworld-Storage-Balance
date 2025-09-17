@@ -15,5 +15,6 @@
     <li IfModActive="sbz.neatstorage">1.6/Balance Patches/Neat Storage</li>
     <li IfModActive="sbz.neatstorage">1.6/Research Patches/Neat Storage</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/Balance Patches/VE Framework</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/Research Patches/Vanilla Furniture Expanded</li>
   </v1.6>
 </loadFolders>
