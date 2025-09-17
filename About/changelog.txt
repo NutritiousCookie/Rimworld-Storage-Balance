@@ -12,4 +12,4 @@
 1.1.4 - Add compatibility for Medieval Overhaul and some more Progression: Storage combinations. Begin support for Neat Storage.
 1.2.0 - Compatibility for [sbz] Neat Storage. Other small tweaks. Neat Storage meat hook takes priority over Reel's, and Reel's+VFE:Props weapon rack takes priority over Neat's, which takes priority over Primitive. This change overwrites Progression: Storage behavior.
 1.2.1 - Add Vanilla Expanded Framework compatibility, using HiddenDesignators to hide items in areas outside the architect menu. Other small tweaks. Fix small bugs with weapon racks.
-1.2.2 - Add Warehouse Storage compatibility.
+1.2.2 - Add Warehouse Storage compatibility. If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
