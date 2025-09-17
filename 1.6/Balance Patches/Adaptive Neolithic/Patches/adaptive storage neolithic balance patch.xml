@@ -144,7 +144,8 @@
                 <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                     <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
                     <value>
-                        <li>ASNeolithicBasketThingBase</li>
+                        <li>ASNeolithicBasketFabric</li>
+                        <li>ASNeolithicBasketWoody</li>
                     </value>
                 </li>
             </operations>
@@ -167,7 +168,7 @@
                 <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
                     <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
                     <value>
-                        <li>ASNeolithicBasketThingBase</li>
+                        <li>ASNeolithicWoodPile</li>
                     </value>
                 </li>
             </operations>
