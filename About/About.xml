@@ -9,6 +9,9 @@
         <li>1.6</li>
     </supportedVersions>
     <description>Rebalances storage buildings from various mods.</description>
+    <loadBefore>
+        <li>ferny.betterarchitect</li>
+    </loadBefore>
     <loadAfter>
         <li>Ludeon.Rimworld</li>
         <li>Ludeon.Rimworld.Royalty</li>
@@ -26,7 +29,8 @@
         <li>phaneron.basic.storage</li>
         <li>reel.expanded.storage</li>
         <li>ferny.progressionstorage</li>
-        <li>ferny.betterarchitect</li>
         <li>potato.progressionstorageundo</li>
+        <li>vin.warehouse.storage</li>
+        <li>sbz.neatstorage</li>
     </loadAfter>
 </ModMetaData>
