@@ -183,8 +183,24 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
             <value>
-            <maxItemsInCell>10</maxItemsInCell>
+            <maxItemsInCell>9</maxItemsInCell>
             </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
+            <value>
+            <maxItemsInCell>9</maxItemsInCell>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/description</xpath>
+        <value>
+            <description>A large storage structure designed to hold barrels of chemfuel for use in generators, vehicles, and other machinery. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 36 
+Stack per tile: 9 
+
+    Allowed items: Chemfuel</description>
+        </value>
     </Operation>
     <!-- cargo container -->
     <Operation Class="PatchOperationReplace">
