@@ -206,15 +206,15 @@ Stack per tile: 9
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <maxItemsInCell>7</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/description</xpath>
         <value>
             <description>A large storage container designed to hold a variety of items for long-term storage. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 64 
-Stack per tile: 8 
+Stack size total: 56 
+Stack per tile: 7 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
@@ -571,13 +571,13 @@ Allowed items: Food, Plant matter.</description>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageCargoContainer" or defName="ReelStorageSkip"]</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageCargoContainer" or defName="ReelStorageSkip"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
@@ -588,6 +588,8 @@ Allowed items: Food, Plant matter.</description>
                         <li>ReelStorageNewBarrel</li>
                         <li>ReelStorageVerticalWeaponRack</li>
                         <li>ReelStorageHorizontalWeaponRack</li>
+                        <li>ReelStorageCargoContainer</li>
+                        <li>ReelStorageSkip</li>
                     </value>
                 </li>
             </operations>

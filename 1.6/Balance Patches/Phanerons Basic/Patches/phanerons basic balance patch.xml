@@ -25,7 +25,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>6</maxItemsInCell>
+            <maxItemsInCell>7</maxItemsInCell>
         </value>
     </Operation>
     <!-- Cask -->
@@ -94,6 +94,64 @@
         <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                    </categories>
+                    <thingDefs>  
+                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                    </thingDefs>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                    </categories>
+                    <thingDefs>
+                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                    </thingDefs>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
         </value>
     </Operation>
     <!-- Meal Cupbaord -->
@@ -267,6 +325,27 @@
                     <value>
                         <li>BasicStorageMeatHook</li>
                         <li>BasicStorageWeaponRack</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Ideology Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>BasicStorageFuelTank</li>
                     </value>
                 </li>
             </operations>
