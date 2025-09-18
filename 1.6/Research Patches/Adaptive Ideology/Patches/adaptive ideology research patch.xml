@@ -10,7 +10,7 @@
             </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/researchPrerequisites</xpath>
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]</xpath>
         <value>
             <researchPrerequisites>
                 <li>Machining</li>
