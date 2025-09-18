@@ -40,6 +40,7 @@ Currently covering these storage mods:
 - [Phaneron's Basic Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3201536200) - Rebalances stack sizes, mostly small tweaks. Removes crates, barrel, meat hook, and weapon rack if Reel's is installed. Removes research projects. Moves buildings to vanilla projects, or VFE projects if VFE is installed.[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474][sbz] Neat Storage[/url] - Small rebalance tweaks to crates. Disables crates/weapon racks if Reel's is installed, crates/pallets/weapon racks if Phaneron's is installed.
 - [[sbz] Neat Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474) - Small rebalance tweaks to crates. Disables crates/weapon racks if Reel's is installed, crates/pallets/weapon racks if Phaneron's is installed.
 - [Warehouse Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3519963835) - If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
+- [Adaptive Ideology Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3301337278) - Now compatible. All items renamed and rebalanced.
 
 Research projects are removed, and items are instead assigned to projects from:
 - Vanilla (no required DLCs)
