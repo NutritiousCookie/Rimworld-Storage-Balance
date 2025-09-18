@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- ITEMS -->
+    <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z" or defName="MealCrate_A" or defName="MealCrate_B"]/researchPrerequisites</xpath>
+            <value>
+                <researchPrerequisites>
+                    <li>Machining</li>
+                </researchPrerequisites>
+            </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/researchPrerequisites</xpath>
+        <value>
+            <researchPrerequisites>
+                <li>Machining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+    
+<!-- VFE -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z" or defName="MealCrate_A" or defName="MealCrate_B"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="False">
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="False">
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

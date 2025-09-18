@@ -18,5 +18,6 @@
     <li IfModActive="vanillaexpanded.vfecore">1.6/Research Patches/Vanilla Furniture Expanded</li>
     <li IfModActive="vin.warehouse.storage">1.6/Balance Patches/Warehouse Storage</li>
     <li IfModActive="vin.warehouse.storage">1.6/Research Patches/Warehouse Storage</li>
+    <li IfModActive="adaptive.ideology.storage">1.6/Research Patches/Adaptive Ideology</li>
   </v1.6>
 </loadFolders>
