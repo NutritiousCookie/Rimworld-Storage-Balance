@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- REBALANCE -->
+    <!-- stacks -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateJ"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateK"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>5</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateL" or defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="asf_rustedtoolbox"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>6</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or "defName=LockerBank_1x1z" or defName="LockerBank_1x2z"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>8</maxItemsInCell>
+        </value>
+    </Operation>
+    <!-- items -->
+    <!-- barrels -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelF"]/description</xpath>
+        <value>
+            <description>A small barrel that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelE" or defName="BarrelG"]/description</xpath>
+        <value>
+            <description>A small rusted barrel that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelD"]/label</xpath>
+        <value>
+            <label>Fuel barrel</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelE"]/label</xpath>
+        <value>
+            <label>Rusted fuel barrel</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelF"]/label</xpath>
+        <value>
+            <label>Hazard barrel</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelG"]/label</xpath>
+        <value>
+            <label>Rusted hazard barrel</label>
+        </value>
+    </Operation>
+    <!-- bundle -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bundle_D"]/label</xpath>
+        <value>
+            <label>Textile bundle</label>
+        </value>
+    </Operation>
+<!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bundle_D"]/description</xpath>
+        <value>
+            <description>A large bundle of textiles. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24\n\nStore items to change appearance.</description>
+        </value>
+    </Operation>
+-->
+    <!-- canisters -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/description</xpath>
+        <value>
+            <description>A large tank that can store a range of liquids. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 60</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterC"]/label</xpath>
+        <value>
+            <label>Fuel canister</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterD"]/label</xpath>
+        <value>
+            <label>Rusted fuel canister</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterE"]/label</xpath>
+        <value>
+            <label>Canister</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterF"]/label</xpath>
+        <value>
+            <label>Rusted canister</label>
+        </value>
+    </Operation>
+    <!-- chunks -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB"]/description</xpath>
+        <value>
+            <description>A large freight container that can store chunks and slag. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 80\</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ChunkA"]/label</xpath>
+        <value>
+            <label>Chunk container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ChunkB"]/label</xpath>
+        <value>
+            <label>Rusted chunk container</label>
+        </value>
+    </Operation>
+    <!-- containers -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]/description</xpath>
+        <value>
+            <description>A large shipping container that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 120\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ContainerC"]/label</xpath>
+        <value>
+            <label>Cargo container</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ContainerD"]/label</xpath>
+        <value>
+            <label>Rusted cargo container</label>
+        </value>
+    </Operation>
+    <!-- crates -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateJ"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 4\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateK"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 5\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateL"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH"]/label</xpath>
+        <value>
+            <label>Cargo crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateI"]/label</xpath>
+        <value>
+            <label>Large crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateJ"]/label</xpath>
+        <value>
+            <label>Long crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateK"]/label</xpath>
+        <value>
+            <label>Crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateL"]/label</xpath>
+        <value>
+            <label>Security crate</label>
+        </value>
+    </Operation>
+    <!-- cylinder -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CylinderA"]/label</xpath>
+        <value>
+            <label>Storage cylinder</label>
+        </value>
+    </Operation>
+    <!-- freight -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Freight_A"]/label</xpath>
+        <value>
+            <label>Freight container</label>
+        </value>
+    </Operation>
+<!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[targetDef=""]/graphics/li[minimumStackCount="2"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>3</minimumStackCount>
+        </value>
+    </Operation>
+-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Freight_B"]/label</xpath>
+        <value>
+            <label>Rusted freight container</label>
+        </value>
+    </Operation>
+    <!-- lockers -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x2z"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 36\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/label</xpath>
+        <value>
+            <label>Locker</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x2z"]/label</xpath>
+        <value>
+            <label>Lockers</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/label</xpath>
+        <value>
+            <label>Lockers</label>
+        </value>
+    </Operation>
+    <!-- meal crates -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MealCrate_A"]/description</xpath>
+        <value>
+            <description>A large crate that is designed to meals. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 32</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MealCrate_B"]/description</xpath>
+        <value>
+            <description>A small crate that is designed to meals. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 8</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MealCrate_A"]/label</xpath>
+        <value>
+            <label>Large meal crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MealCrate_B"]/label</xpath>
+        <value>
+            <label>Meal crate</label>
+        </value>
+    </Operation>
+    <!-- toolbox -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/description</xpath>
+        <value>
+            <description>A rusted toolbox that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 12\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/label</xpath>
+        <value>
+            <label>Rusted toolbox</label>
+        </value>
+    </Operation>
+    
+<!-- CONFIGURE STORAGE -->
+    <Operation Class="PatchOperationAdd" >
+        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterC" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF"]/building</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                    </categories>
+                    <thingDefs>  
+                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                    </thingDefs>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                    </categories>
+                    <thingDefs>
+                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                    </thingDefs>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>MortarShells</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+<!-- FERNY ORGANIZE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MealCrate_A" or defName="MealCrate_B"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="Bundle_D" or defName="CanisterC" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="Freight_A" or defName="Freight_B" or defName="asf_rustedtoolbox"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+<!-- GRAPHICS -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="CanisterCGraphics" or defName="CanisterDGraphics"]</xpath>
+        <value>
+            <allowedRotations>
+                <li>North</li>
+                <li>East</li>
+            </allowedRotations>
+        </value>
+    </Operation>
+
+<!-- REMOVE ITEMS -->
+    <!-- vanilla -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CanisterE" or defName="CanisterF" or defName="ChunkA" or defName="ChunkB" or defName="LockerBank_1x3z"]</xpath>
+        <value>
+            <designationCategory Inherit="False"></designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+        <value>
+            <li>CanisterE</li>
+            <li>CanisterF</li>
+            <li>ChunkA</li>
+            <li>ChunkB</li>
+            <li>LockerBank_1x3z</li>
+        </value>
+    </Operation>
+    <!-- neolithic -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Adaptive Storage Neolithic Module</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Bundle_D"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>Bundle_D</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <!-- other cargo containers and dumpsters -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+            <li>Phaneron's Basic Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD" or defName="Freight_A" or defName="Freight_B"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ContainerC</li>
+                        <li>ContainerD</li>
+                        <li>Freight_A</li>
+                        <li>Freight_B</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Warehouse Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ContainerC</li>
+                        <li>ContainerD</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
