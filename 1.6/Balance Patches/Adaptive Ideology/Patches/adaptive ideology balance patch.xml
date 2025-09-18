@@ -21,7 +21,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or "defName=LockerBank_1x1z" or defName="LockerBank_1x2z"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="LockerBank_1x1z" or defName="LockerBank_1x2z"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>8</maxItemsInCell>
         </value>
