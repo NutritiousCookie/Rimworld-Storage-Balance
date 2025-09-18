@@ -26,7 +26,7 @@ Allowed items: Hay, Kibble</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/description</xpath>
         <value>
-            <description>A scompact barrel designed for storage of common goods, including raw food, plant materials, medicines, textiles, and crafted resources. Prevents deterioration, but perishable items may still need freezing. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+            <description>A compact barrel designed for storage of common goods, including raw food, plant materials, medicines, textiles, and crafted resources. Prevents deterioration, but perishable items may still need freezing. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
 Stack size total: 5 
 Stack per tile: 5 
 
