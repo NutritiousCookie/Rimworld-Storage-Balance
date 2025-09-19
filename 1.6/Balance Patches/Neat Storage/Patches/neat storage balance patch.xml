@@ -15,9 +15,21 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Crate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>50</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/description</xpath>
         <value>
             <description>A crate that can hold up to 8 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>30</costStuffCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -33,9 +45,21 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>40</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/description</xpath>
         <value>
             <description>A pallet that can stack up to 4 different items.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>10</costStuffCount>
         </value>
     </Operation>
     <!-- open shelf -->
@@ -138,6 +162,12 @@
         </value>
     </Operation>
 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>30</costStuffCount>
+        </value>
+    </Operation>
     <!-- textile rack -->
 <!--
     <Operation Class="PatchOperationReplace">
@@ -147,6 +177,12 @@
         </value>
     </Operation>
 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>20</costStuffCount>
+        </value>
+    </Operation>
     <!-- tall weapon rack -->
 <!-- 
     <Operation Class="PatchOperationReplace">
