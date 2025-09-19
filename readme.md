@@ -54,6 +54,17 @@ Made with compatibility in mind for these other mods:
 - [Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3292746186)
 - [Restore Content - Progression: Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3417113151)
 - [Better Architect Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=3563882422)
+- [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926)
+
+## Q&A
+
+**Q:** Why do some similar items across mods have different costs/stack sizes?
+
+**A:** This mod is intended to balance mods closer to each other, and bring the worst offenders in stack size/material cost in line. Some idiosyncrasies of individual mods will still appear. Depending on which mods you have installed, your stone pots, meat hooks, etc might have slightly different costs, stack sizes, and allowed items.
+
+**Q:** Why don't you support (insert mod here)?
+
+**A:** If a mod is not listed in the description, I have not taken the time to add a patch for it. That does not mean it is incompatible, just that I have not rebalanced it. Let me know if there's a mod you would like me to take a look at and I may get around to it.
 
 ## Installation
 
