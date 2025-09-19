@@ -17,27 +17,13 @@
                         </researchPrerequisites>
                     </value>
                 </li>
-                <!-- Art -->
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Furniture Expanded - Art</li>
-                    </mods>
-                    <match Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>VFE_Res_ArtfulDisplay</li>
-                            </researchPrerequisites>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites>
-                                <li>MF_BasicFurniture</li>
-                            </researchPrerequisites>
-                        </value>
-                    </nomatch>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
                 </li>
             </operations>
         </match>
