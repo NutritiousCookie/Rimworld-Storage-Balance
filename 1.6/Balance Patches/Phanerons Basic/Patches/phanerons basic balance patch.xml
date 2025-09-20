@@ -14,11 +14,23 @@
             <minimumStackCount>3</minimumStackCount>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageSack"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>10</costStuffCount>
+        </value>
+    </Operation>
     <!-- Large Bundle -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>40</costStuffCount>
         </value>
     </Operation>
     <!-- Cargo Container -->
@@ -48,6 +60,12 @@
             <minimumStackCount>3</minimumStackCount>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>15</costStuffCount>
+        </value>
+    </Operation>
     <!-- Medium Crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/building/maxItemsInCell</xpath>
@@ -55,11 +73,23 @@
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>20</costStuffCount>
+        </value>
+    </Operation>
     <!-- Large Crate -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>50</costStuffCount>
         </value>
     </Operation>
     <!-- Food Barrel -->
@@ -87,6 +117,12 @@
         <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/costStuffCount</xpath>
         <value>
             <costStuffCount>250</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>150</costStuffCount>
         </value>
     </Operation>
     <!-- Industrial Dumpster -->
@@ -191,12 +227,18 @@
     </Operation>
     <!--
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="3"]/minimumStackCount</xpath>
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/minimumStackCount</xpath>
         <value>
             <minimumStackCount>3</minimumStackCount>
         </value>
     </Operation>
     -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>10</costStuffCount>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
         <value>
@@ -208,6 +250,12 @@
         <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>40</costStuffCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -240,6 +288,12 @@
         </value>
     </Operation>
     -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>50</costStuffCount>
+        </value>
+    </Operation>
 
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
