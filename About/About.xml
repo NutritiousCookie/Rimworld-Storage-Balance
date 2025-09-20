@@ -3,7 +3,7 @@
     <name>Storage Balance Patches</name>
     <author>NutritiousCookie</author>
     <packageId>ncook.storagepatches</packageId>
-    <modVersion>1.2.3</modVersion>
+    <modVersion>1.2.4</modVersion>
     <url>https://github.com/NutritiousCookie/Rimworld-Storage-Balance</url>
     <supportedVersions>
         <li>1.6</li>

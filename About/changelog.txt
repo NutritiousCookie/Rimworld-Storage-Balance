@@ -14,3 +14,4 @@
 1.2.1 - Add Vanilla Expanded Framework compatibility, using HiddenDesignators to hide items in areas outside the architect menu. Other small tweaks. Fix small bugs with weapon racks.
 1.2.2 - Add Warehouse Storage compatibility. If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
 1.2.3 - Add Adaptive Ideology Storage compatibility. Every single item is renamed and rebalanced. 
+1.2.4 - Add initial balance changes for resource costs and allowed items. Some optimizations, additional MO compatibility, and further bugfixing.
