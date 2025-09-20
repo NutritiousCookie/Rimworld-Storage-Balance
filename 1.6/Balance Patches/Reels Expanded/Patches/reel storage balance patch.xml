@@ -102,42 +102,16 @@
             </defaultStorageSettings>
         </value>
     </Operation>
-    <!-- wardrobe -->
-<!--
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName=""]/building/fixedStorageSettings</xpath>
+    <!-- fridge -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/building/*/filter/categories</xpath>
         <value>
-            <fixedStorageSettings>
-                <filter>
-                    <disallowNotEverStorable>true</disallowNotEverStorable>
-                    <categories>
-                        <li>Apparel</li>
-                    </categories>
-                    <disallowedCategories>
-                        <li>Armor</li>
-                    </disallowedCategories>
-                </filter>
-            </fixedStorageSettings>
+            <li>BodyPartsNatural</li>
+            <li>PlantMatter</li>
+            <li>Medicine</li>
+            <li>Drugs</li>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName=""]/building/defaultStorageSettings</xpath>
-        <value>
-            <defaultStorageSettings>
-                <priority>Preferred</priority>
-                <filter>
-                    <categories>
-                        <li>Apparel</li>
-                    </categories>
-                    <disallowedCategories>
-                        <li>Armor</li>
-                    </disallowedCategories>
-                </filter>
-            </defaultStorageSettings>
-        </value>
-    </Operation>
--->
-
     <!-- cargo -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/building/fixedStorageSettings</xpath>

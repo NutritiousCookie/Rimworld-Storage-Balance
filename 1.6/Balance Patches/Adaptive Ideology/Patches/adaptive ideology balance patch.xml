@@ -23,7 +23,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/fixedStorageSettings</xpath>
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/defaultStorageSettings</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
