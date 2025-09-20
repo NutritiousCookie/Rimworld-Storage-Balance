@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- general -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Shelf" or defName="ShelfSmall"]/building/*/filter/disallowedCategories</xpath>
+        <value>
+            <li>Buildings</li>
+        </value>
+    </Operation>
+</Patch>
