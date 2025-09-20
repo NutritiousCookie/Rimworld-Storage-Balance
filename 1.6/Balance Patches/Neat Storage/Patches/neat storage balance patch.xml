@@ -1,6 +1,171 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
+<!-- allowed items -->
+    <!-- all -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbz_DisplayTable"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbz_DisplayTable" or ]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings Inherit="False">
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- general -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- crate -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Foods</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- pallet -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Chunks</li>
+                        <li>Buildings</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings Inherit="False">
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Chunks</li>
+                        <li>Buildings</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- apparel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings Inherit="False">
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Apparel</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Armor</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings Inherit="False">
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Apparel</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Armor</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+<!-- REBALANCE -->
     <!-- crates and pallets -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
