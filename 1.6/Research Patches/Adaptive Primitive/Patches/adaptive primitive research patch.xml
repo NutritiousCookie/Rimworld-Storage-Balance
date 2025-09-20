@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- RESEARCH -->
+
 <!-- Vanilla Furniture Expanded Patches -->
     <!-- Core -->
     <Operation Class="PatchOperationFindMod">
@@ -15,14 +15,6 @@
                 </researchPrerequisites>
             </value>
         </match>
-        <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>MF_BasicFurniture</li>
-                </researchPrerequisites>
-            </value>
-        </nomatch>
     </Operation>
     <!-- Art -->
     <Operation Class="PatchOperationFindMod">

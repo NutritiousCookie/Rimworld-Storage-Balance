@@ -437,10 +437,10 @@
         </nomatch>
     </Operation>
 
-<!-- REMOVE DUPLICATES -->
-    <!-- remove corpse spot -->
+<!-- REMOVE -->
+    <!-- remove items -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]</xpath>
+        <xpath>Defs/ThingDef[defName="sbz_CorpseSpot" or defName="sbz_Drum" or defName="sbz_Safe"]</xpath>
         <value>
             <designationCategory Inherit= "False"></designationCategory>
         </value>
@@ -449,30 +449,43 @@
         <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
         <value>
             <li>sbz_CorpseSpot</li>
+            <li>sbz_Drum</li>
+            <li>sbz_Safe</li>
         </value>
     </Operation>
     <!-- remove display shelves -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
-        <value>
-            <designationCategory Inherit= "False"></designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]/designationCategory</xpath>
-        <value>
-            <designationCategory Inherit= "False"></designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
-        <value>
-            <li>sbz_DisplayShelf</li>
-            <li>sbz_TwoTierDisplayShelf</li>
-            <li>sbz_SmallDisplayShelf</li>
-            <li>sbz_TallDisplayShelf</li>
-            <li>sbz_NarrowTallDisplayShelf</li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reel's Expanded Storage</li>
+            <li>Phaneron's Basic Storage</li>
+            <li>Warehouse Storage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_DisplayShelf" or defName="sbz_TwoTierDisplayShelf" or defName="sbz_SmallDisplayShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory Inherit= "False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>sbz_DisplayShelf</li>
+                        <li>sbz_TwoTierDisplayShelf</li>
+                        <li>sbz_SmallDisplayShelf</li>
+                        <li>sbz_TallDisplayShelf</li>
+                        <li>sbz_NarrowTallDisplayShelf</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
     </Operation>
     <!-- Reels -->
     <Operation Class="PatchOperationFindMod">
