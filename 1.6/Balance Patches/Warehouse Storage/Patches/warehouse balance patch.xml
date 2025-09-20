@@ -1,6 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
+<!-- allowed items -->
+    <!-- crate -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_PC" or defName="Vin_TLR" or defName="Vin_PC"]/building</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Foods</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Foods</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Beer</li>
+                        <li>PsychiteTea</li>
+                        <li>Wort</li>
+                        <li>Hay</li>
+                        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                    </thingDefs>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                    <disallowedThingDefs>
+                        <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                        <li>Kibble</li>
+                    </disallowedThingDefs>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Beer</li>
+                        <li>Wort</li>
+                        <li>Hay</li>
+                        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
     <!-- Cardboard box pile -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_CB"]/building/maxItemsInCell</xpath>
