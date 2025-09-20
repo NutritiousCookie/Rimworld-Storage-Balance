@@ -108,6 +108,12 @@
             <label>vertical display shelf</label>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>25</costStuffCount>
+        </value>
+    </Operation>
     <!-- hanger shelf -->
 <!--
     <Operation Class="PatchOperationReplace">
