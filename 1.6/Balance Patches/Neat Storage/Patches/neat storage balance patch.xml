@@ -8,6 +8,7 @@
         <value>
             <fixedStorageSettings Inherit="False">
                 <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>Root</li>
                     </categories>
@@ -34,6 +35,7 @@
         <value>
             <fixedStorageSettings>
                 <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>Root</li>
                     </categories>
@@ -70,6 +72,7 @@
         <value>
             <fixedStorageSettings>
                 <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>Root</li>
                     </categories>
@@ -93,6 +96,7 @@
                         <li>Root</li>
                     </categories>
                     <disallowedCategories>
+                        <li>Foods</li>
                         <li>Chunks</li>
                         <li>Corpses</li>
                         <li>Buildings</li>
@@ -107,6 +111,7 @@
         <value>
             <fixedStorageSettings Inherit="False">
                 <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>ResourcesRaw</li>
                         <li>Chunks</li>
