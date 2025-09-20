@@ -1,7 +1,228 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
-    <!-- stacks -->
+<!-- allowed items -->
+    <!-- crate -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Foods</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/fixedStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Foods</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- container -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- chemfuel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- textile -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bundle_D"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Chemfuel</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bundle_D"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Chemfuel</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- freight -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Chemfuel</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Chemfuel</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- locker -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Apparel</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Apparel</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- toolbox -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Textiles</li>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                <priority>Preferred</priority>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Manufactured</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Textiles</li>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>PlantMatter</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    
+<!-- stacks -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="CrateJ"]/building/maxItemsInCell</xpath>
         <value>
