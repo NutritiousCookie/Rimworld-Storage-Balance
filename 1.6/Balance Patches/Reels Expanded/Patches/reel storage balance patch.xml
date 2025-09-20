@@ -715,16 +715,34 @@ Allowed items: Food, Plant matter.</description>
         <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_FoodStorage</designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack" or defName="ReelStorageSpacerLocker"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -746,13 +764,13 @@ Allowed items: Food, Plant matter.</description>
 <!-- REMOVE DUPLICATES -->
     <!-- Vanilla -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageMedicineCabinet"]</xpath>
         <value>
             <designationCategory></designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/designationCategory</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageMedicineCabinet"]/designationCategory</xpath>
         <value>
             <designationCategory></designationCategory>
         </value>
@@ -761,6 +779,7 @@ Allowed items: Food, Plant matter.</description>
         <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
         <value>
             <li>ReelStorageBookshelf</li>
+            <li>ReelStorageMedicineCabinet</li>
         </value>
     </Operation>
     <!-- Primitive -->

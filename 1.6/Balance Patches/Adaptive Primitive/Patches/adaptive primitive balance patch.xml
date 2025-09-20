@@ -357,6 +357,18 @@
                         </value>
                     </li>
                     <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or defName="ASF_MeatRack"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_GearStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/designationCategory</xpath>
                         <value>
                             <designationCategory>Ferny_GearStorage</designationCategory>

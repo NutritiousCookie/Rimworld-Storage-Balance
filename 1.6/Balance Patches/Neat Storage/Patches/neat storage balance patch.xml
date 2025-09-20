@@ -559,6 +559,12 @@
                     </nomatch>
                 </li>
 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
                     <value>

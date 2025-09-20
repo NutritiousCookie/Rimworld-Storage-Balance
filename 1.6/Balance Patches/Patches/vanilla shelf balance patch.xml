@@ -2,7 +2,7 @@
 <Patch>
     <!-- general -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="ShelfBase"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
+        <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
         <value>
             <li>Buildings</li>
         </value>

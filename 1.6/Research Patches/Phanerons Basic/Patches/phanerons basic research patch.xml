@@ -64,7 +64,7 @@
             <li>Medieval Overhaul</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageIndustrialContainer" or defName="BasicStorageMetalCrate" or defName="BasicStorageWeaponRack" or defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageIndustrialContainer" or defName="BasicStorageMetalCrate" or defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>DankPyon_RusticStorage</li>
