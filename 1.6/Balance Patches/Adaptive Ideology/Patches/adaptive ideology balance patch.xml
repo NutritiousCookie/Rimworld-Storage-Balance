@@ -174,9 +174,25 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateH"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>10</Steel>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="CrateI"]/label</xpath>
         <value>
             <label>Large crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateI"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>10</Steel>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -192,9 +208,25 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateK"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>10</Steel>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="CrateL"]/label</xpath>
         <value>
             <label>Security crate</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CrateL"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>12</Steel>
+            </costList>
         </value>
     </Operation>
     <!-- cylinder -->
@@ -202,6 +234,14 @@
         <xpath>Defs/ThingDef[defName="CylinderA"]/label</xpath>
         <value>
             <label>Storage cylinder</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CylinderA"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>40</Steel>
+            </costList>
         </value>
     </Operation>
     <!-- freight -->
@@ -227,27 +267,23 @@
     </Operation>
     <!-- lockers -->
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/label</xpath>
+        <value>
+            <label>Locker</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/description</xpath>
         <value>
             <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="LockerBank_1x2z"]/description</xpath>
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/costList</xpath>
         <value>
-            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24\n\nRotate to change appearance.</description>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/description</xpath>
-        <value>
-            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 36\n\nRotate to change appearance.</description>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/label</xpath>
-        <value>
-            <label>Locker</label>
+            <costList>
+                <Steel>20</Steel>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -257,9 +293,37 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x2z"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>80</Steel>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/label</xpath>
         <value>
             <label>Lockers</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/description</xpath>
+        <value>
+            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 36\n\nRotate to change appearance.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>120</Steel>
+            </costList>
         </value>
     </Operation>
     <!-- meal crates -->
