@@ -18,8 +18,8 @@
             </filter>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -54,8 +54,8 @@
             </filter>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -95,8 +95,8 @@
             </filter>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <filter>
@@ -118,7 +118,7 @@
     </Operation>
     <!-- cask -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building/fixedStorageSettings/filter</xpath>
+        <xpath>Defs/ThingDef[defName="BasicStorageCask"]/building/fixedStorageSettings/filter</xpath>
         <value>
             <filter>
                 <disallowNotEverStorable>true</disallowNotEverStorable>
@@ -136,8 +136,8 @@
             </filter>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStorageCask"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <filter>

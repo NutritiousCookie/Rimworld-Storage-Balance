@@ -3,8 +3,8 @@
 <!-- REBALANCE -->
 <!-- allowed items -->
     <!-- tent -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_StorageTent]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -22,8 +22,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_StorageTent]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_StorageTent"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -42,8 +42,8 @@
         </value>
     </Operation>
     <!-- cellar -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone"]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -59,8 +59,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone" or ]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_StoragePit" or defName="ASF_CellarWood" or defName="ASF_CellarStone"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -77,8 +77,8 @@
         </value>
     </Operation>
     <!-- basket -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WovenBasket" or defName="ASF_WovenBasketDouble" or defName="ASF_WovenBasketTriple"]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket" or defName="ASF_WovenBasketDouble" or defName="ASF_WovenBasketTriple"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -95,8 +95,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ASF_WovenBasket" or defName="ASF_WovenBasketDouble" or defName="ASF_WovenBasketTriple"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASF_WovenBasket" or defName="ASF_WovenBasketDouble" or defName="ASF_WovenBasketTriple"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>

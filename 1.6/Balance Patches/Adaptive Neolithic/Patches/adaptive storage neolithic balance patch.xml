@@ -4,22 +4,24 @@
 <!-- allowed items -->
     <!-- basket -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/fixedStorageSettings/filter</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/fixedStorageSettings</xpath>
         <value>
-            <filter>
-                <disallowNotEverStorable>true</disallowNotEverStorable>
-                <categories>
-                    <li>Foods</li>
-                    <li>PlantMatter</li>
-                </categories>
-                <disallowedCategories>
-                    <li>FoodMeals</li>
-                </disallowedCategories>
-            </filter>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>FoodMeals</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -37,23 +39,25 @@
     </Operation>
     <!-- basket -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/fixedStorageSettings/filter</xpath>
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/fixedStorageSettings</xpath>
         <value>
-            <filter>
-                <disallowNotEverStorable>true</disallowNotEverStorable>
-                <categories>
-                    <li>Root</li>
-                </categories>
-                <disallowedCategories>
-                    <li>Chunks</li>
-                    <li>Corpses</li>
-                    <li>Buildings</li>
-                </disallowedCategories>
-            </filter>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>

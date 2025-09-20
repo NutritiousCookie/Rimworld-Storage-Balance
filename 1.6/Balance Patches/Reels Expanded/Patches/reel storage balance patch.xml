@@ -616,7 +616,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     </Operation>
     <!-- weapon rack -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/building/costStuffCount</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/costStuffCount</xpath>
         <value>
             <costStuffCount>10</costStuffCount>
         </value>

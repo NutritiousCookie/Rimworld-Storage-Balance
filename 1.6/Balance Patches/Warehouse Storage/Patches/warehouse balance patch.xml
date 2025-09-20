@@ -15,7 +15,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_CB"]/building/costStuffCount</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_CB"]/costList</xpath>
         <value>
             <costList>
                 <WoodLog>40</WoodLog>
@@ -36,7 +36,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_CBS"]/building/costList</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_CBS"]/costList</xpath>
         <value>
             <costList>
                 <WoodLog>10</WoodLog>
@@ -175,7 +175,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_GR"]/building/costList</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_GR"]/costList</xpath>
         <value>
             <costList>
                 <WoodLog>10</WoodLog>
@@ -197,7 +197,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_GRS"]/building/costList</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_GRS"]/costList</xpath>
         <value>
             <costList>
                 <WoodLog>5</WoodLog>
@@ -441,7 +441,7 @@
     </Operation>
 -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_WP"]/building/costList</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_WP"]/costList</xpath>
         <value>
             <costList>
                 <Steel>60</Steel>
@@ -463,7 +463,7 @@
     </Operation>
 -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Vin_WPS"]/building/costList</xpath>
+        <xpath>Defs/ThingDef[defName="Vin_WPS"]/costList</xpath>
         <value>
             <costList>
                 <Steel>30</Steel>
