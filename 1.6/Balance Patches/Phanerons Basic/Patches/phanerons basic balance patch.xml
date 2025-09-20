@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 <!-- REBALANCE -->
+<!-- allowed items -->
+    <!-- cargo container -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedCategories>
+                    <li>Chunks</li>
+                    <li>Corpses</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- crates -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedCategories>
+                        <li>Foods</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li>Buildings</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                            <li>Foods</li>
+                            <li>Chunks</li>
+                            <li>Corpses</li>
+                            <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- dumpster -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <specialFiltersToAllow>
+                    <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                </specialFiltersToAllow>
+                <categories>
+                    <li>Chunks</li>
+                    <li>Corpses</li>
+                    <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                    <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                </categories>
+                <thingDefs>  
+                    <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                </thingDefs>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <categories>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
+                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
+                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
+                    </categories>
+                    <thingDefs>  
+                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- cask -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <specialFiltersToAllow>
+                    <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                </specialFiltersToAllow>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                </categories>
+                <thingDefs>
+                    <li>Beer</li>
+                </thingDefs>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Beer</li>
+                    </thingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    
+<!-- item specific -->
     <!-- Sack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageSack"]/building/maxItemsInCell</xpath>
@@ -130,64 +287,6 @@
         <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>8</maxItemsInCell>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/fixedStorageSettings</xpath>
-        <value>
-            <fixedStorageSettings>
-                <filter>
-                    <disallowNotEverStorable>true</disallowNotEverStorable>
-                    <specialFiltersToAllow>
-                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
-                    </specialFiltersToAllow>
-                    <categories>
-                        <li>ResourcesRaw</li>
-                        <li>Manufactured</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
-                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
-                    </categories>
-                    <thingDefs>  
-                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
-                    </thingDefs>
-                    <disallowedCategories>
-                        <li>Medicine</li>
-                        <li>Drugs</li>
-                        <li>MortarShells</li>
-                        <li>PlantMatter</li>
-                    </disallowedCategories>
-                </filter>
-            </fixedStorageSettings>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building</xpath>
-        <value>
-            <defaultStorageSettings>
-                <priority>Preferred</priority>
-                <filter>
-                    <disallowNotEverStorable>true</disallowNotEverStorable>
-                    <categories>
-                        <li>ResourcesRaw</li>
-                        <li>Manufactured</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                        <li MayRequire="dubwise.dubsbadhygiene">Waste</li>
-                        <li MayRequire="vanillaexpanded.recycling">VRecyclingE_SpecializedPacks</li>
-                    </categories>
-                    <thingDefs>
-                        <li MayRequire="ludeon.rimworld.biotech">Wastepack</li>
-                    </thingDefs>
-                    <disallowedCategories>
-                        <li>Medicine</li>
-                        <li>Drugs</li>
-                        <li>MortarShells</li>
-                        <li>PlantMatter</li>
-                    </disallowedCategories>
-                </filter>
-            </defaultStorageSettings>
         </value>
     </Operation>
     <!-- Meal Cupbaord -->

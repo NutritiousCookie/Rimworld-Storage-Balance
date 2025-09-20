@@ -70,6 +70,7 @@
         </value>
     </Operation>
 
+<!-- item specific -->
     <!-- baskets -->
     <!--
     <Operation Class="PatchOperationReplace">
