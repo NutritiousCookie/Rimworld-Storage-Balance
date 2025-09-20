@@ -41,6 +41,14 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>15</Steel>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BarrelD"]/label</xpath>
         <value>
             <label>Fuel barrel</label>
@@ -84,6 +92,14 @@
         <xpath>Defs/ThingDef[defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/description</xpath>
         <value>
             <description>A large tank that can store a range of liquids. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 60</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>150</Steel>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
