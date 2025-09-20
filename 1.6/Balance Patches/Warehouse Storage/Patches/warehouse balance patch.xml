@@ -14,6 +14,14 @@
             <description>A pile of densely packed cardboard boxes that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 40\n\nRandom graphic upon placement.</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_CB"]/building/costStuffCount</xpath>
+        <value>
+            <costList>
+                <WoodLog>40</WoodLog>
+            </costList>
+        </value>
+    </Operation>
     <!-- Cardboard box stack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_CBS"]/building/maxItemsInCell</xpath>
@@ -25,6 +33,14 @@
         <xpath>Defs/ThingDef[defName="Vin_CBS"]/description</xpath>
         <value>
             <description>A stack of cardboard boxes that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 5\n\nRandom graphic upon placement.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_CBS"]/building/costList</xpath>
+        <value>
+            <costList>
+                <WoodLog>10</WoodLog>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -158,6 +174,15 @@
             <description>A general storage rack that can store a variety of items.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 8</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_GR"]/building/costList</xpath>
+        <value>
+            <costList>
+                <WoodLog>10</WoodLog>
+                <Steel>30</Steel>
+            </costList>
+        </value>
+    </Operation>
     <!-- General Rack Small -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_GRS"]/building/maxItemsInCell</xpath>
@@ -169,6 +194,15 @@
         <xpath>Defs/ThingDef[defName="Vin_GRS"]/description</xpath>
         <value>
             <description>A small general storage rack.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 4</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_GRS"]/building/costList</xpath>
+        <value>
+            <costList>
+                <WoodLog>5</WoodLog>
+                <Steel>15</Steel>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -405,6 +439,16 @@
             <description>A designated spot to store a large amount of weapons.\n\nItems stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 12</description>
         </value>
     </Operation>
+-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_WP"]/building/costList</xpath>
+        <value>
+            <costList>
+                <Steel>60</Steel>
+            </costList>
+        </value>
+    </Operation>
+<!-- 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_WPS"]/building/maxItemsInCell</xpath>
         <value>
@@ -418,6 +462,14 @@
         </value>
     </Operation>
 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_WPS"]/building/costList</xpath>
+        <value>
+            <costList>
+                <Steel>30</Steel>
+            </costList>
+        </value>
+    </Operation>
 
 <!-- CONFIGURE STORAGE -->
     <Operation Class="PatchOperationAdd">
