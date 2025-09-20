@@ -80,22 +80,24 @@
             <li>Vanilla Furniture Expanded</li>
         </mods>
         <match Class="PatchOperationSequence">
-            <li Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
-            <value>
-                <researchPrerequisites>
-                    <li>MF_ModernFurniture</li>
-                </researchPrerequisites>
-            </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
-                <value>
-                    <researchPrerequisites>
-                        <li>MF_BasicFurniture</li>
-                    </researchPrerequisites>
-                </value>
-            </li>
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>MF_BasicFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
     <!-- Art -->
