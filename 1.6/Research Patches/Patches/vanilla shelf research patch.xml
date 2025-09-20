@@ -5,7 +5,7 @@
             <li>Vanilla Furniture Expanded</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="Shelf" or defName="ShelfSmall"]/researchPrerequisites</xpath>
+            <xpath>Defs/ThingDef[@Name="ShelfBase"]/researchPrerequisites</xpath>
             <value>
                 <researchPrerequisites>
                     <li>MF_BasicFurniture</li>
