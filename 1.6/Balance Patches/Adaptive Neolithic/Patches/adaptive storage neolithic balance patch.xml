@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 <!-- REBALANCE -->
+<!-- allowed items -->
+    <!-- basket -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Foods</li>
+                    <li>PlantMatter</li>
+                </categories>
+                <disallowedCategories>
+                    <li>FoodMeals</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>FoodMeals</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- basket -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedCategories>
+                    <li>Chunks</li>
+                    <li>Corpses</li>
+                    <li>Buildings</li>
+                </disallowedCategories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="ASNeolithicBasketThingBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>FoodMeals</li>
+                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
     <!-- baskets -->
     <!--
     <Operation Class="PatchOperationReplace">
@@ -41,21 +109,6 @@
         <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/label</xpath>
         <value>
             <label>carved pot</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]/building/fixedStorageSettings/filter</xpath>
-        <value>
-            <filter>
-                <disallowNotEverStorable>true</disallowNotEverStorable>
-                <categories>
-                    <li>Foods</li>
-                    <li>PlantMatter</li>
-                </categories>
-                <disallowedCategories>
-                    <li>FoodMeals</li>
-                </disallowedCategories>
-            </filter>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
