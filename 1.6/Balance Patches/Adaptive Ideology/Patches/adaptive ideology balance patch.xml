@@ -3,8 +3,8 @@
 <!-- REBALANCE -->
 <!-- allowed items -->
     <!-- crate -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -22,8 +22,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -59,8 +59,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ContainerC" or defName="ContainerD"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -77,8 +77,8 @@
         </value>
     </Operation>
     <!-- chemfuel -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -89,8 +89,8 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="CanisterG"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -109,20 +109,20 @@
             <fixedStorageSettings>
                 <filter>
                     <categories>
-                        <li>Chemfuel</li>
+                        <li>Textiles</li>
                     </categories>
                 </filter>
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Bundle_D"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Bundle_D"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
                 <filter>
                     <categories>
-                        <li>Chemfuel</li>
+                        <li>Textiles</li>
                     </categories>
                 </filter>
             </defaultStorageSettings>
@@ -135,20 +135,24 @@
             <fixedStorageSettings>
                 <filter>
                     <categories>
-                        <li>Chemfuel</li>
+                        <li>ResourcesRaw</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
                     </categories>
                 </filter>
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Freight_A" or defName="Freight_B"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
                 <filter>
                     <categories>
-                        <li>Chemfuel</li>
+                        <li>ResourcesRaw</li>
+                        <li>Chunks</li>
+                        <li>Corpses</li>
                     </categories>
                 </filter>
             </defaultStorageSettings>
@@ -181,8 +185,8 @@
         </value>
     </Operation>
     <!-- toolbox -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building/fixedStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -200,13 +204,12 @@
             </fixedStorageSettings>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building/defaultStorageSettings</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="asf_rustedtoolbox"]/building</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
                 <filter>
-                <priority>Preferred</priority>
                     <categories>
                         <li>ResourcesRaw</li>
                         <li>Manufactured</li>
@@ -798,15 +801,20 @@
             <designationCategory Inherit="False"></designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
-        <value>
-            <li>CanisterE</li>
-            <li>CanisterF</li>
-            <li>ChunkA</li>
-            <li>ChunkB</li>
-            <li>LockerBank_1x3z</li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+            <value>
+                    <li>CanisterE</li>
+                    <li>CanisterF</li>
+                    <li>ChunkA</li>
+                    <li>ChunkB</li>
+                    <li>LockerBank_1x3z</li>
+            </value>
+        </match>
     </Operation>
     <!-- neolithic -->
     <Operation Class="PatchOperationFindMod">

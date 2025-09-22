@@ -618,13 +618,18 @@
             <designationCategory Inherit= "False"></designationCategory>
         </value>
     </Operation>
-    <Operation Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-        <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
-        <value>
-            <li>sbz_CorpseSpot</li>
-            <li>sbz_Drum</li>
-            <li>sbz_Safe</li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+            <value>
+                <li>sbz_CorpseSpot</li>
+                <li>sbz_Drum</li>
+                <li>sbz_Safe</li>
+            </value>
+        </match>
     </Operation>
     <!-- remove display shelves -->
     <Operation Class="PatchOperationFindMod">
