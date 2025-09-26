@@ -160,6 +160,45 @@
             </building>
         </value>
     </Operation>
+    <!-- weapon -->
+    <Operation Class="PatchOperationAttributeAdd">
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/fixedStorageSettings</xpath>
+        <attribute>Inherit</attribute>
+        <value>False</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings Inherit="False">
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- textile -->
+    <Operation Class="PatchOperationAttributeAdd">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/fixedStorageSettings</xpath>
+        <attribute>Inherit</attribute>
+        <value>False</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings Inherit="False">
+                <priority>Preferred</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Textiles</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
 
 <!-- REBALANCE -->
     <!-- crates and pallets -->
