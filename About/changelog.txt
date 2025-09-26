@@ -16,4 +16,5 @@
 1.2.3 - Add Adaptive Ideology Storage compatibility. Every single item is renamed and rebalanced. 
 1.2.4 - Add initial balance changes for resource costs and allowed items. Some optimizations, additional MO compatibility, and further bugfixing.
 1.2.5 - Fix errors on load related to HiddenDesignators and StorageSettings for Adaptive Ideology and Neat Storage
+1.2.6 - Fix StorageSettings inheritence on some Neat Storage items
 
