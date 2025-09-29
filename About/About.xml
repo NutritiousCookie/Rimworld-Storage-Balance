@@ -29,6 +29,10 @@
         <li>potato.progressionstorageundo</li>
         <li>vin.warehouse.storage</li>
         <li>sbz.neatstorage</li>
+<<<<<<< HEAD
+=======
+        <li>sbz.neatstoragefridge</li>
+>>>>>>> 360cbb2 (fix sbz fridge packageid)
         <li>ferny.betterarchitect</li>
     </loadAfter>
 </ModMetaData>
