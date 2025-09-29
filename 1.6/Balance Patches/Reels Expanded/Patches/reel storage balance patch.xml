@@ -210,7 +210,7 @@
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/building/maxItemsInCell</xpath>
             <value>
-            <maxItemsInCell>6</maxItemsInCell>
+                <maxItemsInCell>6</maxItemsInCell>
             </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

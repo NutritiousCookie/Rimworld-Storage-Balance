@@ -101,6 +101,36 @@
             </costList>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Fridge"]/building/maxItemsInCell</xpath>
+        <value>
+            <maxItemsInCell>4</maxItemsInCell>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Fridge"]/description</xpath>
+        <value>
+            <description>A fridge that can freeze up to 4 items. Does not function in temperatures above 100°C.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_FridgeASF"]/itemGraphics/columns/c0/rows/r0</xpath>
+        <value>
+            <r0>
+                <stackBehaviour>Stack</stackBehaviour>
+                <stackOffset>(0,0.2,0.25)</stackOffset>
+                <stackOffsetEast>(0,-0.02,0.166)</stackOffsetEast>
+                <stackOffsetWest>(0,-0.02,0.166)</stackOffsetWest>
+                <stackOffsetSouth>(0,0,0)</stackOffsetSouth>
+                <drawOffset>(0,0.2,0)</drawOffset>
+                <drawOffsetEast>(-0.1,0.1,0.15)</drawOffsetEast>
+                <drawOffsetWest>(0.1,0.1,0.15)</drawOffsetWest>
+                <drawOffsetSouth>(0,0,1000)</drawOffsetSouth>
+                <drawScale>0.9</drawScale>
+                <rotation>0</rotation>
+            </r0>
+        </value>
+    </Operation>
     <!-- large fridge -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/comps/li/basePowerConsumption</xpath>
