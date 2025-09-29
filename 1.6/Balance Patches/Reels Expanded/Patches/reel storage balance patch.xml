@@ -103,13 +103,70 @@
         </value>
     </Operation>
     <!-- fridge -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/building/*/filter/categories</xpath>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/building/fixedStorageSettings/filter</xpath>
         <value>
-            <li>BodyPartsNatural</li>
-            <li>PlantMatter</li>
-            <li>Medicine</li>
-            <li>Drugs</li>
+            <filter>
+                <specialFiltersToAllow>
+                    <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                </specialFiltersToAllow>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Foods</li>
+                    <li>PlantMatter</li>
+                    <li>BodyPartsNatural</li>
+                    <li>Drugs</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                    <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                </categories>
+                <thingDefs>
+                    <li>MedicineHerbal</li>
+                    <li>Wort</li>
+                    <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                </thingDefs>
+                <specialFiltersToDisallow>
+                    <li>AllowRotten</li>
+                </specialFiltersToDisallow>
+                <disallowedThingDefs>
+                    <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                    <li>Kibble</li>
+                </disallowedThingDefs>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/building/defaultStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <specialFiltersToAllow>
+                    <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                </specialFiltersToAllow>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Foods</li>
+                    <li>PlantMatter</li>
+                    <li>BodyPartsNatural</li>
+                    <li>Drugs</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                    <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                    <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                </categories>
+                <thingDefs>
+                    <li>MedicineHerbal</li>
+                    <li>Wort</li>
+                    <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                </thingDefs>
+                <specialFiltersToDisallow>
+                    <li>AllowRotten</li>
+                </specialFiltersToDisallow>
+                <disallowedThingDefs>
+                    <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                    <li>Kibble</li>
+                </disallowedThingDefs>
+            </filter>
         </value>
     </Operation>
     <!-- cargo -->
