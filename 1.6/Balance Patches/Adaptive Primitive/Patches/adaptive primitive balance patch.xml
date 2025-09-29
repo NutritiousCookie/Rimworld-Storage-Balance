@@ -380,6 +380,18 @@
                             <designationCategory>Ferny_GearStorage</designationCategory>
                         </value>
                     </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_Granary"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_Granary"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_FoodStorage</designationCategory>
+                        </value>
+                    </li>
                 </operations>
             </match>
             <nomatch Class="PatchOperationSequence">

@@ -423,7 +423,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle" or defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge" or defName="BasicStorageStonePot" or defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate"]</xpath>
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle" or defName="BasicStorageStonePot"]</xpath>
                     <value>
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>
@@ -435,7 +435,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageFuelTank" or defName="BasicStorageIndustrialContainer"]</xpath>
+                    <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageFuelTank" or defName="BasicStorageIndustrialContainer" or defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageMetalCrate" or defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>

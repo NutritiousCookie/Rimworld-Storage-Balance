@@ -612,7 +612,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="sbz_TextileRack" or defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>

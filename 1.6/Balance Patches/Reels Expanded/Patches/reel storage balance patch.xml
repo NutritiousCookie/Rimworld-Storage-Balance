@@ -819,13 +819,13 @@ Allowed items: Food, Plant matter.</description>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate"]</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageTanningRack" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
@@ -855,13 +855,13 @@ Allowed items: Food, Plant matter.</description>
 <!-- REMOVE DUPLICATES -->
     <!-- Vanilla -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageMedicineCabinet"]</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageNewMedicineCabinet"]</xpath>
         <value>
             <designationCategory></designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageMedicineCabinet"]/designationCategory</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf" or defName="ReelStorageNewMedicineCabinet"]/designationCategory</xpath>
         <value>
             <designationCategory></designationCategory>
         </value>
@@ -870,7 +870,7 @@ Allowed items: Food, Plant matter.</description>
         <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
         <value>
             <li>ReelStorageBookshelf</li>
-            <li>ReelStorageMedicineCabinet</li>
+            <li>ReelStorageNewMedicineCabinet</li>
         </value>
     </Operation>
     <!-- Primitive -->
