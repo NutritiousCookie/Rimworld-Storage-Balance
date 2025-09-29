@@ -131,7 +131,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ASF_StoragePit"]/description</xpath>
         <value>
-        <description>A dirt dugout that can store a range of items. Keeps perishable items slightly cooler underground, effective at around 65F/18C. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \nOccupies a 1x1 area underground.\n\nTotal Capacity: 6 Stacks</description>
+            <description>A dirt dugout that can store a range of items. Keeps perishable items slightly cooler underground, effective at around 65F/18C. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. \nOccupies a 1x1 area underground.\n\nTotal Capacity: 6 Stacks</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
