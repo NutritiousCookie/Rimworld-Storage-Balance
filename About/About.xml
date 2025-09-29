@@ -32,4 +32,11 @@
         <li>sbz.neatstoragefridge</li>
         <li>ferny.betterarchitect</li>
     </loadAfter>
+    <modDependencies>
+        <li>
+            <packageId>adaptive.storage.framework</packageId>
+            <displayName>Adaptive Storage Framework</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
+        </li>
+    </modDependencies>
 </ModMetaData>

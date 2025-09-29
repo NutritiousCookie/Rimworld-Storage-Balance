@@ -11,3 +11,13 @@
 !About/*.txt
 !1.6/
 !1.6/**/*
+!Assemblies/
+!Assemblies/*
+!Source/
+!Source/*
+!Source/**/*
+
+#ignore
+Source/StorageBalance/bin
+Source/StorageBalance/obj
+Source/**/.*
