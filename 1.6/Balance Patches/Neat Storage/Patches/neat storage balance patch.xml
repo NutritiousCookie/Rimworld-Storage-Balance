@@ -264,10 +264,12 @@
             <description>A pallet that can stack up to 5 different items.</description>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/building/maxItemsInCell</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
         <value>
-            <maxItemsInCell Inherit="False">5</maxItemsInCell>
+            <building>
+                <maxItemsInCell Inherit="False">5</maxItemsInCell>
+            </building>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
