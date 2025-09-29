@@ -657,7 +657,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="Vin_FR"]</xpath>
+                    <xpath>Defs/ThingDef[defName="Vin_FR"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
