@@ -9,10 +9,11 @@ The changes made by this mod are listed [here](https://docs.google.com/spreadshe
 
 ## Design philosophy
 
+This mod aims to:
 - Declutter menus by removing duplicate items across mods
 - Declutter research by removing storage-specific projects, moving buildings to vanilla or vanilla expanded projects.
-- Balance around vanilla shelves
-- Balance stack sizes by tech level and specialization of the building, rather than resource cost to build it.
+- Balance around vanilla items.
+- Balance stack sizes by tech level and specialization of the shelf, rather than resource cost to build it.
 
 General guidelines for stacks per cell are:
 
@@ -39,6 +40,7 @@ Currently covering these storage mods:
 - [Reel's Expanded Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3237638097) - Decreases stack sizes. Removes some items if Adaptive Primitive is installed. Removes research projects. Moves buildings to vanilla projects, or Vanilla Furniture Expanded projects if VFE is installed. Also covers the buildings from [VFE - Props](https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149) and [VFE - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023) if they are installed.
 - [Phaneron's Basic Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3201536200) - Rebalances stack sizes, mostly small tweaks. Removes crates, barrel, meat hook, and weapon rack if Reel's is installed. Removes research projects. Moves buildings to vanilla projects, or VFE projects if VFE is installed.
 - [[sbz] Neat Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474) - Small rebalance tweaks to crates. Disables crates/weapon racks if Reel's is installed, crates/pallets/weapon racks if Phaneron's is installed.
+- [[sbz] Fridge](https://steamcommunity.com/sharedfiles/filedetails/?id=3486264784) - Rebalance costs and power draw. Removes freezers from other mods. Freezers from all mods have a power draw of 20w/stack.
 - [Warehouse Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3519963835) - If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
 - [Adaptive Ideology Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3301337278) - Now compatible. All items renamed and rebalanced.
 
@@ -59,11 +61,9 @@ Made with compatibility in mind for these other mods:
 ## Q&A
 
 **Q:** Why do some similar items across mods have different costs/stack sizes?
-
 **A:** This mod is intended to balance mods closer to each other, and bring the worst offenders in stack size/material cost in line. Some idiosyncrasies of individual mods will still appear. Depending on which mods you have installed, your stone pots, meat hooks, etc might have slightly different costs, stack sizes, and allowed items.
 
 **Q:** Why don't you support (insert mod here)?
-
 **A:** If a mod is not listed in the description, I have not taken the time to add a patch for it. That does not mean it is incompatible, just that I have not rebalanced it. Let me know if there's a mod you would like me to take a look at and I may get around to it.
 
 ## Installation
