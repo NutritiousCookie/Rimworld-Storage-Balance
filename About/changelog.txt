@@ -19,4 +19,4 @@
 1.2.6 - Fix StorageSettings inheritance on some Neat Storage items
 1.2.7 - Various fixes to align patches with spreadsheet. Add [sbz] Fridge compatibility.
 1.2.8 - Fridge power draw and construction cost balancing.
-1.2.9 - Various fixes to align patches with spreadsheet.
+1.2.9 - Various fixes to align patches with spreadsheet. Crates and pallets reorganized to raw resource storage (item graphics looked ugly in the crates)
