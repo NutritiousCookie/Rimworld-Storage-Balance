@@ -20,5 +20,6 @@
     <li IfModActive="vin.warehouse.storage">1.6/Research Patches/Warehouse Storage</li>
     <li IfModActive="adaptive.ideology.storage">1.6/Balance Patches/Adaptive Ideology</li>
     <li IfModActive="adaptive.ideology.storage">1.6/Research Patches/Adaptive Ideology</li>
+    <li IfModActive="sbz.fridge">1.6/Balance Patches/sbz Fridge</li>
   </v1.6>
 </loadFolders>

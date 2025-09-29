@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- REBALANCE -->
+<!-- allowed items -->
+    <!-- all -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/building/defaultStorageSettings/filter/categories</xpath>
+        <value>
+            <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+        </value>
+    </Operation>
+
+<!-- FERNY ORGANIZE -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>ASFstorage</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+</Patch>
