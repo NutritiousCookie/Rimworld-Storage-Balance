@@ -83,6 +83,48 @@
             </defaultStorageSettings>
         </value>
     </Operation>
+    <!-- corpse fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>CorpsesMechanoid</li>
+                        <li MayRequire="Ludeon.RimWorld.Odyssey">CorpsesDrone</li>
+                    </disallowedCategories>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>CorpsesMechanoid</li>
+                        <li MayRequire="Ludeon.RimWorld.Odyssey">CorpsesDrone</li>
+                    </disallowedCategories>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
 
 <!-- item specific -->
     <!-- fridge -->
