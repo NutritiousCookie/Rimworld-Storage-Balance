@@ -29,7 +29,7 @@
         <li>potato.progressionstorageundo</li>
         <li>vin.warehouse.storage</li>
         <li>sbz.neatstorage</li>
-        <li>sbz.fridge</li>
+        <li>sbz.neatstoragefridge</li>
         <li>ferny.betterarchitect</li>
     </loadAfter>
 </ModMetaData>
