@@ -56,8 +56,8 @@
                         </researchPrerequisites>
                     </value>
                 </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]/building/maxItemsInCell</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]</xpath>
                     <value>
                         <researchPrerequisites Inherit="False">
                             <li>MF_ModernFurniture</li>
