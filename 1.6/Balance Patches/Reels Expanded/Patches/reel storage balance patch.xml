@@ -353,7 +353,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>5</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -414,12 +414,6 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
 
     <!-- VFE Props -->
     <!-- barrel pallet -->
-    <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
-            <value>
-            <maxItemsInCell>9</maxItemsInCell>
-            </value>
-    </Operation>
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/building/maxItemsInCell</xpath>
             <value>

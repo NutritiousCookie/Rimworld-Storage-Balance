@@ -229,7 +229,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>4</maxItemsInCell>
+            <maxItemsInCell>3</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -328,24 +328,30 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/building/maxItemsInCell</xpath>
         <value>
-            <maxItemsInCell>8</maxItemsInCell>
+            <maxItemsInCell>6</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStorageMetalCrateBase"]/graphics/li[minimumStackCount="5"]/minimumStackCount
 </xpath>
         <value>
-            <minimumStackCount>6</minimumStackCount>
+            <minimumStackCount>4</minimumStackCount>
         </value>
     </Operation>
     <!-- Small Pallet -->
+    <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
     </Operation>
-    <!--
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
+        <value>
+            <minimumStackCount>4</minimumStackCount>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/minimumStackCount</xpath>
         <value>
@@ -359,23 +365,12 @@
             <costStuffCount>10</costStuffCount>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet1x1_Base"]/graphics/li[minimumStackCount="5"]/minimumStackCount</xpath>
-        <value>
-            <minimumStackCount>4</minimumStackCount>
-        </value>
-    </Operation>
     <!-- Large Pallet -->
+    <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/costStuffCount</xpath>
-        <value>
-            <costStuffCount>40</costStuffCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -388,6 +383,13 @@
         <xpath>Defs/AdaptiveStorage.GraphicsDef[@ParentName="BasicStoragePallet2x2_Base"]/graphics/li[minimumStackCount="10"]/minimumStackCount</xpath>
         <value>
             <minimumStackCount>8</minimumStackCount>
+        </value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>40</costStuffCount>
         </value>
     </Operation>
     <!-- Stone Pot -->
