@@ -9,7 +9,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/researchPrerequisites</xpath>
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase" or defName="sbz_Drum" or defName="sbz_Safe"]/researchPrerequisites</xpath>
         <value>
             <researchPrerequisites Inherit="False">
                 <li>Machining</li>
@@ -52,6 +52,14 @@
                     <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
+                            <li>MF_ModernFurniture</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <researchPrerequisites Inherit="False">
                             <li>MF_ModernFurniture</li>
                         </researchPrerequisites>
                     </value>
