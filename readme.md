@@ -51,7 +51,6 @@ Research projects are removed, and items are instead assigned to projects from:
 - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
 - [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
 - [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
-- [Vanilla Furniture Expanded - Spacer](https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079)
 - [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926)
 
 Made with compatibility in mind for these other mods:
