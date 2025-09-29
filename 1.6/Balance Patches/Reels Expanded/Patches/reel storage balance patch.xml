@@ -247,12 +247,14 @@ Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant ma
         </value>
     </Operation>
     <!-- fridge -->
+<!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/comps/li/basePowerConsumption</xpath>
         <value>
             <basePowerConsumption>120</basePowerConsumption>
         </value>
     </Operation>
+-->
     <!-- double shelf -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/building/maxItemsInCell</xpath>

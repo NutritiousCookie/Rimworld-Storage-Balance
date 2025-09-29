@@ -272,7 +272,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_FR"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>60</basePowerConsumption>
+            <basePowerConsumption>120</basePowerConsumption>
         </value>
     </Operation>
     <!-- General Rack -->

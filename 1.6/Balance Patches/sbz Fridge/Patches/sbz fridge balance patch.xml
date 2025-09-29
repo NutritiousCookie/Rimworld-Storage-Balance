@@ -89,7 +89,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_Fridge"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>40</basePowerConsumption>
+            <basePowerConsumption>80</basePowerConsumption>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -135,7 +135,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>100</basePowerConsumption>
+            <basePowerConsumption>200</basePowerConsumption>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -151,7 +151,16 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_SingleChestFridge" or defName="sbz_SingleWallFridge"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>30</basePowerConsumption>
+            <basePowerConsumption>60</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SingleChestFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>20</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -167,7 +176,16 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge" or defName="sbz_DoubleWallFridge"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>60</basePowerConsumption>
+            <basePowerConsumption>120</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>40</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
