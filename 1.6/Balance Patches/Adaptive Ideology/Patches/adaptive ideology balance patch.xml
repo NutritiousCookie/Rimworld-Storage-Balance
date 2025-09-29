@@ -227,7 +227,7 @@
 
 <!-- stacks -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="CrateJ"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/ThingDef[defName="CrateJ" or defName="LockerBank_1x1z"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>4</maxItemsInCell>
         </value>
@@ -245,7 +245,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="LockerBank_1x1z" or defName="LockerBank_1x2z"]/building/maxItemsInCell</xpath>
+        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="LockerBank_1x2z"]/building/maxItemsInCell</xpath>
         <value>
             <maxItemsInCell>8</maxItemsInCell>
         </value>
@@ -515,7 +515,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="LockerBank_1x1z"]/description</xpath>
         <value>
-            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 6\n\nRotate to change appearance.</description>
+            <description>A locker that stores apparel. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 4</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -535,7 +535,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="LockerBank_1x2z"]/description</xpath>
         <value>
-            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24\n\nRotate to change appearance.</description>
+            <description>Lockers that store apparel. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 16</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -555,7 +555,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="LockerBank_1x3z"]/description</xpath>
         <value>
-            <description>A crate that can store a range of items. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 36\n\nRotate to change appearance.</description>
+            <description>Lockers that store apparel. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nTotal Capacity: 24</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
