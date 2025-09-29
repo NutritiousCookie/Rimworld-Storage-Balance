@@ -611,6 +611,12 @@
                         <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
             </operations>
         </match>
         <nomatch Class="PatchOperationSequence">
