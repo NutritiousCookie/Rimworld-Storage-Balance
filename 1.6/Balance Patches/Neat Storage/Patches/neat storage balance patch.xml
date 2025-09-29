@@ -611,6 +611,12 @@
                         <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_TextileRack" or defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_TextileRack" or defName="sbz_Crate" or defName="sbz_MidCrate" or defName="sbz_SmallCrate"]/designationCategory</xpath>
                     <value>
@@ -619,41 +625,6 @@
                 </li>
             </operations>
         </match>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-<!--
-                <li Class="PatchOperationFindMod">
-                    <mods>
-                        <li>Vanilla Furniture Expanded</li>
-                    </mods>
-                    <match Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
-                        <value>
-                            <designationCategory>Furniture</designationCategory>
-                        </value>
-                    </match>
-                    <nomatch Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
-                        <value>
-                            <designationCategory>ASFstorage</designationCategory>
-                        </value>
-                    </nomatch>
-                </li>
--->
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="sbz_WeaponRack" or defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </li>
-            </operations>
-        </nomatch>
     </Operation>
 
 <!-- REMOVE -->
