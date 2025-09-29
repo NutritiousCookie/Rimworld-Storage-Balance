@@ -12,6 +12,161 @@
             <li>Items</li>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/building/fixedStorageSettings</xpath>
+        <value>
+            <fixedStorageSettings>
+                <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                        <li>BodyPartsNatural</li>
+                        <li>Drugs</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                    </categories>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                        <li>Wort</li>
+                        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                    </thingDefs>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                    <disallowedThingDefs>
+                        <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                        <li>Kibble</li>
+                    </disallowedThingDefs>
+                </filter>
+            </fixedStorageSettings>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/building/defaultStorageSettings</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+                    <categories>
+                        <li>Foods</li>
+                        <li>PlantMatter</li>
+                        <li>BodyPartsNatural</li>
+                        <li>Drugs</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
+                    </categories>
+                    <thingDefs>
+                        <li>MedicineHerbal</li>
+                        <li>Wort</li>
+                        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
+                    </thingDefs>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                    <disallowedThingDefs>
+                        <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                        <li>Kibble</li>
+                    </disallowedThingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+
+<!-- item specific -->
+    <!-- fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Fridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>50</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_Fridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>30</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+    <!-- large fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>100</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>60</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+    <!-- single fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SingleChestFridge" or defName="sbz_SingleWallFridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>30</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_SingleWallFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>25</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+    <!-- double fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge" or defName="sbz_DoubleWallFridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>60</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_DoubleWallFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>50</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+    <!-- corpse fridge -->
+<!-- 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>200</basePowerConsumption>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>80</Steel>
+                <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+-->
 
 <!-- FERNY ORGANIZE -->
     <Operation Class="PatchOperationConditional">
@@ -19,7 +174,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase" or defName="sbz_CorpseFridge"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_FoodStorage</designationCategory>
                     </value>
@@ -29,7 +184,7 @@
         <nomatch Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[@Name="sbzFridgeBase" or defName="sbz_CorpseFridge"]/designationCategory</xpath>
                     <value>
                         <designationCategory>ASFstorage</designationCategory>
                     </value>

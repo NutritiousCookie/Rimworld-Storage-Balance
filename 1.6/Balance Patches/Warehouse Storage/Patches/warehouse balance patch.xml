@@ -78,21 +78,32 @@
             <defaultStorageSettings>
                 <priority>Important</priority>
                 <filter>
+                    <specialFiltersToAllow>
+                        <li MayRequire="ludeon.rimworld.ideology">AllowVegetarian</li>
+                    </specialFiltersToAllow>
                     <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>Foods</li>
                         <li>PlantMatter</li>
+                        <li>BodyPartsNatural</li>
+                        <li>Drugs</li>
                         <li MayRequire="vanillaexpanded.vbrewe">VBE_Musts</li>
                         <li MayRequire="vanillaexpanded.vcooke">VCE_Condiments</li>
                         <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksSimpleSpirits</li>
                         <li MayRequire="vanillaexpanded.vbrewe">VBE_DrinksLuxurySpirits</li>
                     </categories>
                     <thingDefs>
-                        <li>Beer</li>
+                        <li>MedicineHerbal</li>
                         <li>Wort</li>
-                        <li>Hay</li>
                         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_Must</li>
                     </thingDefs>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li>
+                    </specialFiltersToDisallow>
+                    <disallowedThingDefs>
+                        <li MayRequire="ludeon.rimworld.ideology">Dye</li>
+                        <li>Kibble</li>
+                    </disallowedThingDefs>
                 </filter>
             </defaultStorageSettings>
         </value>
@@ -258,6 +269,12 @@
         </value>
     </Operation>
 -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>60</basePowerConsumption>
+        </value>
+    </Operation>
     <!-- General Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_GR"]/building/maxItemsInCell</xpath>
