@@ -952,7 +952,7 @@ Allowed items: Food, Plant matter.</description>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
                     <value>
                         <designationCategory Inherit="False"></designationCategory>
                     </value>
