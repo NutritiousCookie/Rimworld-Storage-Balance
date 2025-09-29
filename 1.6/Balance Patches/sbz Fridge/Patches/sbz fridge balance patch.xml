@@ -89,7 +89,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="sbz_Fridge"]/comps/li/basePowerConsumption</xpath>
         <value>
-            <basePowerConsumption>50</basePowerConsumption>
+            <basePowerConsumption>40</basePowerConsumption>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
