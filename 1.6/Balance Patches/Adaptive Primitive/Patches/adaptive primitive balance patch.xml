@@ -14,9 +14,10 @@
                     </categories>
                     <disallowedCategories>
                         <li>Foods</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
                         <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </fixedStorageSettings>
@@ -33,9 +34,10 @@
                     </categories>
                     <disallowedCategories>
                         <li>Foods</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
                         <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </defaultStorageSettings>
@@ -52,8 +54,9 @@
                         <li>Root</li>
                     </categories>
                     <disallowedCategories>
-                        <li>Chunks</li>
                         <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
                     </disallowedCategories>
                 </filter>
             </fixedStorageSettings>
@@ -69,8 +72,9 @@
                         <li>Root</li>
                     </categories>
                     <disallowedCategories>
-                        <li>Chunks</li>
                         <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
                     </disallowedCategories>
                 </filter>
             </defaultStorageSettings>
@@ -88,8 +92,9 @@
                     </categories>
                     <disallowedCategories>
                         <li>Chunks</li>
-                        <li>Corpses</li>
                         <li>Buildings</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </fixedStorageSettings>
@@ -106,8 +111,9 @@
                     </categories>
                     <disallowedCategories>
                         <li>Chunks</li>
-                        <li>Corpses</li>
                         <li>Buildings</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </defaultStorageSettings>

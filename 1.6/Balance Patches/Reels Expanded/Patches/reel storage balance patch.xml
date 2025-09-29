@@ -13,13 +13,14 @@
                 <disallowedCategories>
                     <li>Buildings</li>
                     <li>Chunks</li>
+                    <li>Plants</li>
                     <li>Corpses</li>
                 </disallowedCategories>
             </filter>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="VFE_Pottery" or defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack"]/building/defaultStorageSettings</xpath>
+        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf" or defName="VFE_Pottery" or defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageWoodChest" or defName="ReelStorageLargeWoodChest"]/building/defaultStorageSettings</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -31,6 +32,7 @@
                     <disallowedCategories>
                         <li>Buildings</li>
                         <li>Chunks</li>
+                        <li>Plants</li>
                         <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
@@ -39,19 +41,14 @@
     </Operation>
     <!-- crate -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate" or defName="ReelStorageWoodChest" or defName="ReelStorageLargeWoodChest"]/building/fixedStorageSettings/filter</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate"]/building/fixedStorageSettings/filter</xpath>
         <value>
             <filter>
                 <disallowNotEverStorable>true</disallowNotEverStorable>
                 <categories>
-                    <li>Root</li>
+                    <li>Manufactured</li>
+                    <li>ResourcesRaw</li>
                 </categories>
-                <disallowedCategories>
-                    <li>Foods</li>
-                    <li>Buildings</li>
-                    <li>Chunks</li>
-                    <li>Corpses</li>
-                </disallowedCategories>
             </filter>
         </value>
     </Operation>
@@ -63,14 +60,9 @@
                 <filter>
                     <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
-                        <li>Root</li>
+                        <li>Manufactured</li>
+                        <li>ResourcesRaw</li>
                     </categories>
-                    <disallowedCategories>
-                        <li>Foods</li>
-                        <li>Buildings</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                    </disallowedCategories>
                 </filter>
             </defaultStorageSettings>
         </value>
@@ -95,6 +87,7 @@
             <defaultStorageSettings>
                 <priority>Preferred</priority>
                 <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
                         <li>Apparel</li>
                     </categories>

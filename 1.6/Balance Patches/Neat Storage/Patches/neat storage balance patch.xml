@@ -41,9 +41,10 @@
                             <li>Root</li>
                         </categories>
                         <disallowedCategories>
-                            <li>Chunks</li>
-                            <li>Corpses</li>
                             <li>Buildings</li>
+                            <li>Chunks</li>
+                            <li>Plants</li>
+                            <li>Corpses</li>
                         </disallowedCategories>
                     </filter>
                 </fixedStorageSettings>
@@ -54,9 +55,10 @@
                             <li>Root</li>
                         </categories>
                         <disallowedCategories>
-                            <li>Chunks</li>
-                            <li>Corpses</li>
                             <li>Buildings</li>
+                            <li>Chunks</li>
+                            <li>Plants</li>
+                            <li>Corpses</li>
                         </disallowedCategories>
                     </filter>
                 </defaultStorageSettings>
@@ -71,14 +73,9 @@
                 <filter>
                     <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
-                        <li>Root</li>
+                        <li>Manufactured</li>
+                        <li>ResourcesRaw</li>
                     </categories>
-                    <disallowedCategories>
-                        <li>Foods</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                        <li>Buildings</li>
-                    </disallowedCategories>
                 </filter>
             </fixedStorageSettings>
         </value>
@@ -90,14 +87,9 @@
                 <priority>Preferred</priority>
                 <filter>
                     <categories>
-                        <li>Root</li>
+                        <li>Manufactured</li>
+                        <li>ResourcesRaw</li>
                     </categories>
-                    <disallowedCategories>
-                        <li>Foods</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                        <li>Buildings</li>
-                    </disallowedCategories>
                 </filter>
             </defaultStorageSettings>
         </value>
@@ -114,6 +106,7 @@
                             <li>ResourcesRaw</li>
                             <li>Chunks</li>
                             <li>Buildings</li>
+                            <li>Plants</li>
                         </categories>
                     </filter>
                 </fixedStorageSettings>
@@ -124,6 +117,7 @@
                             <li>ResourcesRaw</li>
                             <li>Chunks</li>
                             <li>Buildings</li>
+                            <li>Plants</li>
                         </categories>
                     </filter>
                 </defaultStorageSettings>
@@ -141,9 +135,6 @@
                         <categories>
                             <li>Apparel</li>
                         </categories>
-                        <disallowedCategories>
-                            <li>Armor</li>
-                        </disallowedCategories>
                     </filter>
                 </fixedStorageSettings>
                 <defaultStorageSettings Inherit="False">
@@ -152,9 +143,6 @@
                         <categories>
                             <li>Apparel</li>
                         </categories>
-                        <disallowedCategories>
-                            <li>Armor</li>
-                        </disallowedCategories>
                     </filter>
                 </defaultStorageSettings>
             </building>
@@ -174,6 +162,7 @@
                 <filter>
                     <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
+                        <li>Weapons</li>
                     </categories>
                 </filter>
             </defaultStorageSettings>
@@ -245,11 +234,9 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+        <xpath>Defs/ThingDef[defName="sbz_Pallet"]/building</xpath>
         <value>
-            <building>
-                <maxItemsInCell Inherit="False">5</maxItemsInCell>
-            </building>
+            <maxItemsInCell Inherit="False">5</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -265,11 +252,9 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+        <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/building</xpath>
         <value>
-            <building>
-                <maxItemsInCell Inherit="False">5</maxItemsInCell>
-            </building>
+            <maxItemsInCell Inherit="False">5</maxItemsInCell>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

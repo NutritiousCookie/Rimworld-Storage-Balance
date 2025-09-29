@@ -43,14 +43,9 @@
             <filter>
                 <disallowNotEverStorable>true</disallowNotEverStorable>
                 <categories>
-                    <li>Root</li>
+                    <li>Manufactured</li>
+                    <li>ResourcesRaw</li>
                 </categories>
-                <disallowedCategories>
-                        <li>Foods</li>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
-                        <li>Buildings</li>
-                </disallowedCategories>
             </filter>
         </value>
     </Operation>
@@ -62,14 +57,40 @@
                 <filter>
                     <disallowNotEverStorable>true</disallowNotEverStorable>
                     <categories>
-                        <li>Root</li>
+                        <li>Manufactured</li>
+                        <li>ResourcesRaw</li>
                     </categories>
-                    <disallowedCategories>
-                            <li>Foods</li>
-                            <li>Chunks</li>
-                            <li>Corpses</li>
-                            <li>Buildings</li>
-                    </disallowedCategories>
+                </filter>
+            </defaultStorageSettings>
+        </value>
+    </Operation>
+    <!-- pallets -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/building/fixedStorageSettings/filter</xpath>
+        <value>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>ResourcesRaw</li>
+                    <li>Chunks</li>
+                    <li>Buildings</li>
+                    <li>Plants</li>
+                </categories>
+            </filter>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]/building</xpath>
+        <value>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>ResourcesRaw</li>
+                        <li>Chunks</li>
+                        <li>Buildings</li>
+                        <li>Plants</li>
+                    </categories>
                 </filter>
             </defaultStorageSettings>
         </value>

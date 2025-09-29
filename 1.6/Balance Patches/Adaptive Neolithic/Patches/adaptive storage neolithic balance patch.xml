@@ -48,9 +48,10 @@
                         <li>Root</li>
                     </categories>
                     <disallowedCategories>
-                        <li>Chunks</li>
-                        <li>Corpses</li>
                         <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </fixedStorageSettings>
@@ -63,11 +64,13 @@
                 <priority>Preferred</priority>
                 <filter>
                     <categories>
-                        <li>Foods</li>
-                        <li>PlantMatter</li>
+                        <li>Root</li>
                     </categories>
                     <disallowedCategories>
-                        <li>FoodMeals</li>
+                        <li>Buildings</li>
+                        <li>Chunks</li>
+                        <li>Plants</li>
+                        <li>Corpses</li>
                     </disallowedCategories>
                 </filter>
             </defaultStorageSettings>

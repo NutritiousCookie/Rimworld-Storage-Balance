@@ -5,6 +5,7 @@
         <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
         <value>
             <li>Buildings</li>
+            <li>Plants</li>
         </value>
     </Operation>
 </Patch>
