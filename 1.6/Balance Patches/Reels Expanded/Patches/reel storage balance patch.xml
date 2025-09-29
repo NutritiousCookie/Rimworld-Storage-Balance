@@ -938,6 +938,37 @@ Allowed items: Food, Plant matter.</description>
             </operations>
         </match>
     </Operation>
+<<<<<<< HEAD
+=======
+    <!-- sbz Fridge -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[sbz] Fridge</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory Inherit="False"></designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                    <xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="StorageBalancePatches_HiddenDesignators"]/hiddenDesignators</xpath>
+                    <value>
+                        <li>ReelStorageNewFridge</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+>>>>>>> 7958d52 (fix faulty xml im reels fridge patch)
 </Patch>
 
 <!-- Note - Progression: Storage MO patch removes: 
