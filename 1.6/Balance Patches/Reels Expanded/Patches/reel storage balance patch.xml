@@ -149,6 +149,7 @@
     </Operation>
     
 <!-- item specific -->
+    <!-- animal feeder -->
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/building/maxItemsInCell</xpath>
             <value>
@@ -165,6 +166,7 @@ Stack per tile: 6
 Allowed items: Hay, Kibble</description>
         </value>
     </Operation>
+    <!-- barrel -->
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/building/maxItemsInCell</xpath>
             <value>
@@ -187,6 +189,14 @@ Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant ma
             <costStuffCount>20</costStuffCount>
         </value>
     </Operation>
+    <!-- fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/comps/li/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>120</basePowerConsumption>
+        </value>
+    </Operation>
+    <!-- double shelf -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/building/maxItemsInCell</xpath>
         <value>
