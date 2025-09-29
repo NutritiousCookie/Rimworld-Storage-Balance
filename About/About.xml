@@ -3,7 +3,7 @@
     <name>Storage Balance Patches</name>
     <author>NutritiousCookie</author>
     <packageId>ncook.storagepatches</packageId>
-    <modVersion>1.2.6</modVersion>
+    <modVersion>1.2.7</modVersion>
     <url>https://github.com/NutritiousCookie/Rimworld-Storage-Balance</url>
     <supportedVersions>
         <li>1.6</li>
@@ -29,6 +29,7 @@
         <li>potato.progressionstorageundo</li>
         <li>vin.warehouse.storage</li>
         <li>sbz.neatstorage</li>
+        <li>sbz.fridge</li>
         <li>ferny.betterarchitect</li>
     </loadAfter>
 </ModMetaData>
