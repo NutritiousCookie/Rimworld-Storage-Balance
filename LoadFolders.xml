@@ -20,9 +20,6 @@
     <li IfModActive="vin.warehouse.storage">1.6/Research Patches/Warehouse Storage</li>
     <li IfModActive="adaptive.ideology.storage">1.6/Balance Patches/Adaptive Ideology</li>
     <li IfModActive="adaptive.ideology.storage">1.6/Research Patches/Adaptive Ideology</li>
-<<<<<<< HEAD
-=======
     <li IfModActive="sbz.neatstoragefridge">1.6/Balance Patches/sbz Fridge</li>
->>>>>>> 360cbb2 (fix sbz fridge packageid)
   </v1.6>
 </loadFolders>

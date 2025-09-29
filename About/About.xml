@@ -3,11 +3,7 @@
     <name>Storage Balance Patches</name>
     <author>NutritiousCookie</author>
     <packageId>ncook.storagepatches</packageId>
-<<<<<<< HEAD
-    <modVersion>1.2.6</modVersion>
-=======
     <modVersion>1.2.8</modVersion>
->>>>>>> 61d7ca8 (bump version)
     <url>https://github.com/NutritiousCookie/Rimworld-Storage-Balance</url>
     <supportedVersions>
         <li>1.6</li>
@@ -33,10 +29,7 @@
         <li>potato.progressionstorageundo</li>
         <li>vin.warehouse.storage</li>
         <li>sbz.neatstorage</li>
-<<<<<<< HEAD
-=======
         <li>sbz.neatstoragefridge</li>
->>>>>>> 360cbb2 (fix sbz fridge packageid)
         <li>ferny.betterarchitect</li>
     </loadAfter>
 </ModMetaData>

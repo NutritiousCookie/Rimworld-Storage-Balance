@@ -182,7 +182,7 @@
     <!-- textile -->
     <Operation Class="PatchOperationAttributeAdd">
         <xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/fixedStorageSettings</xpath>
-        <attribute>Inherit</attribute>
+            <attribute>Inherit</attribute>
         <value>False</value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -477,7 +477,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[@Name = "BasicBedBase" or defName = "HospitalBed" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <xpath>Defs/ThingDef[@Name="BasicBedBase" or defName="HospitalBed" or defName="Bedroll" or defName="BedrollDouble"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                     <value>
                         <li>sbz_HangerShelf</li>
                         <li>sbz_WideHangerShelf</li>

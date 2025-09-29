@@ -17,8 +17,5 @@
 1.2.4 - Add initial balance changes for resource costs and allowed items. Some optimizations, additional MO compatibility, and further bugfixing.
 1.2.5 - Fix errors on load related to HiddenDesignators and StorageSettings for Adaptive Ideology and Neat Storage
 1.2.6 - Fix StorageSettings inheritance on some Neat Storage items
-<<<<<<< HEAD
-=======
 1.2.7 - Various fixes to align patches with spreadsheet. Add [sbz] Fridge compatibility.
 1.2.8 - Fridge power draw and construction cost balancing.
->>>>>>> 61d7ca8 (bump version)

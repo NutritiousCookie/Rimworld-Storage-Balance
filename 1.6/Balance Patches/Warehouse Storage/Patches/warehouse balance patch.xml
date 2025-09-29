@@ -660,8 +660,6 @@
             </operations>
         </match>
     </Operation>
-<<<<<<< HEAD
-=======
     <!-- sbz Fridge -->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -690,5 +688,4 @@
             </operations>
         </match>
     </Operation>
->>>>>>> 1704e81 (fix warehouse fridge xpath)
 </Patch>
