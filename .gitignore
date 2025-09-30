@@ -16,6 +16,8 @@
 !Source/
 !Source/*
 !Source/**/*
+!Languages/
+!Languages/**/*
 
 #ignore
 Source/StorageBalance/bin
