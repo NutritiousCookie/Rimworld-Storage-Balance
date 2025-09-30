@@ -20,6 +20,6 @@
 !Languages/**/*
 
 #ignore
-Source/StorageBalance/bin
-Source/StorageBalance/obj
-Source/**/.*
+Source/bin
+Source/obj
+Source/.*
