@@ -240,6 +240,15 @@ Allowed items: Raw Plants, Herbal medicine, Animal Products, Chocolate, Plant ma
         </value>
     </Operation>
     <!-- fridge -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>60</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
 <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewFridge"]/comps/li/basePowerConsumption</xpath>
@@ -268,7 +277,7 @@ Allowed items: Meals, Raw Food, Everything except Corpses and Chunks</descriptio
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/costStuffCount</xpath>
         <value>
-            <costStuffCount>60</costStuffCount>
+            <costStuffCount>40</costStuffCount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
