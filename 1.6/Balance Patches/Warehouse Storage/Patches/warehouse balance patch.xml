@@ -277,6 +277,15 @@
             <basePowerConsumption>120</basePowerConsumption>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>40</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
     <!-- General Rack -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Vin_GR"]/building/maxItemsInCell</xpath>
