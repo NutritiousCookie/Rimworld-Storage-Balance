@@ -69,7 +69,7 @@
     </Operation>
     <!-- locker -->
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/building/fixedStorageSettings</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker" or defName="ReelStorageNewLargeLocker"]/building/fixedStorageSettings</xpath>
         <value>
             <fixedStorageSettings>
                 <filter>
@@ -82,7 +82,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/building/defaultStorageSettings</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker" or defName="ReelStorageNewLargeLocker"]/building/defaultStorageSettings</xpath>
         <value>
             <defaultStorageSettings>
                 <priority>Preferred</priority>
@@ -215,6 +215,13 @@ Stack per tile: 6
 
 Allowed items: Hay, Kibble</description>
         </value>
+    </Operation>
+    <!-- apparel locker -->
+    <Operation Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/costList</xpath>
+            <costList>
+                <Steel>60</Steel>
+            </costList>
     </Operation>
     <!-- barrel -->
     <Operation Class="PatchOperationReplace">
@@ -468,6 +475,14 @@ Stack per tile: 9
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>400</Steel>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageCargoContainer"]/description</xpath>
         <value>
             <description>A large storage container designed to hold a variety of items for long-term storage. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
@@ -645,7 +660,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]/costList</xpath>
         <value>
             <costList>
-                <Plasteel>210</Plasteel>
+                <Plasteel>120</Plasteel>
                 <ComponentIndustrial>10</ComponentIndustrial>
                 <ComponentSpacer>1</ComponentSpacer>
             </costList>
