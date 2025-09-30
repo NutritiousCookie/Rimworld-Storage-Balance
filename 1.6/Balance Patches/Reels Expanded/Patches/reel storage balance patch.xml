@@ -266,6 +266,12 @@ Allowed items: Meals, Raw Food, Everything except Corpses and Chunks</descriptio
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>60</costStuffCount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/AdaptiveStorage.GraphicsDef[@Name="ReelNewIndustrialShelfBase"]/itemGraphics</xpath>
         <value>
             <itemGraphics>
@@ -338,8 +344,8 @@ Allowed items: Medicine, Plant Matter, Drugs, Neutroamine, Body parts, Medical e
         <xpath>Defs/ThingDef[defName="ReelStorageMetalCrate"]/description</xpath>
         <value>
             <description>A sturdy metal crate designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 5 
-Stack per tile: 5 
+Stack size total: 6 
+Stack per tile: 6 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
         </value>
@@ -360,10 +366,16 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
         <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/description</xpath>
         <value>
             <description>A stack of five sturdy metal crates designed for storing mass quantities of goods and valuables. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
-Stack size total: 20 
-Stack per tile: 5 
+Stack size total: 24 
+Stack per tile: 6 
 
 Allowed items: Everything except Foods, Corpses and Chunks</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ReelStorageLargeMetalCrate"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>50</costStuffCount>
         </value>
     </Operation>
     <!-- wood crate -->
@@ -408,7 +420,7 @@ Allowed items: Everything except Foods, Corpses and Chunks</description>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/costStuffCount</xpath>
         <value>
-            <costStuffCount>40</costStuffCount>
+            <costStuffCount>50</costStuffCount>
         </value>
     </Operation>
 
