@@ -218,10 +218,12 @@ Allowed items: Hay, Kibble</description>
     </Operation>
     <!-- apparel locker -->
     <Operation Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/costList</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/costList</xpath>
+        <value>
             <costList>
                 <Steel>60</Steel>
             </costList>
+        </value>
     </Operation>
     <!-- barrel -->
     <Operation Class="PatchOperationReplace">
