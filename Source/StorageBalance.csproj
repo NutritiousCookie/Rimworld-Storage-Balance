@@ -51,6 +51,7 @@
     <Compile Include="StorageBalanceMod.cs" />
     <Compile Include="StorageBalanceSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StorageBalanceXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref" ExcludeAssets="runtime">

@@ -1,37 +1,9 @@
-﻿using System.Xml;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
 
 namespace StorageBalance
 {    
-    public class ResearchLevelDef : Def
-    {
-        public ResearchProjectDef targetDef;
-    }
-    // PatchOperation to replace research dynamically
-    public class PatchOperationStorageResearch : PatchOperation
-    {
-        public string xpath;
-        public string techLevel;
-        protected override bool ApplyWorker(XmlDocument xml)
-        {
-            // Build the xpath dynamically
-            XmlNode techPath = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDef");
-            XmlNodeList nodes = xml.SelectNodes($"{xpath}/research");
-            if (techPath != null && nodes[0] != null)
-            {
-                foreach (XmlNode node in nodes)
-                {
-                    node.InnerText = $"<li>{techPath.InnerText}</li>";
-                }
-                return true;
-            }
-            else return false;
-        }
-    }
-
-    //[UsedImplicitly(ImplicitUseTargetFlags.WithMembers)]
     public class StorageBalanceMod : Mod
     {
         // Mod Name
