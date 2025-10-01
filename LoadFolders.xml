@@ -1,9 +1,5 @@
 <loadFolders>
   <v1.6>
-    <li>/</li>
-    <li>1.6</li>
-    <li>1.6/Balance Patches</li>
-    <li>1.6/Research Patches</li>
     <li IfModActive="adaptive.storage.neolithic">1.6/Balance Patches/Adaptive Neolithic</li>
     <li IfModActive="adaptive.storage.neolithic">1.6/Research Patches/Adaptive Neolithic</li>
     <li IfModActive="adaptive.primitivestorage">1.6/Balance Patches/Adaptive Primitive</li>
@@ -21,5 +17,9 @@
     <li IfModActive="adaptive.ideology.storage">1.6/Balance Patches/Adaptive Ideology</li>
     <li IfModActive="adaptive.ideology.storage">1.6/Research Patches/Adaptive Ideology</li>
     <li IfModActive="sbz.neatstoragefridge">1.6/Balance Patches/sbz Fridge</li>
+    <li>1.6/Balance Patches</li>
+    <li>1.6/Research Patches</li>
+    <li>1.6</li>
+    <li>/</li>
   </v1.6>
 </loadFolders>
