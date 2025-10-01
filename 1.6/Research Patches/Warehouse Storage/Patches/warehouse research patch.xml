@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- REMOVE RESEARCH -->
 <!-- ITEMS -->
     <Operation Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_MR" or defName="Vin_MRS" or defName="Vin_PC" or defName="Vin_TLR" or defName="Vin_WP" or defName="Vin_WPS"]/researchPrerequisites</xpath>
