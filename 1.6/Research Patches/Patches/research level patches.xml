@@ -55,6 +55,18 @@
             </value>
         </match>
     </Operation>
+    <!-- VFE FARMING -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Farming</li>
+        </mods>
+        <match  Class="PatchOperationReplace">
+            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDef</xpath>
+            <value>
+                <targetDef>VFE_Res_FarmingTechniques</targetDef>
+            </value>
+        </match>
+    </Operation>
     
     
 <!-- DEDICATED -->
