@@ -1,9 +1,8 @@
-﻿using RimWorld;
-using UnityEngine;
+﻿using UnityEngine;
 using Verse;
 
 namespace StorageBalance
-{    
+{
     public class StorageBalanceMod : Mod
     {
         // Mod Name
@@ -16,6 +15,7 @@ namespace StorageBalance
         {
             settings = GetSettings<StorageBalanceSettings>();
         }
+
         // Settings GUI
         public override void DoSettingsWindowContents(Rect inRect)
         {
