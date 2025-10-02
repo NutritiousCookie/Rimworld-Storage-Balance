@@ -12,7 +12,6 @@ namespace StorageBalance
 
         // Settings
         public static StorageBalanceSettings settings;
-        public static string[] researchTypes = { "Furniture", "Storage" };
         public StorageBalanceMod(ModContentPack content) : base(content)
         {
             settings = GetSettings<StorageBalanceSettings>();
@@ -23,26 +22,26 @@ namespace StorageBalance
             Rect rectLeftColumn = inRect.LeftPart(0.46f).Rounded();
             Rect rectRightColumn = inRect.RightPart(0.46f).Rounded();
 
-            Listing_Standard list = new Listing_Standard();
-            list.Begin(inRect);
-            list.CheckboxLabeled("StorageBalanceDoResearchLabel".Translate(), ref settings.doResearch, null);
-            list.End();
-
             Listing_Standard listLeft = new Listing_Standard();
             listLeft.ColumnWidth = rectLeftColumn.width;
             listLeft.Begin(rectLeftColumn);
+            listLeft.CheckboxLabeled("StorageBalanceDoResearchLabel".Translate(), ref settings.doResearch, null);
+
             if (settings.doResearch)
             {
                 listLeft.Gap();
                 listLeft.Gap();
                 listLeft.Label("StorageBalanceResearchTypeLabel".Translate());
                 listLeft.Gap();
-                foreach (var option in researchTypes)
+                if (listLeft.RadioButton(("FurnitureResearchTypeLabel").Translate(), settings.researchTypeFurniture, 0f, ("FurnitureResearchTypeDescription").Translate(), 0.1f))
                 {
-                    if (listLeft.RadioButton((option + "ResearchTypeLabel").Translate(), settings.researchType == option, 0f, (option + "ResearchTypeDescription").Translate(), 0.1f))
-                    {
-                        settings.researchType = option;
-                    }
+                    settings.researchTypeFurniture = true;
+                    settings.researchTypeStorage = false;
+                }
+                if (listLeft.RadioButton(("StorageResearchTypeLabel").Translate(), settings.researchTypeStorage, 0f, ("StorageResearchTypeDescription").Translate(), 0.1f))
+                {
+                    settings.researchTypeFurniture = false;
+                    settings.researchTypeStorage = true;
                 }
             }
             listLeft.End();
