@@ -31,11 +31,17 @@
         <defName>IndustrialStorage</defName>
         <targetDefFurniture>Machining</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
-    <!-- advanced industrial tech, eg metal crates -->
+    <!-- bulk industrial tech, eg metal crates -->
     <!-- usually stays at machining -->
     <StorageBalance.ResearchLevelDef>
-        <defName>AdvancedIndustrialStorage</defName>
+        <defName>BulkIndustrialStorage</defName>
         <targetDefFurniture>Machining</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- advanced industrial tech, eg warehouse storage -->
+    <!-- usually stays at fabrication -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>AdvancedIndustrialStorage</defName>
+        <targetDefFurniture>Fabrication</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- spacer tech -->
     <StorageBalance.ResearchLevelDef>
