@@ -7,7 +7,8 @@ namespace StorageBalance
     // Def to store research projects
     public class ResearchLevelDef : Def
     {
-        public ResearchProjectDef targetDef;
+        public ResearchProjectDef targetDefFurniture;
+        public ResearchProjectDef targetDefDedicated;
     }
     // PatchOperation to replace research dynamically
     public class PatchOperationStorageResearch : PatchOperation
@@ -24,13 +25,11 @@ namespace StorageBalance
                 // Build the xpath dynamically
                 if (techLevel != null)
                 {
-                    techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDef").InnerText;
+                    if (StorageBalanceMod.settings.useDedicatedResearch) techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated").InnerText;
+                    if (String.IsNullOrEmpty(techDef)) techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture").InnerText;
                 }
-                else if (String.IsNullOrEmpty(techDef))
-                {
-                    techDef = "";
-                }
-                if (techDef != null && thingNodes != null)
+                if (String.IsNullOrEmpty(techDef)) techDef = "";
+                if (thingNodes != null)
                 {
                     foreach (XmlNode thingNode in thingNodes)
                     {
@@ -58,9 +57,7 @@ namespace StorageBalance
                 }
                 else return false;
             }
-            else {
-                return true;
-            }
+            else return true;
         }
     }
 }
