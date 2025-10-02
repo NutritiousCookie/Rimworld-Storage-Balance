@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
     <StorageBalanceModName>Storage Balance Patches</StorageBalanceModName>
-    <StorageBalanceDoResearchLabel>Change required research projects for storage buildings?</StorageBalanceDoResearchLabel>
-    <StorageBalanceResearchTypeLabel>Research projects to use for most storage buildings (requires reload):</StorageBalanceResearchTypeLabel>
+    <StorageBalanceDoResearchLabel>Apply research patches? (requires reload)</StorageBalanceDoResearchLabel>
+    <StorageBalanceResearchTypeLabel>Research projects to use for most storage buildings:</StorageBalanceResearchTypeLabel>
     <FurnitureResearchTypeLabel>Furniture</FurnitureResearchTypeLabel>
     <StorageResearchTypeLabel>Storage</StorageResearchTypeLabel>
     <FurnitureResearchTypeDescription>Put storage buildings in vanilla/VFE furniture projects.</FurnitureResearchTypeDescription>
