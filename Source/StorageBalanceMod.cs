@@ -31,18 +31,7 @@ namespace StorageBalance
             {
                 listLeft.Gap();
                 listLeft.Gap();
-                listLeft.Label("StorageBalanceResearchTypeLabel".Translate());
-                listLeft.Gap();
-                if (listLeft.RadioButton(("FurnitureResearchTypeLabel").Translate(), settings.researchTypeFurniture, 0f, ("FurnitureResearchTypeDescription").Translate(), 0.1f))
-                {
-                    settings.researchTypeFurniture = true;
-                    settings.researchTypeStorage = false;
-                }
-                if (listLeft.RadioButton(("StorageResearchTypeLabel").Translate(), settings.researchTypeStorage, 0f, ("StorageResearchTypeDescription").Translate(), 0.1f))
-                {
-                    settings.researchTypeFurniture = false;
-                    settings.researchTypeStorage = true;
-                }
+                listLeft.CheckboxLabeled("DedicatedResearchLabel".Translate(), ref settings.useDedicatedResearch, ("DedicatedResearchDescription" + settings.useDedicatedResearch.ToString()).Translate(), 0.1f);
             }
             listLeft.End();
 
