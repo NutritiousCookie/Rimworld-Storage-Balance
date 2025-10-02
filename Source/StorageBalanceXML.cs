@@ -15,26 +15,26 @@ namespace StorageBalance
     {
         public string xpath;
         public string techLevel;
-        public string techDef;
+        public string researchDefName;
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
             if (StorageBalanceMod.settings.doResearch)
             {
                 XmlNodeList thingNodes = xml.SelectNodes(xpath);
-                // Build the xpath dynamically
+                // Find the researchProject name
                 if (techLevel != null)
                 {
                     if (StorageBalanceMod.settings.useDedicatedResearch)
                     {
-                        techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
+                        researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
                     }
-                    if (String.IsNullOrEmpty(techDef)) techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture")?.InnerText;
-                    if (String.IsNullOrEmpty(techDef)) techDef = "";
+                    if (String.IsNullOrEmpty(researchDefName)) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture")?.InnerText;
+                    if (String.IsNullOrEmpty(researchDefName)) researchDefName = "";
                 }
-                else if (String.IsNullOrEmpty(techDef))
+                else if (String.IsNullOrEmpty(researchDefName))
                 {
-                    techDef = "";
+                    researchDefName = "";
                 }
                 if (thingNodes != null)
                 {
@@ -56,9 +56,9 @@ namespace StorageBalance
                         attr.Value = "False";
                         newResearchNode.Attributes.SetNamedItem(attr);
                         // Set desired tech list item
-                        if (!String.IsNullOrEmpty(techDef))
+                        if (!String.IsNullOrEmpty(researchDefName))
                         {
-                            newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techDef;
+                            newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = researchDefName;
                         }
                         // Add to item
                         thingNode.AppendChild(newResearchNode);

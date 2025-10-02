@@ -24,6 +24,6 @@
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase" or defName="sbz_Drum" or defName="sbz_Safe"]</xpath>
-        <techLevel>AdvancedIndustrialStorage</techLevel>
+        <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
 </Patch>

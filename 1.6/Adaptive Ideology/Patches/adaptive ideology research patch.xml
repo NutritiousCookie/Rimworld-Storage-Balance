@@ -12,6 +12,6 @@
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="CrateL" or defName="Freight_A" or defName="Freight_B"]</xpath>
-        <techLevel>AdvancedIndustrialStorage</techLevel>
+        <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
 </Patch>

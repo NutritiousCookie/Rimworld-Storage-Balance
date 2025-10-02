@@ -24,24 +24,24 @@
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageCargoContainer"]</xpath>
-        <techLevel>AdvancedIndustrialStorage</techLevel>
+        <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
 <!-- techDef -->
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageNewMedicineCabinet"]</xpath>
-        <techDef>AirConditioning</techDef>
+        <researchDefName>AirConditioning</researchDefName>
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]</xpath>
-        <techDef>BiofuelRefining</techDef>
+        <researchDefName>BiofuelRefining</researchDefName>
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageStonePile" or defName="ReelStorageLargeStonePile"]</xpath>
-        <techDef>Stonecutting</techDef>
+        <researchDefName>Stonecutting</researchDefName>
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
-        <techDef></techDef>
+        <researchDefName></researchDefName>
     </Operation>
 
 <!-- PROJECTS -->

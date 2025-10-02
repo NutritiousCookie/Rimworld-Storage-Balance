@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationConditional">
-        <xpath>ModSettings[Class="StorageBalance.StorageBalanceSettings"]/doStorageResearch</xpath>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-            <!-- ITEMS -->
-            <!-- ResearchLevelDef -->
-                <li Class="StorageBalance.PatchOperationStorageResearch">
-                    <xpath>Defs/ThingDef[defName="ASF_MeatRack" or defName="ASF_WeaponRack"]</xpath>
-                    <techLevel>NeolithicStorage</techLevel>
-                </li>
-                <li Class="StorageBalance.PatchOperationStorageResearch">
-                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot" or defName="ASF_UncoveredClayPot"]</xpath>
-                    <techLevel>PotteryStorage</techLevel>
-                </li>
-            </operations>
-        </nomatch>
+<!-- ITEMS -->
+<!-- ResearchLevelDef -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ASF_MeatRack" or defName="ASF_WeaponRack"]</xpath>
+        <techLevel>NeolithicStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot" or defName="ASF_UncoveredClayPot"]</xpath>
+        <techLevel>PotteryStorage</techLevel>
     </Operation>
 </Patch>
