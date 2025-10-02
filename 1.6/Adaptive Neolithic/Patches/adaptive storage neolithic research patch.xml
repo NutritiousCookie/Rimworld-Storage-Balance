@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>ModSettings[Class="StorageBalance.StorageBalanceSettings"]/doStorageResearch</xpath>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+            <!-- ITEMS -->
+            <!-- ResearchLevelDef -->
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="ASNeolithicMealShelf" or @Name="ASNeolithicItemDisplayBase"]</xpath>
+                    <techLevel>NeolithicStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicLargePotStoneThingBase"]</xpath>
+                    <techLevel>PotteryStorage</techLevel>
+                </li>
+
+            <!-- RESEARCH -->
+            <!-- Clear items -->
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+                </li>
+            <!-- Remove if unused -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicStorage"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="ASNeolithicNeolithicItemDisplay"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+                    </nomatch>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+</Patch>

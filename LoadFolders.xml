@@ -1,24 +1,15 @@
 <loadFolders>
   <v1.6>
-    <li IfModActive="adaptive.storage.neolithic">1.6/Balance Patches/Adaptive Neolithic</li>
-    <li IfModActive="adaptive.storage.neolithic">1.6/Research Patches/Adaptive Neolithic</li>
-    <li IfModActive="adaptive.primitivestorage">1.6/Balance Patches/Adaptive Primitive</li>
-    <li IfModActive="adaptive.primitivestorage">1.6/Research Patches/Adaptive Primitive</li>
-    <li IfModActive="phaneron.basic.storage">1.6/Balance Patches/Phanerons Basic</li>
-    <li IfModActive="phaneron.basic.storage">1.6/Research Patches/Phanerons Basic</li>
-    <li IfModActive="reel.expanded.storage">1.6/Balance Patches/Reels Expanded</li>
-    <li IfModActive="reel.expanded.storage">1.6/Research Patches/Reels Expanded</li>
-    <li IfModActive="sbz.neatstorage">1.6/Balance Patches/Neat Storage</li>
-    <li IfModActive="sbz.neatstorage">1.6/Research Patches/Neat Storage</li>
-    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/Balance Patches/VE Framework</li>
-    <li IfModActive="vanillaexpanded.vfecore">1.6/Research Patches/Vanilla Furniture Expanded</li>
-    <li IfModActive="vin.warehouse.storage">1.6/Balance Patches/Warehouse Storage</li>
-    <li IfModActive="vin.warehouse.storage">1.6/Research Patches/Warehouse Storage</li>
-    <li IfModActive="adaptive.ideology.storage">1.6/Balance Patches/Adaptive Ideology</li>
-    <li IfModActive="adaptive.ideology.storage">1.6/Research Patches/Adaptive Ideology</li>
-    <li IfModActive="sbz.neatstoragefridge">1.6/Balance Patches/sbz Fridge</li>
-    <li>1.6/Balance Patches</li>
-    <li>1.6/Research Patches</li>
+    <li IfModActive="phaneron.basic.storage">1.6/Phanerons Basic</li>
+    <li IfModActive="reel.expanded.storage">1.6/Reels Expanded</li>
+    <li IfModActive="adaptive.storage.neolithic">1.6/Adaptive Neolithic</li>
+    <li IfModActive="vanillaexpanded.vfecore">1.6/Vanilla Furniture Expanded</li>
+    <li IfModActive="vin.warehouse.storage">1.6/Warehouse Storage</li>
+    <li IfModActive="sbz.neatstoragefridge">1.6/sbz Fridge</li>
+    <li IfModActive="sbz.neatstorage">1.6/Neat Storage</li>
+    <li IfModActive="adaptive.primitivestorage">1.6/Adaptive Primitive</li>
+    <li IfModActive="adaptive.ideology.storage">1.6/Adaptive Ideology</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">1.6/VE Framework</li>
     <li>1.6</li>
     <li>/</li>
   </v1.6>

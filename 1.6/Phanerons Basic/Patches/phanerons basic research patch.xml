@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>ModSettings[Class="StorageBalance.StorageBalanceSettings"]/doStorageResearch</xpath>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+            <!-- ITEMS -->
+            <!-- ResearchLevelDef -->
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStorageSack"]</xpath>
+                    <techLevel>NeolithicStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStorageLargeBundle" or defName="BasicStorageCask"or defName="BasicStorageWoodenCrate" or defName="BasicStorageMediumCrate" or defName="BasicStorageLargeCrate" or defName="BasicStorageFoodBarrel" or defName="BasicStorageFoodCupboard" or defName="BasicStorageMealStorage"]</xpath>
+                    <techLevel>MedievalStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]</xpath>
+                    <techLevel>AdvancedMedievalStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStoragePalletSmall" or defName="BasicStoragePalletLarge"]</xpath>
+                    <techLevel>ModernStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageIndustrialContainer" or defName="BasicStorageMetalCrate" or defName="BasicStorageWeaponRack"]</xpath>
+                    <techLevel>AdvancedIndustrialStorage</techLevel>
+                </li>
+                <li Class="StorageBalance.PatchOperationStorageResearch">
+                    <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]</xpath>
+                    <techLevel>PotteryStorage</techLevel>
+                </li>
+
+            <!-- ResearchPrerequisites -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>BiofuelRefining</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+
+            <!-- PROJECTS -->
+            <!-- Remove if unused -->
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="BasicStorageNeolithicStorage"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="BasicStorageNeolithicStorage"]</xpath>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="BasicStorage"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="BasicStorage"]</xpath>
+                    </nomatch>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+</Patch>
