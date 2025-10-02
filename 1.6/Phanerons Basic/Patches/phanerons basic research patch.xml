@@ -20,7 +20,7 @@
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="BasicStorageCargoContainer" or defName="BasicStorageIndustrialContainer" or defName="BasicStorageMetalCrate" or defName="BasicStorageWeaponRack"]</xpath>
-        <techLevel>AdvancedIndustrialStorage</techLevel>
+        <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="BasicStorageStonePot"]</xpath>
