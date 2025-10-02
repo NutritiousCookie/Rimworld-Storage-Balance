@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationConditional">
-        <xpath>ModSettings[Class="StorageBalance.StorageBalanceSettings"]/doStorageResearch</xpath>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
-            <!-- ITEMS -->
-                <!-- ResearchLevelDef -->
-                <li Class="StorageBalance.PatchOperationStorageResearch">
-                    <xpath>Defs/ThingDef[defName="Bundel_D"]</xpath>
-                    <techLevel>MedievalStorage</techLevel>
-                </li>
-                <li Class="StorageBalance.PatchOperationStorageResearch">
-                    <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z" or defName="MealCrate_A" or defName="MealCrate_B" or defName="asf_rustedtoolbox" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK"]</xpath>
-                    <techLevel>ModernStorage</techLevel>
-                </li>
-                <li Class="StorageBalance.PatchOperationStorageResearch">
-                    <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="CrateL" or defName="Freight_A" or defName="Freight_B"]</xpath>
-                    <techLevel>AdvancedIndustrialStorage</techLevel>
-                </li>
-            </operations>
-        </nomatch>
+<!-- ITEMS -->
+    <!-- ResearchLevelDef -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Bundel_D"]</xpath>
+        <techLevel>MedievalStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z" or defName="MealCrate_A" or defName="MealCrate_B" or defName="asf_rustedtoolbox" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK"]</xpath>
+        <techLevel>ModernStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ChunkA" or defName="ChunkB" or defName="ContainerC" or defName="ContainerD" or defName="CrateL" or defName="Freight_A" or defName="Freight_B"]</xpath>
+        <techLevel>AdvancedIndustrialStorage</techLevel>
     </Operation>
 </Patch>
