@@ -26,6 +26,10 @@
         <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageCargoContainer"]</xpath>
         <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageLargeSpacerLocker"]</xpath>
+        <techLevel>SpacerStorage</techLevel>
+    </Operation>
 <!-- techDef -->
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
         <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageNewMedicineCabinet"]</xpath>
@@ -47,7 +51,7 @@
 <!-- PROJECTS -->
 <!-- Remove if unused -->
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ResearchProjectDef[defName="ReelNeoOperationthicStorage"]</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationConditional">
