@@ -6,54 +6,53 @@
     <!-- resolves to medieval if no neolithic project is found -->
     <StorageBalance.ResearchLevelDef>
         <defName>NeolithicStorage</defName>
-        <targetDef>ComplexFurniture</targetDef>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- medieval tech, eg crates-->
     <StorageBalance.ResearchLevelDef>
         <defName>MedievalStorage</defName>
-        <targetDef>ComplexFurniture</targetDef>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- advanced medieval tech, eg meat hooks -->
     <!-- usually stays at smithing -->
     <StorageBalance.ResearchLevelDef>
         <defName>AdvancedMedievalStorage</defName>
-        <targetDef>Smithing</targetDef>
+        <targetDefFurniture>Smithing</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- early industrial tech, eg pallets -->
     <!-- resolves to medieval if no modern project is found -->
     <StorageBalance.ResearchLevelDef>
         <defName>ModernStorage</defName>
-        <targetDef>ComplexFurniture</targetDef>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- industrial tech, eg double shelves -->
     <!-- resolves to modern if no industrial project is found, or machining if no modern is found -->
     <StorageBalance.ResearchLevelDef>
         <defName>IndustrialStorage</defName>
-        <targetDef>Machining</targetDef>
+        <targetDefFurniture>Machining</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- advanced industrial tech, eg metal crates -->
     <!-- usually stays at machining -->
     <StorageBalance.ResearchLevelDef>
         <defName>AdvancedIndustrialStorage</defName>
-        <targetDef>Machining</targetDef>
+        <targetDefFurniture>Machining</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- spacer tech -->
     <StorageBalance.ResearchLevelDef>
         <defName>SpacerStorage</defName>
-        <targetDef>AdvancedFabrication</targetDef>
+        <targetDefFurniture>AdvancedFabrication</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- ultra tech (currently unused) -->
     <StorageBalance.ResearchLevelDef>
         <defName>UltraStorage</defName>
-        <targetDef>AdvancedFabrication</targetDef>
+        <targetDefFurniture>AdvancedFabrication</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
 <!-- Special Research -->
     <StorageBalance.ResearchLevelDef>
         <defName>PotteryStorage</defName>
-        <targetDef>Stonecutting</targetDef>
+        <targetDefFurniture>Stonecutting</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <StorageBalance.ResearchLevelDef>
         <defName>FarmingStorage</defName>
-        <targetDef />
     </StorageBalance.ResearchLevelDef>
 </Defs>

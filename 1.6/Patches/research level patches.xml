@@ -6,9 +6,9 @@
             <li>Odyssey</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="UltraStorage"]/targetDef</xpath>
+            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="UltraStorage"]/targetDefFurniture</xpath>
             <value>
-                <targetDef>UltraMechtech</targetDef>
+                <targetDefFurniture>UltraMechtech</targetDefFurniture>
             </value>
         </match>
     </Operation>
@@ -23,34 +23,34 @@
             <operations>
                 <!-- Research Levels -->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDefFurniture</xpath>
                     <value>
-                        <targetDef>MF_BasicFurniture</targetDef>
+                        <targetDefFurniture>MF_BasicFurniture</targetDefFurniture>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage"]/targetDefFurniture</xpath>
                     <value>
-                        <targetDef>MF_ModernFurniture</targetDef>
+                        <targetDefFurniture>MF_ModernFurniture</targetDefFurniture>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="IndustrialStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="IndustrialStorage"]/targetDefFurniture</xpath>
                     <value>
-                        <targetDef>MF_ModernFurniture</targetDef>
+                        <targetDefFurniture>MF_ModernFurniture</targetDefFurniture>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDefFurniture</xpath>
                     <value>
-                        <targetDef>MF_SpacerFurniture</targetDef>
+                        <targetDefFurniture>MF_SpacerFurniture</targetDefFurniture>
                     </value>
                 </li>
                 <!-- Special Research -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDef</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]</xpath>
                     <value>
-                        <targetDef>MF_BasicFurniture</targetDef>
+                        <targetDefFurniture>MF_BasicFurniture</targetDefFurniture>
                     </value>
                 </li>
             </operations>
@@ -62,9 +62,9 @@
             <li>Vanilla Furniture Expanded - Spacer Module</li>
         </mods>
         <match  Class="PatchOperationReplace">
-            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDef</xpath>
+            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDefFurniture</xpath>
             <value>
-                <targetDef>SpacerFurniture</targetDef>
+                <targetDefFurniture>SpacerFurniture</targetDefFurniture>
             </value>
         </match>
     </Operation>
@@ -73,11 +73,21 @@
         <mods>
             <li>Vanilla Furniture Expanded - Farming</li>
         </mods>
-        <match  Class="PatchOperationReplace">
-            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDef</xpath>
-            <value>
-                <targetDef>VFE_Res_FarmingTechniques</targetDef>
-            </value>
+        <match  Class="PatchOperationSequence">
+            <operations>
+                <li  Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]</xpath>
+                    <value>
+                        <targetDefFurniture>VFE_Res_FarmingTechniques</targetDefFurniture>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDefFurniture</xpath>
+                    <value>
+                        <targetDefFurniture>VFE_Res_FarmingTechniques</targetDefFurniture>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
     <!-- VFE ART -->
@@ -86,9 +96,9 @@
             <li>Vanilla Furniture Expanded - Art</li>
         </mods>
         <match  Class="PatchOperationReplace">
-            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="PotteryStorage"]/targetDef</xpath>
+            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="PotteryStorage"]/targetDefFurniture</xpath>
             <value>
-                <targetDef>VFE_Res_Pottery</targetDef>
+                <targetDefFurniture>VFE_Res_Pottery</targetDefFurniture>
             </value>
         </match>
     </Operation>
@@ -100,10 +110,10 @@
         <mods>
             <li>Adaptive Storage Neolithic Module</li>
         </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDef</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]</xpath>
             <value>
-                <targetDef>ASNeolithicNeolithicStorage</targetDef>
+                <targetDefDedicated>ASNeolithicNeolithicStorage</targetDefDedicated>
             </value>
         </match>
     </Operation>
@@ -115,16 +125,22 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <!-- Research Levels -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDef</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]</xpath>
                     <value>
-                        <targetDef>BasicStorageNeolithicStorage</targetDef>
+                        <targetDefDedicated>BasicStorageNeolithicStorage</targetDefDedicated>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage" or defName="IndustrialStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDefDedicated</xpath>
                     <value>
-                        <targetDef>BasicStorage</targetDef>
+                        <targetDefDedicated>BasicStorageNeolithicStorage</targetDefDedicated>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage" or defName="IndustrialStorage"]</xpath>
+                    <value>
+                        <targetDefDedicated>BasicStorage</targetDefDedicated>
                     </value>
                 </li>
             </operations>
@@ -138,28 +154,55 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <!-- Research Levels -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDef</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]</xpath>
                     <value>
-                        <targetDef>ReelNeolithicStorage</targetDef>
+                        <targetDefDedicated>ReelNeolithicStorage</targetDefDedicated>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="MedievalStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage"]/targetDefDedicated</xpath>
                     <value>
-                        <targetDef>ReelMedievalStorage</targetDef>
+                        <targetDefDedicated>ReelNeolithicStorage</targetDefDedicated>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="MedievalStorage"]</xpath>
+                    <value>
+                        <targetDefDedicated>ReelMedievalStorage</targetDefDedicated>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage" or defName="IndustrialStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="MedievalStorage"]/targetDefDedicated</xpath>
                     <value>
-                        <targetDef>ReelIndustrialStorage</targetDef>
+                        <targetDefDedicated>ReelMedievalStorage</targetDefDedicated>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage" or defName="IndustrialStorage"]</xpath>
+                    <value>
+                        <targetDefDedicated>ReelIndustrialStorage</targetDefDedicated>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="ModernStorage" or defName="IndustrialStorage"]/targetDefDedicated</xpath>
                     <value>
-                        <targetDef>ReelSpacerStorage</targetDef>
+                        <targetDefDedicated>ReelIndustrialStorage</targetDefDedicated>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]</xpath>
+                    <value>
+                        <targetDefDedicated>ReelSpacerStorage</targetDefDedicated>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="SpacerStorage"]/targetDefDedicated</xpath>
+                    <value>
+                        <targetDefDedicated>ReelSpacerStorage</targetDefDedicated>
                     </value>
                 </li>
             </operations>
@@ -173,17 +216,23 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <!-- Research Levels -->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage" or defName="MedievalStorage"]/targetDef</xpath>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage" or defName="MedievalStorage"]</xpath>
                     <value>
-                        <targetDef>DankPyon_RusticStorage</targetDef>
+                        <targetDefDedicated>DankPyon_RusticStorage</targetDefDedicated>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="NeolithicStorage" or defName="MedievalStorage"]/targetDefDedicated</xpath>
+                    <value>
+                        <targetDefDedicated>DankPyon_RusticStorage</targetDefDedicated>
                     </value>
                 </li>
                 <!-- Special Research -->
                 <li Class="PatchOperationReplace">
-                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDef</xpath>
+                    <xpath>Defs/StorageBalance.ResearchLevelDef[defName="FarmingStorage"]/targetDefFurniture</xpath>
                     <value>
-                        <targetDef>DankPyon_BasicAgriculture</targetDef>
+                        <targetDefFurniture>DankPyon_BasicAgriculture</targetDefFurniture>
                     </value>
                 </li>
             </operations>
