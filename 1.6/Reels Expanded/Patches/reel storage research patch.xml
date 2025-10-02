@@ -27,7 +27,7 @@
         <techLevel>BulkIndustrialStorage</techLevel>
     </Operation>
     <Operation Class="StorageBalance.PatchOperationStorageResearch">
-        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageLargeSpacerLocker"]</xpath>
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageSpacerLocker"]</xpath>
         <techLevel>SpacerStorage</techLevel>
     </Operation>
 <!-- techDef -->
