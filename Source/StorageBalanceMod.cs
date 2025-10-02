@@ -32,7 +32,7 @@ namespace StorageBalance
                 listLeft.Gap();
                 listLeft.Gap();
                 listLeft.CheckboxLabeled("DedicatedResearchLabel".Translate(), ref settings.useDedicatedResearch);
-                listLeft.Label("DedicatedResearchDescription" + settings.useDedicatedResearch.ToString().Translate());
+                listLeft.Label(("DedicatedResearchDescription" + settings.useDedicatedResearch.ToString()).Translate());
             }
             listLeft.End();
 
