@@ -8,7 +8,7 @@ namespace StorageBalance
     public class ResearchLevelDef : Def
     {
         public ResearchProjectDef targetDefFurniture;
-        public ResearchProjectDef targetDefDedicated;
+        public string targetDefDedicated;
     }
     // PatchOperation to replace research dynamically
     public class PatchOperationStorageResearch : PatchOperation
