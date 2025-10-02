@@ -1,7 +1,6 @@
-﻿using System.Xml;
-using System.Xml.Linq;
+﻿using System;
+using System.Xml;
 using Verse;
-using Verse.AI;
 
 namespace StorageBalance
 {
@@ -19,42 +18,49 @@ namespace StorageBalance
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            XmlNodeList thingNodes = xml.SelectNodes(xpath);
-            // Build the xpath dynamically
-            if (techLevel != null) {
-                techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDef").InnerText;
-            }
-            else if (techDef != "")
+            if (StorageBalanceMod.settings.doResearch)
             {
-                techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techDef}\"]/targetDef").InnerText;
-            }
-            if (techDef != null && thingNodes != null)
-            {
-                foreach (XmlNode thingNode in thingNodes)
+                XmlNodeList thingNodes = xml.SelectNodes(xpath);
+                // Build the xpath dynamically
+                if (techLevel != null)
                 {
-                    // remove all researchPrerequisites nodes entirely
-                    XmlNodeList oldResearchNodes = thingNode.SelectNodes("researchPrerequisites");
-                    if (oldResearchNodes != null)
-                    {
-                        foreach (XmlNode node in oldResearchNodes)
-                        {
-                            node.ParentNode.RemoveChild(node);
-                        }
-                    }
-                    // then create a new researchPrerequisites node
-                    XmlNode newResearchNode = xml.CreateElement(null, "researchPrerequisites", null);
-                    // set Inherit = "False"
-                    XmlAttribute attr = xml.CreateAttribute("Inherit");
-                    attr.Value = "False";
-                    newResearchNode.Attributes.SetNamedItem(attr);
-                    // Set desired tech list item
-                    newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techDef;
-                    // Add to item
-                    thingNode.AppendChild(newResearchNode);
+                    techDef = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDef").InnerText;
                 }
+                else if (String.IsNullOrEmpty(techDef))
+                {
+                    techDef = "";
+                }
+                if (techDef != null && thingNodes != null)
+                {
+                    foreach (XmlNode thingNode in thingNodes)
+                    {
+                        // remove all researchPrerequisites nodes entirely
+                        XmlNodeList oldResearchNodes = thingNode.SelectNodes("researchPrerequisites");
+                        if (oldResearchNodes != null)
+                        {
+                            foreach (XmlNode node in oldResearchNodes)
+                            {
+                                node.ParentNode.RemoveChild(node);
+                            }
+                        }
+                        // then create a new researchPrerequisites node
+                        XmlNode newResearchNode = xml.CreateElement(null, "researchPrerequisites", null);
+                        // set Inherit = "False"
+                        XmlAttribute attr = xml.CreateAttribute("Inherit");
+                        attr.Value = "False";
+                        newResearchNode.Attributes.SetNamedItem(attr);
+                        // Set desired tech list item
+                        newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techDef;
+                        // Add to item
+                        thingNode.AppendChild(newResearchNode);
+                    }
+                    return true;
+                }
+                else return false;
+            }
+            else {
                 return true;
             }
-            else return false;
         }
     }
 }
