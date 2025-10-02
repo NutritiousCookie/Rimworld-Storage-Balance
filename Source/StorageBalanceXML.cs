@@ -28,12 +28,20 @@ namespace StorageBalance
                     if (researchNode != null)
                     {
                         researchNode.RemoveAll();
+                        XmlAttribute attr = xml.CreateAttribute("Inherit");
+                        attr.Value = "False";
+                        researchNode.Attributes.SetNamedItem(attr);
                         researchNode.AppendChild(xml.CreateElement(null,"li",null)).InnerText = techPath.InnerText;
                     }
                     // create researchPrerequisites if it doesn't
                     else
                     {
-                        node.AppendChild(xml.CreateElement(null, "researchPrerequisites", null)).AppendChild(xml.CreateElement(null, "li", null)).InnerText = techPath.InnerText;
+                        researchNode = xml.CreateElement(null, "researchPrerequisites", null);
+                        XmlAttribute attr = xml.CreateAttribute("Inherit");
+                        attr.Value = "False";
+                        researchNode.Attributes.SetNamedItem(attr);
+                        researchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techPath.InnerText;
+                        node.AppendChild(researchNode);
                     }
                 }
                 return true;
