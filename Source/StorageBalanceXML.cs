@@ -56,7 +56,10 @@ namespace StorageBalance
                         attr.Value = "False";
                         newResearchNode.Attributes.SetNamedItem(attr);
                         // Set desired tech list item
-                        newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techDef;
+                        if (!String.IsNullOrEmpty(techDef))
+                        {
+                            newResearchNode.AppendChild(xml.CreateElement(null, "li", null)).InnerText = techDef;
+                        }
                         // Add to item
                         thingNode.AppendChild(newResearchNode);
                     }
