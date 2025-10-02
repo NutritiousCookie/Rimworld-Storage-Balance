@@ -4,5 +4,5 @@
     <StorageBalanceDoResearchLabel>Apply research patches? (requires reload)</StorageBalanceDoResearchLabel>
     <DedicatedResearchLabel>Remove dedicated research projects, such as Reel's?: (requires reload)</DedicatedResearchLabel>
     <DedicatedResearchDescriptionFalse>Put storage buildings in vanilla/VFE furniture projects.</DedicatedResearchDescriptionFalse>
-    <StorageResearchTypeDescriptionTrue>Put storage buildings in storage mod research projects, such as Reel's.</StorageResearchTypeDescriptionTrue>
+    <DedicatedResearchDescriptionTrue>Put storage buildings in storage mod research projects, such as Reel's.</DedicatedResearchDescriptionTrue>
 </LanguageData>
