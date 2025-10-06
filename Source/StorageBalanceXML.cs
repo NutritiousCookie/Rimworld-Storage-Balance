@@ -8,7 +8,7 @@ namespace StorageBalance
     public class ResearchLevelDef : Def
     {
         public ResearchProjectDef targetDefFurniture;
-        public string targetDefDedicated;
+        public string targetDefDedicated; // may be removed, string avoids errors
     }
     // PatchOperation to replace research dynamically
     public class PatchOperationStorageResearch : PatchOperation
@@ -25,17 +25,10 @@ namespace StorageBalance
                 // Find the researchProject name
                 if (techLevel != null)
                 {
-                    if (StorageBalanceMod.settings.useDedicatedResearch)
-                    {
-                        researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
-                    }
-                    if (String.IsNullOrEmpty(researchDefName)) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture")?.InnerText;
-                    if (String.IsNullOrEmpty(researchDefName)) researchDefName = "";
+                    if (StorageBalanceMod.settings.useDedicatedResearch) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
+                    if (string.IsNullOrEmpty(researchDefName)) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture")?.InnerText;
                 }
-                else if (String.IsNullOrEmpty(researchDefName))
-                {
-                    researchDefName = "";
-                }
+                if (string.IsNullOrEmpty(researchDefName)) researchDefName = "";
                 if (thingNodes != null)
                 {
                     foreach (XmlNode thingNode in thingNodes)
