@@ -1,4 +1,5 @@
 # Rimworld Storage Balance Patches
+### *now with mod settings menu!*
 ### by NutritiousCookie
 
 ![Storage Balance Patches](About/preview.png)
@@ -13,7 +14,7 @@ The changes made by this mod are listed [here](https://docs.google.com/spreadshe
 
 This mod aims to:
 - Declutter menus by removing duplicate items across mods
-- Declutter research by removing storage-specific projects, moving buildings to vanilla or vanilla expanded projects.
+- Declutter research by moving buildings to consolidated research projects (able to be disabled, configurable).
 - Balance around vanilla items.
 - Balance stack sizes by tech level and specialization of the shelf, rather than resource cost to build it.
 
@@ -46,7 +47,7 @@ Currently covering these storage mods:
 - [Warehouse Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3519963835) - If any other big storage mods are loaded (Reel's, Phaneron's, Neat, Adaptive Deep, Adaptive Simple) cardboard boxes and medicine racks are removed. Storage shelves have chunks/corpses disallowed.
 - [Adaptive Ideology Storage](https://steamcommunity.com/sharedfiles/filedetails/?id=3301337278) - Now compatible. All items renamed and rebalanced.
 
-Research projects are removed, and items are instead assigned to projects from:
+If "Use dedicated research" setting is disabled, storage research projects are removed, and items are instead assigned to projects from:
 - Vanilla (no required DLCs)
 - [Vanilla Furniture Expanded - Core](https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143)
 - [Vanilla Furniture Expanded - Art](https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023)
