@@ -38,10 +38,10 @@
         <targetDefFurniture>Machining</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- advanced industrial tech, eg warehouse storage -->
-    <!-- usually stays at fabrication -->
+    <!-- usually stays at microelectronics -->
     <StorageBalance.ResearchLevelDef>
         <defName>AdvancedIndustrialStorage</defName>
-        <targetDefFurniture>Fabrication</targetDefFurniture>
+        <targetDefFurniture>MicroelectronicsBasics</targetDefFurniture>
     </StorageBalance.ResearchLevelDef>
     <!-- spacer tech -->
     <StorageBalance.ResearchLevelDef>
