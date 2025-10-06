@@ -19,13 +19,13 @@ namespace StorageBalance
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            if (StorageBalanceMod.settings.doResearch)
+            if (StorageBalanceMod.settings?.doResearch != false)
             {
                 XmlNodeList thingNodes = xml.SelectNodes(xpath);
                 // Find the researchProject name
                 if (techLevel != null)
                 {
-                    if (StorageBalanceMod.settings.useDedicatedResearch) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
+                    if (StorageBalanceMod.settings?.useDedicatedResearch != false) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefDedicated")?.InnerText;
                     if (string.IsNullOrEmpty(researchDefName)) researchDefName = xml.SelectSingleNode($"Defs/StorageBalance.ResearchLevelDef[defName=\"{techLevel}\"]/targetDefFurniture")?.InnerText;
                 }
                 if (string.IsNullOrEmpty(researchDefName)) researchDefName = "";
@@ -60,7 +60,10 @@ namespace StorageBalance
                 }
                 else return false;
             }
-            else return true;
+            else {
+                // Log.WarningOnce("Storage research patching disabled, skipping.", 356668711);
+                return true;
+            }
         }
     }
 }
