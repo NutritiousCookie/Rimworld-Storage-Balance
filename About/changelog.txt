@@ -20,3 +20,4 @@
 1.2.7 - Various fixes to align patches with spreadsheet. Add [sbz] Fridge compatibility.
 1.2.8 - Fridge power draw and construction cost balancing.
 1.2.9 - Various fixes to align patches with spreadsheet. Crates and pallets reorganized to raw resource storage (item graphics looked ugly in the crates)
+1.2.10 - Small fixes and tweaks to a few Reel's items.
