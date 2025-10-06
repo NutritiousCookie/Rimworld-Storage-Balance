@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- ITEMS -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Vin_CB" or defName="Vin_CBS" or defName="Vin_DLR" or defName="Vin_GR" or defName="Vin_GRS" or defName="Vin_TLR"]</xpath>
+        <techLevel>AdvancedIndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Vin_MR" or defName="Vin_MRS"]</xpath>
+        <techLevel>IndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Vin_WP" or defName="Vin_WPS"]</xpath>
+        <techLevel>BulkIndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Vin_PC"]</xpath>
+        <techLevel>ModernStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Vin_FR"]</xpath>
+        <researchDefName>AirConditioning</researchDefName>
+    </Operation>
+</Patch>

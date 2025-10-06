@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- ITEMS -->
+<!-- ResearchLevelDef -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]</xpath>
+        <techLevel>NeolithicStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]</xpath>
+        <techLevel>MedievalStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="sbz_TextileRack"]</xpath>
+        <techLevel>AdvancedMedievalStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="sbz_Pallet" or defName="sbz_MiniPallet"]</xpath>
+        <techLevel>ModernStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase" or @Name="sbzSmallDisplayShelfBase"]</xpath>
+        <techLevel>IndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase" or defName="sbz_Drum" or defName="sbz_Safe"]</xpath>
+        <techLevel>BulkIndustrialStorage</techLevel>
+    </Operation>
+</Patch>

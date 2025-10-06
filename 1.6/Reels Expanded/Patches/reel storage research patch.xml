@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- ITEMS -->
+<!-- ResearchLevelDef -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]</xpath>
+        <techLevel>FarmingStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]</xpath>
+        <techLevel>NeolithicStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder" or defName="ReelStorageNewBarrel" or defName="ReelStorageNewWoodCrate" or defName="ReelStorageNewLargeWoodCrate" or defName="ReelStorageBookshelf" or defName="ReelStorageWineRack" or defName="ReelStorageWoodChest" or defName="ReelStorageLargeWoodChest"]</xpath>
+        <techLevel>MedievalStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook" or defName="ReelStorageWeaponRack"]</xpath>
+        <techLevel>AdvancedMedievalStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker" or defName="ReelNewIndustrialShelf"]</xpath>
+        <techLevel>IndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageSkip" or defName="ReelStorageVerticalWeaponRack" or defName="ReelStorageHorizontalWeaponRack" or defName="ReelStorageMetalCrate" or defName="ReelStorageLargeMetalCrate" or defName="ReelStorageCargoContainer"]</xpath>
+        <techLevel>BulkIndustrialStorage</techLevel>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageSpacerContainer" or defName="ReelStorageLargeSpacerContainer" or defName="ReelStorageSpacerContainerStack" or defName="ReelStorageSpacerLocker"]</xpath>
+        <techLevel>SpacerStorage</techLevel>
+    </Operation>
+<!-- techDef -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageNewFridge" or defName="ReelStorageNewMedicineCabinet"]</xpath>
+        <researchDefName>AirConditioning</researchDefName>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]</xpath>
+        <researchDefName>BiofuelRefining</researchDefName>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageStonePile" or defName="ReelStorageLargeStonePile"]</xpath>
+        <researchDefName>Stonecutting</researchDefName>
+    </Operation>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]</xpath>
+        <researchDefName></researchDefName>
+    </Operation>
+
+<!-- PROJECTS -->
+<!-- Remove if unused -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="ReelNeolithicStorage"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef/researchPrerequisites[li="ReelMedievalStorage"]</xpath>
+                    <nomatch Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+                    </nomatch>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelIndustrialStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]</xpath>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef/researchPrerequisites[li="ReelSpacerStorage"]</xpath>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="ReelSpacerStorage"]</xpath>
+        </nomatch>
+    </Operation>
+</Patch>

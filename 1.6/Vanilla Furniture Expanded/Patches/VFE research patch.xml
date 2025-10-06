@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- ITEMS -->
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]</xpath>
+        <techLevel>ModernStorage</techLevel>
+    </Operation>
+
+</Patch>

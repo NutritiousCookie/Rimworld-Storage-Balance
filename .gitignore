@@ -11,3 +11,15 @@
 !About/*.txt
 !1.6/
 !1.6/**/*
+!Assemblies/
+!Assemblies/*
+!Source/
+!Source/*
+!Source/**/*
+!Languages/
+!Languages/**/*
+
+#ignore
+Source/bin
+Source/obj
+Source/.*

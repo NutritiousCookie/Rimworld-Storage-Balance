@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- these will be overwritten later -->
+<Defs>
+<!-- Research Levels -->
+    <!-- neolithic tech, eg shelves -->
+    <!-- resolves to medieval if no neolithic project is found -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>NeolithicStorage</defName>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- medieval tech, eg crates-->
+    <StorageBalance.ResearchLevelDef>
+        <defName>MedievalStorage</defName>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- advanced medieval tech, eg meat hooks -->
+    <!-- usually stays at smithing -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>AdvancedMedievalStorage</defName>
+        <targetDefFurniture>Smithing</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- early industrial tech, eg pallets -->
+    <!-- resolves to medieval if no modern project is found -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>ModernStorage</defName>
+        <targetDefFurniture>ComplexFurniture</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- industrial tech, eg double shelves -->
+    <!-- resolves to modern if no industrial project is found, or machining if no modern is found -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>IndustrialStorage</defName>
+        <targetDefFurniture>Machining</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- bulk industrial tech, eg metal crates -->
+    <!-- usually stays at machining -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>BulkIndustrialStorage</defName>
+        <targetDefFurniture>Machining</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- advanced industrial tech, eg warehouse storage -->
+    <!-- usually stays at microelectronics -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>AdvancedIndustrialStorage</defName>
+        <targetDefFurniture>MicroelectronicsBasics</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- spacer tech -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>SpacerStorage</defName>
+        <targetDefFurniture>AdvancedFabrication</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <!-- ultra tech (currently unused) -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>UltraStorage</defName>
+        <targetDefFurniture>AdvancedFabrication</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+<!-- Special Research -->
+    <StorageBalance.ResearchLevelDef>
+        <defName>PotteryStorage</defName>
+        <targetDefFurniture>Stonecutting</targetDefFurniture>
+    </StorageBalance.ResearchLevelDef>
+    <StorageBalance.ResearchLevelDef>
+        <defName>FarmingStorage</defName>
+    </StorageBalance.ResearchLevelDef>
+</Defs>

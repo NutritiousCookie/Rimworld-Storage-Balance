@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="StorageBalance.PatchOperationStorageResearch">
+        <xpath>Defs/ThingDef[@Name="ShelfBase"]</xpath>
+        <techLevel>NeolithicStorage</techLevel>
+    </Operation>
+</Patch>
