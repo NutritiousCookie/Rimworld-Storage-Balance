@@ -3,6 +3,6 @@
     <StorageBalanceModName>Storage Balance Patches</StorageBalanceModName>
     <StorageBalanceDoResearchLabel>Apply research patches? (requires reload)</StorageBalanceDoResearchLabel>
     <DedicatedResearchLabel>Use dedicated research projects, such as Reel's?: (requires reload)</DedicatedResearchLabel>
-    <DedicatedResearchDescriptionFalse>Put storage buildings in vanilla/VFE furniture projects.</DedicatedResearchDescriptionFalse>
-    <DedicatedResearchDescriptionTrue>Put storage buildings in storage mod research projects, such as Reel's.</DedicatedResearchDescriptionTrue>
+    <DedicatedResearchDescriptionFalse>Put some storage buildings in vanilla/VFE furniture projects.</DedicatedResearchDescriptionFalse>
+    <DedicatedResearchDescriptionTrue>Put some storage buildings in storage mod research projects, such as Reel's.</DedicatedResearchDescriptionTrue>
 </LanguageData>
