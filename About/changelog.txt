@@ -21,4 +21,4 @@
 1.2.8 - Fridge power draw and construction cost balancing.
 1.2.9 - Various fixes to align patches with spreadsheet. Crates and pallets reorganized to raw resource storage (item graphics looked ugly in the crates)
 1.2.10 - Small fixes and tweaks to a few Reel's items.
-1.3.0 - Major update. New mod settings menu with two settings: 'Apply research patches', and 'Use dedicated research projects', which allow the user to choose how the mod handles research projects. Big changes under the hood to facilitate this change.
+1.3.0 - Major update. New mod settings menu with two settings: 'Apply research patches', and 'Use dedicated research projects', which allow the user to choose how the mod handles research projects. Both are on by default. Big changes under the hood to facilitate this change.
